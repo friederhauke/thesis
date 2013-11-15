@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: all.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "worden_overview_2004"
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            616 strings with 5640 characters,
+and the built_in function-call counts, 1640 in all, are:
+= -- 166
+> -- 52
+< -- 4
++ -- 18
+- -- 15
+* -- 96
+:= -- 220
+add.period$ -- 13
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 89
+empty$ -- 141
+format.name$ -- 22
+if$ -- 375
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 27
+num.names$ -- 12
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 91
+stack$ -- 0
+substring$ -- 93
+swap$ -- 35
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 33
+warning$ -- 0
+while$ -- 11
+width$ -- 0
+write$ -- 53
+(There was 1 warning)

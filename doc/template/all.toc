@@ -1,0 +1,40 @@
+\contentsline {section}{List of Figures}{ii}{section*.1}
+\contentsline {section}{List of Tables}{1}{section*.2}
+\contentsline {part}{I\hspace {1em}Data Acquisition, Data Integration and Creation of LOD3 model}{1}{part.1}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Data Analysis}{2}{section.2}
+\contentsline {section}{\numberline {3}Geometry Analysis}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Calculation of wall-surface intersection}{3}{subsection.3.1}
+\contentsline {paragraph}{\numberline {3.1.0.1}Calculate neighbouring buildings}{3}{paragraph.3.1.0.1}
+\contentsline {paragraph}{\numberline {3.1.0.2}Calculating area touching other buildings}{4}{paragraph.3.1.0.2}
+\contentsline {paragraph}{\numberline {3.1.0.3}Overall- and sharing wall area}{5}{paragraph.3.1.0.3}
+\contentsline {subsection}{\numberline {3.2}Geometry Analysis - Building Volume}{5}{subsection.3.2}
+\contentsline {paragraph}{\numberline {3.2.0.4}Volume calculation 1. approach: SQL}{6}{paragraph.3.2.0.4}
+\contentsline {paragraph}{\numberline {3.2.0.5}Volume calculation 2. approach: FME}{6}{paragraph.3.2.0.5}
+\contentsline {paragraph}{\numberline {3.2.0.6}Volume calculation 3. approach: Arcmap}{6}{paragraph.3.2.0.6}
+\contentsline {paragraph}{\numberline {3.2.0.7}Volume calculation 4. approach: Arcmap again}{7}{paragraph.3.2.0.7}
+\contentsline {paragraph}{\numberline {3.2.0.8}Volume calculation - Comparison}{7}{paragraph.3.2.0.8}
+\contentsline {part}{II\hspace {1em}Estimation of Energy Consumption and Energy Demand}{8}{part.2}
+\contentsline {section}{\numberline {4}Introduction}{9}{section.4}
+\contentsline {section}{\numberline {5}Input values}{9}{section.5}
+\contentsline {section}{\numberline {6}Demand of effective energy for heating}{10}{section.6}
+\contentsline {section}{\numberline {7}Demand of effective energy for warmwater}{13}{section.7}
+\contentsline {section}{\numberline {8}Result}{14}{section.8}
+\contentsline {section}{\numberline {9}Discussion}{14}{section.9}
+\contentsline {section}{\numberline {10}Introduction}{16}{section.10}
+\contentsline {subsection}{\numberline {10.1}Work Flow}{16}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Related Work}{17}{subsection.10.2}
+\contentsline {section}{\numberline {11}Fundamentals of Photovoltaik systems}{18}{section.11}
+\contentsline {section}{\numberline {12}Fundamentals of Solar thermal systems}{19}{section.12}
+\contentsline {section}{\numberline {13}Global Irradiance}{19}{section.13}
+\contentsline {subsection}{\numberline {13.1}Orientation of the roof}{19}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Inclination of the roof}{20}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Satel-Light Database}{20}{subsection.13.3}
+\contentsline {section}{\numberline {14}Reduction of Roof Surface Area due to Roof Equipment}{20}{section.14}
+\contentsline {section}{\numberline {15}Shadowing}{23}{section.15}
+\contentsline {section}{\numberline {16}Calculation of the potential}{23}{section.16}
+\contentsline {subsection}{\numberline {16.1}Potential of Photovoltiac systems}{24}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Solar Thermal}{26}{subsection.16.2}
+\contentsline {section}{\numberline {17}Validation of Result}{27}{section.17}
+\contentsline {section}{\numberline {18}Conclusion}{28}{section.18}
+\contentsline {section}{\numberline {19}Future Work}{29}{section.19}

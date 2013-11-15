@@ -1,0 +1,17 @@
+\subsection{Calculation of the potential}
+
+The calculation begins with the reduction of the roof area according to the building age class as described in chapter \ref{sec:roofarea}. If the roof surface is a flat roof ($tilt < 8 ^\circ$) the modules cannot directly mounted of the roof surface. To bring the modules in an optimal tilt angle they are mounted on a mounting system of the roof. Because they are tilted they might shadow the neighboring modules, therefore a certain distance between the modules is necessary as shown in Figure \ref{fig:flatroof}. The distance has to be $c=2.75$ times longer then the width of the ground of the module $w$.
+%TODO: ADD REFERENCE!
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{phase2/group2/figure/flatroofreduction.png}
+	\caption{Solar Modules mounted on a mounting system of a flat roof}
+	\label{fig:flatroof}
+\end{figure}
+Furthermore the global irradiance has to be picked from the look-up table. According to Solar Atlas Berlin \citen{solaratlas} areas with a global irradiance less than $905 Wh/m^2$ have to be neglected. Also surface are neglected which have a smaller area then $5m^2$. It is assumed that it is economically not worth the mount modules on such a small roof. The actual calculation of the potential highly depends on the type of module. This will be explained in the following sub sections.
+
+
+
+\input{phase2/group2/include/calculation_potovoltaic}
+
+\input{phase2/group2/include/calculation_solarthermal}

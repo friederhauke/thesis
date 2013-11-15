@@ -1,0 +1,486 @@
+\section{Introduction}
+The task for group 1 in the phase 1 was to specify energy relevant attributes and try to calculate or extract them from the semantic city model.\\
+First of all a connection to the databse was necessary to establish, and the following three subtasks where reasonable to define.
+With the specification of the energy relevant attributes inside of the database, a data basis for the different algorithms was created. This algorithms can be differentiated into data analysis algorithms basing on the pure values stored in the database and geometry analysis dealing with the geometry information in the database.\\
+Our work was restricted to the area of Berlin Moabit, a small subset of the full Berlin model. For the Java algorithms the database information where exported as .gml files and the obtained output was saved as .csv files, which were able to be re-uploaded to the database. All data kept their necessary identifier.\\
+As important values for an energy atlas following parameter where determined:
+\begin{itemize}
+\item Airvolume of building to be able to calculate the Surface-to-Volume-Ratio
+\item Number of storeys which can be calculated by using the average storey-height of the specific building
+\item Orientation of the wallsurfaces of each building to get information about neighbourhood relations between buildings and inner- and outer walls
+\end{itemize}
+
+\section{Data Analysis}
+Each buidling stored in the database contains at least one groundsurfaces, one roofsurface and three wallsurfaces. Based on these information, the volume of the buildings, the orientation of the walls (whether it is a outer or neighbouring wall), therewith also the surface-to-volume-ratio and the outer-wall orientation for sunlight-heating-effects can be calculated. Also necessary for the average storey height and important for the calculations is the buidling's function as it is residential, public or industry.\\
+
+
+\section{Geometry Analysis - Surface-to-Volume-Ratio}
+Carrion (2010) defines the surface area to volume ratio as follows: \\
+\begin{quote}
+"The S/V is the ratio of the aggregated area of all surfaces which transmit energy to the surrounding (wall surfaces touching other buildings are not considered) and the volume of the building."
+\end{quote}
+Important to know is, that the S/V does not include wallsurfaces touching other buildings, and therewith those wallsurfaces must be detected using the information which are stored in the database. For this issue the following workflow to calculate wall surfaces which are not touching other buildings was developed:
+\begin{enumerate}
+\item Calculate neighbouring buildings
+\item Calculate area touching other buildings (for each building)
+\item Calculate sum of surface areas (ground-, roof-, wallsurfaces)
+\item Subtract intersecting area with neighbouring building from sum of surface areas
+\end{enumerate}
+
+\subsection{Calculate neighbouring buildings}
+The calculation of neighbouring buildings is done, to minimize the candidate set for the calculation of the intersection of two buildings. It has to be determined if the wall surfaces of two buildings are within a certain distance, and if the angle between the two wall surfaces is smaller than a defined threshold \ref{fig:neighbours3d}. When using Java as language for programming the algorithm, and therewith the JTS Topology Suite (JTS) library, calculations cannot been done on 3D geometries.
+\begin{figure}[h]
+	\centering
+ 	 \includegraphics[scale=0.35]{neighbours3d.png}
+ 	 \label{fig:neighbours3d}
+	\caption{..}
+\end{figure}
+As a solution of this problem a walk-around can be used described as followed:\\
+First as a simplification, wallsurfaces can be assumed as absolute vertical and parallel to each other. Then with omitting the Z-coordinate the walls can be projected into 2D space. Thereby the wall surfaces become linestrings \ref{fig:neighbours2d}.
+\begin{figure}[h]
+	\centering
+ 	 \includegraphics[scale=0.8]{neighbours2d.png}
+ 	 \label{fig:neighbours2d}
+	\caption{..}
+\end{figure}
+After those assumptions and the projection from the 3D to a 2D space, a test if two wall surfaces of two buildings are within a certain distance and their included angle is below a certain threshold can be done using JTS. For every wall its neighboured wallsurfaces are saved.
+
+\subsection{Calculation of Surface Intersection}
+For the following calculation of the intersection area of two walls it is necessary that the wall surfaces are lying in the YZ-plane, since JTS cannot do calculations on 3D geometries. Therefore the coordinate system has to be rotated so that the x-coordinates can be ignored.\\
+To rotate the coordinate system so that the wall surfaces are lying in the YZ-plane, the normal vector of one of the two walls needs to be calculated. Afterwards the angle between the normal vector and the normal vector of the YZ-plane [1 0 0] can be calculated and used as the rotation angle $\alpha$ for both wall surfaces. If the rotated surfaces are now intersecting, it can be interpreted as an intersection of the real world surfaces as well.\\
+The following rotation matrix \ref{fig:rotationmatrix} is used for the rotation:
+\begin{figure}[h]
+	\centering
+ 	 \includegraphics[scale=0.5]{rotation_matrix.png}
+ 	 \label{fig:rotationmatrix}
+\end{figure}
+The following listing calculates the intersection area of two wall surfaces (\textit{polygon} and \textit{polygonNeighbour})
+\begin{lstlisting}
+Geometry intersection=polygon.intersection(polygonNeighbour);
+
+		if (intersection instanceof com.vividsolutions.jts.geom.Polygon) {
+			com.vividsolutions.jts.geom.Polygon intersectionPolygon = (com.vividsolutions.jts.geom.Polygon) intersection;
+			// unit is m^2
+			intersectingArea = intersectionPolygon.getArea();
+		}
+\end{lstlisting}
+The calculation of the shared wallsurface area is followed by the calculation of the wall-, roof- and groundsurfaces for each building. The latter surface areas are summed up to get the overall surface area of each building. With this each building's outer-surface area can be calculated easily.
+
+\begin{frame}
+\frametitle{Overall and sharing wall area}
+Extract of the result (.csv file):\\
+\begin{table}[b]
+\centering
+\begin{tabular}{c  c  c}
+building\_id & surface\_area & shared\_wall\_area\\
+\hline						
+BLDG\_0003000000432cd8 & 234.99638499102912 & 45.46462674214126\\
+BLDG\_0003000000432c80 & 1265.0716547126067 & 529.4226535306225\\
+BLDG\_0003000f000858d0 & 2201.2130139165056 & 975.798086083496\\
+...\\
+\end{tabular}
+\label{table:result shared wall surfaces}
+\caption{subset of result .csv file about shared wall surfaces} 
+\end{table}
+\end{frame}
+
+
+\subsection{Geometry Analysis - Building Volume}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Four Approaches}
+\begin{itemize}
+\item SQL
+\item FME
+\item ArcMap - 3D Analyst
+\item ArcMap - Buildings to DEM
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Volume calculation 1. approach: SQL}
+\begin{itemize}
+\item SQL
+\item Oracle spatial functions to calculate building area
+\item Multiplying with stored height in the database
+\item Problem: only one height from ground to the highest roof point $\rightarrow$ wrong volume
+\end{itemize}
+\begin{center}
+\includegraphics[scale=0.3]{build_h.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Volume calculation 2. approach: FME}
+\begin{itemize}
+\item FME Data Inspector showed stored geometry
+\item Building contains: ground, wall and roofsurface
+\item Not connected $\rightarrow$ No closed geometry
+\item Problem: FME workbench is very complex $\rightarrow$ a lot of errors occure
+\end{itemize}
+\begin{center}
+\includegraphics[scale=0.3]{fme.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Volume calculation 3. approach: Arcmap}
+\begin{itemize}
+\item Extension: 3D Analyst
+\item Can close geometries, but changes the size of a building
+\item Problem: Changes the volume
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Volume calculation 4. approach: Arcmap again}
+\begin{itemize}
+\item Creation of a rasterlayer for ground and roof geometrie with extension: "Add Buildings to DEM"
+\pause
+\item Creating a difference raster
+\pause
+\item Calculating the volume with this raster
+\pause
+\item Problem: automation for all buildings
+\item Solution: Arcmap Modelbuilder
+\end{itemize}
+\includegraphics[scale=0.1]{raster_ground.jpg} 
+\includegraphics[scale=0.1]{raster_roof.jpg}
+\includegraphics[scale=0.1]{raster_diff.jpg} 
+\includegraphics[scale=0.1]{arcscene_tin.jpg} 
+\includegraphics[scale=0.1]{modelbuilder.jpg} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Volume calculation - Comparison}
+\begin{itemize}
+\item 1.approach: Volume: $10227m^3$
+\item 2.approach: Volume: no result
+\item 3.approach: Volume: $6000m^3$
+\item 4.approach: Volume: $7400m^3$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Overall Result Phase 1}
+\begin{itemize}
+\item No explicit calculation and use of the ratio between building-volume and wall-surfaces
+\item Important information for phase 2: \\marking walls as outer walls and walls between two neighboured building
+\end{itemize}
+\end{frame}
+
+\section{Phase 2}
+
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+
+\subsection{Overview}
+
+\begin{frame}
+\frametitle{About}
+\begin{quote}
+Values for the calculation of the building energy demand using Java with the citygml4j library and the 3D city model 
+\end{quote}
+\end{frame}
+
+
+\subsection{The IWU Report}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview}
+\begin{itemize}
+\item Created by the IGG based on calculation methods of the "Institut Wohnen und Umwelt GmbH" [eng. Institute living and environment GmbH]
+\item Manual for the calculation of the building energy demand using the semantic citymodel of Berlin
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Structure}
+\begin{itemize}
+\item Determination of input-values [temperature, geometries, energy reference building-parameter]
+\item Calculation of building's energy demand for space-heating using an accounting system
+\item Calculation of building's energy demand for warm-water
+\end{itemize}
+\end{frame}
+
+\subsection{Input values}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{"Gradstunden"}
+\begin{itemize}
+\item Days per month multiplied with the difference of heated temperature inside and the actual temperature outside
+\item Summed up for the whole year
+\item Only for days with switched on heater!
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energy reference area}
+\begin{block}{Due to the fact, that a precise indoor-model of the city is not available, the estimation of this value can be done with the following formula:}
+\[ A_{EB} = 0.75 \times n_{G} x A_{FB} [m^2]\]\begin{description}
+\item[$n_{G}$:] number of storeys\\
+\item[$A_{FB}$:] building footprint\\
+\end{description}
+Only heated storeys without roof and cellar are taken into account!
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Storey-Height}
+Depending on type and age of the building, following average values can be taken:
+\begin{center}
+\includegraphics[scale=0.5]{storey_height.jpg} 
+\end{center}
+For our calculations we took additional 0.3m per storey to achieve (more or less) the same numer of storeys as in real world.
+\end{frame}
+
+\begin{frame}
+\frametitle{Air-Volume}
+For calculations of aeration the building's air volume is needed:
+\[V_L = A_{EB} \times 2.5\]
+which is the energy reference area multiplied with the assumed mean (lighted) storey height.
+\end{frame}
+
+\begin{frame}
+\frametitle{U-Values}
+For the calculation of the energy-flow, values are needed which can describe the energy transmission of specific building parts
+\begin{center}
+\includegraphics[scale=0.4]{U-Values.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{U-Values}
+Following table shows the average U-Values for specific building-ages and building-parts:
+\begin{center}
+\includegraphics[scale=0.59]{u-values_table.jpg}
+\end{center}
+\end{frame}
+
+
+\subsection{Demand of effective energy for heating}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Calculation of the energy demand for heating}
+Easily with using an accounting system:
+\[Demand = Gain - Loss\]
+\end{frame}
+
+\begin{frame}
+\frametitle{Energy Loss}
+\begin{block}{Energy loss [kWh/a]:}
+\[Q_{V} = (Q_T + Q_L) \times f_{Abs}\]
+\begin{description}
+\item[$Q_{T}$:] transmission loss [kWh/a]\\
+\item[$Q_L$: ]aeration loss [kWh/a]\\
+\item[$f_{Abs}$:] reduction factor day-/night-setback\\
+\end{description}
+[Day- Nightsetback: table with average values, depending on building type e.g. new-building]\\
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energy Loss}
+\begin{block}{Energy loss [kWh/a]:}
+\[Q_{V} = (Q_T + Q_L) \times f_{Abs}\]
+\end{block}
+\begin{block}{Loss through transmission [kWh/a]:}
+\[Q_T = (\sum f_i \times k_I \times A_i) \times \Theta \]
+\begin{description}
+\item[$f_i$:]reductionfactor [1.0 outer-walls; 0.5 inner-walls]\\
+\item[$k_I$:] U-value [W/($m2$K)]\\
+\item[$A_i$:] building's area [$m^2$]\\
+\item[$\Theta$:] Gradstunden [kKh/a]\\
+\end{description}
+[i: building part's orientation e.g. south]
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energy Loss}
+\begin{block}{Energy loss [kWh/a]:}
+\[Q_{V} = (Q_T + Q_L) \times f_{Abs}\]
+\end{block}
+\begin{block}{Loss through transmission [kWh/a]:}
+\[Q_T = (\sum f_i \times k_I \times A_i) \times \Theta \]
+\end{block}
+\begin{block}{Loss through aeration [kWh/a]:}
+\[Q_L = 0.34 \times n \times V_L \times \Theta \]
+\begin{description}
+\item[$n$:] frequency of aeration [1/h] (from table)\\
+\item[$V_L$:] building's air volume [$m^3$]\\
+\end{description}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Energy gain [kWh/a]:
+\[Q_G = \eta_F \times Q_F \]
+\begin{description}
+\item[$\eta_F$:] utilisation\\
+\item[$Q_F$:] free heat\\
+\end{description}
+\pause
+\item Free heat [kWh/a]:
+\[Q_F = Q_S + Q_I \]
+\begin{description}
+\item[$Q_S $:] solar irradiation\\
+\item[$Q_I $:] heat sources inside\\
+\end{description}
+\pause
+\item utilisation:
+\[\eta_F = 1 - 0.3 \times (\dfrac{Q_F}{Q_V}) \]
+\begin{description}
+\item[$Q_V $:] (remember:) energy-loss\\
+\end{description}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Solar Energy Gain}
+\begin{block}{precise formula [kWh/a]:}
+\[Q_S = r \times g_{senkr} \times \sum G_i \times A_{F,i} \]
+\begin{description}
+\item[$G_i $:] global radiation per orientation (e.g. south)\\
+\item[$A_{F,i} $:] window area per orientation [$m^2$]\\
+\item[$g_{senkr} $:] energy transmission through glass-area (from Kurzverfahren Energieprofil)\\
+\item[$r $:] reduction factor due to windows (standard value: 0.36)\\
+\end{description}
+\end{block}
+
+\begin{block}{simplified formula [kWh/a]:}
+\[Q_S = r \times g_{senkr} \times 240 \times A_{window} \]
+\begin{description}
+\item[$A_{window} $:] estimated overall window area [$m^2$]\\
+\end{description}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Heat Sources Inside}
+\begin{itemize}
+\item energy gain inside [kWh/a]:
+\[Q_I = 0.024 \times q_i \times t_H \times A_{EB} \]
+\begin{description}
+\item[$0.024 $:] factor for conversation ([W] $\rightarrow$ [kW]; [d] $\rightarrow$ [h]\\
+\item[$q_i $:] specific power of inside heat sources [W/$m^2$]\\
+\item[$t_H $:] heating period [d/a]\\
+\item[$A_{EB} $:] energy reference area\\
+\end{description}
+\end{itemize}
+\end{frame}
+
+
+\subsection{Demand of effective energy for warmwater}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Calculation of Energy Demand for Warmwater}
+\begin{itemize}
+\item Needed warm Water per year [kWh/a]:
+\[Q_W = \dfrac{Q_{W/P} \times A_{EB}}{A_{EB/P}}\]
+\begin{description}
+\item[$Q_{W/P} $:] demand of warm water per year and person [kWh/(P a)] (standard: 600 kWh/(P a))\\
+\item[$A_{EB/P} $:] living space per person [$m^2$/P] (standard: 35 $m^2$/P)\\
+\end{description}
+\begin{quote}
+A more precise number of inhabitants per building is calculated by the group 3 of this project\\
+\pause
+$\Rightarrow$ Formula becomes:\\
+\[Q_W = Q_{W/P} \times N_P\]
+\begin{description}
+\item[$N_P$:] number of persons\\
+\end{description}
+\end{quote}
+\end{itemize}
+\end{frame}
+
+\subsection{Result}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Result IWU-Report}
+\begin{table}[b]
+\centering
+\begin{tabular}{c  c  c  c}
+building\_id & heating\_loss & heating\_gain & ...\\
+\hline						
+BLDG\_000300000026ed79 & 116670,763	& 15572,718 & ...\\
+BLDG\_000300000026f491 & 229314,037	& 32343,216 & ...\\
+BLDG\_000300000026f4a7 & 216882,225	& 31687,923 & ...\\
+...\\
+\end{tabular}
+\end{table}
+\begin{table}[b]
+\centering
+\begin{tabular}{c  c  c  c}
+building\_id & ... & ..demand\_heating & ..demand\_warmwater \\
+\hline                      
+BLDG\_000300000026ed79 & ... & 101098,045 & 4805,405\\
+BLDG\_000300000026f491 & ... & 196970,821 & 16289,207\\
+BLDG\_000300000026f4a7 & ... & 185194,302 & 15044,102\\
+...\\
+\end{tabular}
+\label{table:result IWU-Report}
+\caption{Results of the IWU-report-calculation [kWh/a]} 
+\end{table}
+\end{frame}
+
+\subsection{Discussion}
+
+\begin{frame}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Number of Storey - Reference Area}
+\begin{center}
+\includegraphics[scale=0.5]{change_area.png} 
+\end{center}
+\caption{Changing area with wrong estimated number of storeys}
+\end{frame}
+
+\begin{frame}
+\frametitle{Number of Storey - Energy Parameters}
+\begin{center}
+\includegraphics[scale=0.5]{change_param.png} 
+\end{center}
+\caption{Changing energy parameters with wrong estimated number of storeys}
+\end{frame}
+
+\begin{frame}
+\frametitle{Discussion}
+\begin{itemize}
+\item For better estimations of the storey height, we took additional 0.3m.
+\item Maybe consideration of building's usage is useful for estimation of storey height.
+\item Assumed 2.5m storey height for the air-volume \\
+$\rightarrow$ in our calculations we are using the previously calculated storey height.
+\end{itemize}
+\end{frame}
+
+\end{document}
+

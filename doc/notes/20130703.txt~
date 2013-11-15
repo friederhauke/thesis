@@ -1,0 +1,69 @@
+Grafische Oberfläche:
+Nutzerbedarf für constructional health monitoring
+
+Datenaustausch im Feld, 
+-erfasste Daten
+-bearbeitete Daten
+-wie in Datenbank integriert werden
+-was braucht ingenieur im Feld
+
+Einlesen von Dateien im Feld (Bsp. Nivellier daten bezogen auf vorher definierte Punkte etc.)
+
+Was braucht Nutzer im Feld, was möchte Nutzer ins Büro transferieren
+
+Validierung der Daten im Feld
+Prozessierung der Daten im Feld
+Vergleich zu Epochen vorher
+
+Abruf der Daten übers Netz
+
+Konzeption:
+Was brauche ich, was macht Sinn, wo prozessieren, wo speichern, wie speichern, wie darstellen, Web perspective view service, augmented reality??, Bilder machen und analysieren (quasi augmented reality), grafische darstellungen??, 3D und 2D Darstellungen, farbcodierte Darstellung - mit gefakter prozessierung, 
+
+Reale Daten von Brückenmodell am ICC? (Fang)
+
+"Office field communication"
+
+verschiedene Sensoren (Nivelment, Tachimeter, Laser, Beschleunigung, Displacement, Meteorologische)
+
+Architecture (thin client?)
+
+Abspeichern der Daten im 100khz bereich?? oder nur Teilweise? Wie werden Daten gespeichert?
+
+FEM?
+
+Mangementfunktionen im Feld: Entscheidung ob Ergebnisse in Datenbank gespeichert werden, wie und ob prozessiert
+
+was macht sinn im Fiel office zu erledigen? Welche Analysen sind möglich, welche müssen im Büro erledigt werden?
+
+wo hört automatisierung auf, wo fängt manuelle Bearbeitung an? Bis zu welchem Grad können automatisiert Messwerte analysiert werden?
+
+Assitenz für Feldarbeit? Direkte Anzeige der soeben gemessenen Punkte, und Anbeiten der nächsten Punkte? Anleitung zum Arbeiten
+
+Was ist technisch und finanziell heute Möglich? Open Source, Low Cost?
+
+Experiemente (Echtzeit?)
+
+Analyse im Vordergrund (FEM Analyse)
+
+Analysierte Daten bei Belastungstest, beurteilung im Feld.
+Evtl. parallele Masterarbeit mit Analyse Teil bei den Vermessern
+
+Use-Cases:
+Soll-Ist Vergleich (Konstruktionspläne)
+Experimente (Änderungen on the Fly + FEM Simulation)
+Assistenz System
+
+Methodology:
+Welche Standards können genutzt werden,
+Welche Requirements an System, Datenbank, Technik
+
+
+Evaluierung bestehender Ansätze und Systeme (Studentenprojekt)
+
+Exposè (~8 Seiten):
+Introduction and motivation
+Relevante Arbeiten (Field Service Communication, Datenkommunikation)
+Vorgehensweise (Schrittweise, Vorstellung der Methodology mit möglichen Use Cases)
+Expected Results (Konzept im Vordergrund, aber auch Prototyp)
+Probleme innerhalb der Arbeit

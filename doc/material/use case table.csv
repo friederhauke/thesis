@@ -1,0 +1,35 @@
+Name	Set up Network
+Usergroup	Field engineer
+Goal	Input all metadata about connected sensors and initialise network
+Precondition	Network physicaly existing and able to correspond with system
+Postcondition	working network with all sensors
+	
+Name	Measure Data
+Usergroup	Field engineer
+Goal	Input all data by hand  getting from standalone measurement device
+Precondition	Running system and access to database
+Postcondition	valid data in the database with full set of metadata
+	
+Name	Edit Data
+Usergroup	Office Engineer
+Goal	Spcify data by parameter and inout new values by hand or measurement
+Precondition	Running system and access to database
+Postcondition	changed data in the database with full set of metadata
+	
+Name	Export Data
+Usergroup	Office Engineer
+Goal	Specify data by parameter and specify oputput format
+Precondition	Spcified data and output format
+Postcondition	complete dataset in specific format offline
+	
+Name	Analyse Data
+Usergroup	Field engineer
+Goal	Getting information about validity of data in comparison to historical data
+Precondition	Amount of measurements higher then two
+Postcondition	information about validity of the data
+	
+Name	Visualise Data
+Usergroup	Field engineer
+Goal	Getting support by visualising measurements and interpretation
+Precondition	Existing meatadat for measurements
+Postcondition	meaningful and „supporting“ graphic

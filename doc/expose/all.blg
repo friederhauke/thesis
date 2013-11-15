@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: all.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--empty journal in gerhard_groger_ogc_2012
+Warning--empty journal in strobl_geodatenmanagement_2007
+You've used 16 entries,
+            2773 wiz_defined-function locations,
+            676 strings with 8699 characters,
+and the built_in function-call counts, 6703 in all, are:
+= -- 582
+> -- 358
+< -- 14
++ -- 124
+- -- 108
+* -- 481
+:= -- 1014
+add.period$ -- 54
+call.type$ -- 16
+change.case$ -- 80
+chr.to.int$ -- 16
+cite$ -- 34
+duplicate$ -- 343
+empty$ -- 568
+format.name$ -- 128
+if$ -- 1425
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 94
+num.names$ -- 64
+pop$ -- 201
+preamble$ -- 1
+purify$ -- 68
+quote$ -- 0
+skip$ -- 288
+stack$ -- 0
+substring$ -- 127
+swap$ -- 66
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 161
+warning$ -- 2
+while$ -- 50
+width$ -- 0
+write$ -- 216
+(There were 2 warnings)
+h$ -- 17
+write$ -- 149
+(There were 3 warnings)

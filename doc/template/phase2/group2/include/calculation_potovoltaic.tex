@@ -1,0 +1,34 @@
+\subsubsection{Potential of Photovoltiac systems}
+To calculate the potential of photovoltiac systems two approaches were applied. First the estimation as described by Wagner (2010) \citen{Wagner2010} was implemented. According to Wagner (2010) the energy gain of a photovoltiac system can be calculated with 
+
+\begin{align}
+\label{eq:pv_calc}
+E &= M \cdot GA \cdot \frac{P}{E_0} \cdot PR \cdot \eta_{EUR} \cdot \eta_l \\\notag\\\notag
+\text{with:}&\\\notag
+E &:\text{total energy gain per year \(kWh/a\)} \\\notag
+E_0 &:\text{1000 \(W/m^2\)} \\\notag
+M &:\text{Number of Modules} \\\notag
+PR &:\text {Performance ratio} \\\notag
+P &:\text{nominal power \(W\)} \\\notag
+\eta_{EUR} &:\text{euro inverter efficiency} \\\notag
+\eta_l&:\text{transmission efficiency} \\\notag
+GA &:\text{Global Irradiation \(kWh/m^2 a\)} \notag
+\end{align}
+
+The parameters \(P\),\(\eta_{EUR}\),\(\eta_l\) and \(M\)depend on the photovoltaic cell and the inverter. Values for these parameters are taken from real photovoltiac cells. For the calculations the silicon cell BP 585F from BP Solar \citen{BPSolar} combined with the inverter SP 2500-450 from the company Sun Power \citen{SunPower} has been used. The inverter efficiency is \(\eta_{EUR} = 15 \%\) and the transmission efficiency is set to \(\eta_l = 9\%\). The nominal power of the cell is \(P_0 = 85 W\). This calculation method allows to use real data of photovoltiac cells and considers the inverter.
+\\
+
+Because the the Solar Atlas Berlin is the only available reference, finally a second approach according to the Solar Atlas was used. The calculation of the photovoltiac energy is simplified and finally done with equation \ref{eq:pv_calc_SAB}. Where the efficiency coefficient is set to \(e=15\%\) and the system area is the reduced roof surface area.
+
+\begin{align}
+\label{eq:pv_calc_SAB}
+E &= A \cdot GA \cdot PR \cdot e \\\notag\\\notag
+\text{with:}&\\\notag
+E &:\text{total energy gain per year \(kWh/a\)} \\\notag
+A &:\text{System Area \(m^2\)} \\\notag
+e &:\text{efficiency coefficient} \\\notag
+GA &:\text{Global Irradiation \(kWh/m^2 a\)} \notag
+\end{align}
+
+
+
