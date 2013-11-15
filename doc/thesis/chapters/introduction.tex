@@ -90,7 +90,7 @@ The export of the data is another major task within the management field. It cou
 Name & Set up network\\ \hline 
 Usergroup & Field engineer\\ \hline 
 Goal & Input all metadata about connected sensors and initialise network\\ \hline 
-Precondition & Network physicaly existing and able to correspond with system\\ \hline 
+Precondition & Network physically existing and able to correspond with system\\ \hline 
 Postcondition & working network with all sensors\\ 
 \end{tabular}
 \caption{Use Cases tabular description of characteristics} 
@@ -102,8 +102,8 @@ Postcondition & working network with all sensors\\
 \begin{tabular}{l | p{11cm}}
 Name & Export data\\ \hline 
 Usergroup & Office Engineer\\ \hline 
-Goal & Specify data by parameter and specify oputput format\\ \hline 
-Precondition & Spcified data and output format\\ \hline 
+Goal & Specify data by parameter and specify output format\\ \hline 
+Precondition & Specified data and output format\\ \hline 
 Postcondition & complete dataset in specific format offline\\ 
 \end{tabular}
 \caption{Use Cases tabular description of characteristics} 
@@ -126,14 +126,11 @@ The export use case is much easier, it is simply the normal flow which is equal 
 
 \subsubsection{Measuring}
 
-The measurement part might be the most important one within the system. Central 
+The measurement part might be the most important one within the system. This part is the only one which is describing a manual manipulation of the data in the database.
 
-\begin{figure}[H]
-	\centering
- 	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_measurement.jpg} 
-	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central measuring proceedings. By F. H. Euteneuer 2013}
-	 \label{fig:bpmn_use-case_measuring}
-\end{figure}
+There are two identified use cases: The first is dealing with the initial data input which is the measurement see table \ref{table:use case description of "Measure data"}. In contrast to the automatic measurements, this is describing a discrete manual measurement, and the input of the data by hand.
+
+And the second one is editing already existing data in the database see table \ref{table:use case description of "Edit data"}. This is a merely a standard operation for database related systems. Nevertheless, this task is related to the measurement task, in case of re-measuring data or validation of data.
 
 \begin{table}[H]
 \centering
@@ -153,7 +150,7 @@ Postcondition & valid data in the database with full set of metadata\\
 \begin{tabular}{l | p{11cm}}
 Name & Edit data\\ \hline 
 Usergroup & Office Engineer\\ \hline 
-Goal & Spcify data by parameter and inout new values by hand or measurement\\ \hline 
+Goal & Specify data by parameter and input new values by hand or measurement\\ \hline 
 Precondition & Running system and access to database\\ \hline 
 Postcondition & changed data in the database with full set of metadata\\ 
 \end{tabular}
@@ -161,15 +158,20 @@ Postcondition & changed data in the database with full set of metadata\\
 \label{table:use case description of "Edit data"}
 \end{table}
 
-
-\subsubsection{Analysis}
+When performing a manual measurement, most of the task described in the first line of the figure \ref{fig:bpmn_use-case_measuring} will be mandatory tasks. In the end the system will perform a quick analysis of the inserted data in order to validate the measurement. After this step the system will either point out possible errors, or it will approve the measurements, and write them into the database. The second line, the editing flow, is offering two options, one is a manual insert of new data, another would lead to a re-entering of the manual measurement flow, in order to overwrite the selected datasets with new measurements.
 
 \begin{figure}[H]
 	\centering
- 	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_analysis.jpg} 
-	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central analysis proceedings. By F. H. Euteneuer 2013}
-	 \label{fig:bpmn_use-case_analysis}
+ 	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_measurement.jpg} 
+	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central measuring proceedings. By F. H. Euteneuer 2013}
+	 \label{fig:bpmn_use-case_measuring}
 \end{figure}
+
+\subsubsection{Analysis}
+
+A complex part is the analysis functionalities of the system which will be described in this section. The analysis described here will be slightly different to the "ad hoc" statistics in the previous part which are leading to approved or discarded measurements. Those are checking the coherence of the performed measurements. The analysis described here are producing also easy and quick statistics, but in comparison to historical data see table \ref{table:use case description of "Analyse data"}. The user will be able to recheck if the measurements are leading to similar results, or if the measurements are possibly done with wrong parameters. 
+
+The other analysis part is a visual analysis of the data (see table \ref{table:use case description "Visualise data"}). The system will here produce some graphics representing the measurement, the observed object and the related statistics. An optical validation of the performed measurements, and additionally to that, an optical representation of real-time data is a big advantage for the field-engineer (as described in the overall introduction).
 
 \begin{table}[H]
 \centering
@@ -177,7 +179,7 @@ Postcondition & changed data in the database with full set of metadata\\
 Name & Visualise data\\ \hline 
 Usergroup & Field engineer\\ \hline 
 Goal & Getting support by visualising measurements and interpretation\\ \hline 
-Precondition & Existing meatadat for measurements\\ \hline 
+Precondition & Existing meatadata for measurements\\ \hline 
 Postcondition & meaningful and „supporting“ graphic\\
 \end{tabular}
 \caption{Use Cases tabular description of characteristics} 
@@ -197,6 +199,16 @@ Postcondition & information about validity of the data\\
 \label{table:use case description of "Analyse data"}
 \end{table}
 
+Figure \ref{fig:bpmn_use-case_analysis} is showing the two flows of the analysis part. The first line is describing the single steps of the analysis. For the analysis of data in context of historical data, the history has to be well defined. Therefore this is also part of the work-flow analysis.
+
+The visualisation is divided into two different types of visualisations. The user can select a visualisation of the measured data. This might be represented by single geographic points. The type of visualisation is strongly depending on the type of the measurement instrument (e.g. an accelerometer is not changing its position, but it is changing the positions attributes). The second option is the visualisation of the statistics. Therefore the visualisation workflow is "calling" the function analysis in order to get the dataset specific statistics for its visualisation.
+
+\begin{figure}[H]
+	\centering
+ 	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_analysis.jpg} 
+	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central analysis proceedings. By F. H. Euteneuer 2013}
+	 \label{fig:bpmn_use-case_analysis}
+\end{figure}
 
 
 
