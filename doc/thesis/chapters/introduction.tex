@@ -47,191 +47,187 @@ Die manuelle Messung beginnt mir der normalen Messung der Werte. Im zweiten Schr
 
 Der Nutzer wird die Möglichkeit haben vergangene Messungen manuell zu bearbeiten. Dazu muss ein Datensatz (Üblicherweise ein Messwert) ausgewählt werden, und der Nutzer kann dann entscheiden ob die betreffende Messung wiederholt werden soll, oder die Werte manuell geändert werden sollen. Bei einer Wiederholung der Messung wird die Prozesskette der manuellen Messung durchlaufen.
 
+Die automatische Messung ist die wichtigste Funktion des Systems, und stellt eine der Innovationen dar. Obwohl das Verfahren ein anderes ist, sind die zu Grunde liegenden Funktionen der manuellen und der automatischen Messung sehr ähnlich. Als initiale Handlug muss das Sensor Netzwerk eingerichtet werden, dazu gehören die Eingabe der Metadaten, wie Sensor-Typ und -Position oder benutztes geographisches Referenz System. Welche Parameter tatsächlich benötigt werden um ein lauffähiges Sensoren Netzwerk einzurichten, wird in später folgenden methodischen Teilen genauer beschrieben. Nach der Einrichtung des Netzwerkes hat der Nutzer die Möglichkeit kontinuierliche automatische Messungen zu starten, und später auch wieder zu stoppen. Auch ein nachträgliches Ändern der eingegebenen Parameter ist möglich.
 
-The automatic measurements are the most important one for the described SHM. The will be the backbone of the system, nevertheless they are using similar functionalities. The user will initially be able to set the sensor network up. Which means to enter metadata about the used sensors like position, reference system, type of sensor, measurement interval, etc. A more detailed description of what is needed for such a setup will follow in the methodical part. After the setup, the user is able to start the measurements with the defined parameter, or the edit the settings.
-
-As a conclusion of this chapter, I would like to point out that this list is only representing functionalities of a basic system, and should not be understood as being complete.
+Zum Abschluss dieses Kapitels möchte ich nochmal darauf hinweisen, dass die hier beschriebene Liste an Funktionalitäten lediglich ein sehr rudimentäres System beschreiben, und demnach auch keinen Anspruch auf Vollständigkeit erhebt.
 
 
-\section{Functionalities}
-This chapter will describe what the system should provide to solve the problem and/or make the existing situation better: Which functionalities should be part of the system. To get closer to a possible solution, the different stakeholders and their use cases in the domain of structural health monitoring must be defined and described.
+\section{Produktfunktionen}
+Was muss das System nun an Funktionalität anbieten, um den genannten Ansprüchen gerecht zu werden? Um diese Frage besser beantworten zu können möchte ich einige Anwendungsfälle beschreiben, in denen verschiedene Nutzergruppen für sie interessante Aufgaben mit Hilfe des System lösen werden. Nach einer kurzen Beschreibung der verschiedenen Nutzergruppen werde ich jeden Anwendungsfall in tabellarischer Form analysieren.
 
 \begin{figure}[H]
 	\centering
  	 \includegraphics[scale=0.6]{graphics/uml_functionalities.jpg} 
-	\caption{UML Use Case Diagram of the described System describing two different users and their use cases. By F. H. Euteneuer 2013}
+	\caption{UML Anwendungsfalldiagram des beschriebenen Systems und der einzelnen Nutzergruppen mit ihren Anwendungsfällen, F. H. Euteneuer 2013}
 	 \label{fig:model_functionalities}
 \end{figure}
 
-\subsection{Usergroups}
-As a main source for information and parameter for the concept of a software, the usergroups are of large importance. I will analyse the involved usergroups and their needs respective expectations to get those information. As the figure \ref{fig:model_functionalities} is already representing, I have identified two main usergroups which might be involved in the processes.
+\subsection{Nutzergruppen}
+Die Analyse der verschiedenen Nutzergruppen des Systems bildet eine wichtige Informationsquelle für die Konzeption des Systems. Anstatt wahllos Funktionen zu beschreiben, die vermutlich in ein System gehören sollten, werden so imaginäre aber präzise definierte Nutzer identifiziert und befragt, was sie mit diesem System anfangen wollen. Die Abbildung \ref{fig:model_functionalities} enthält bereits die zwei identifizierten wichtigsten Nutzergruppen die in die Prozesse involviert sind.
 
-\subsubsection{Field-engineer}
-The group of field-engineers can described as the executive persons which are dealing with the direct measurements, observations and setup of an automatic measurement network. This group can be categorised by its technically limits, which are:
+\subsubsection{Feldingenieure}
+Die Gruppe der Feldingenieure kann als die Gruppe der Ausführenden Personen beschreiben werden, die im direkten Kontakt zu den Sensoren stehen oder selbst manuell die Messungen durchführen. Für die Kommunikation mit dem System verwenden sie einen mobilen Klienten, dadurch sind sie technisch bestimmten Restriktionen unterworfen. In der Folgenden Liste sind die wichtigsten benannt:
 \begin{itemize}
-\item the small screen-size of the mobile computers (quality of visualisation is limited)
-\item the lack of input facilities (e.g. only digital keyboard on a handheld computer)
-\item high weight of not handheld instruments (e.g. a conventional laptops too heavy for using while walking/standing)
+\item Kleine Anzeigefläche auf dem Mobilen Klienten (Qualität der Visualisierung ist limitiert)
+\item Fehlende oder mangelhafte Eingabemöglichkeiten (z.B.: Eingabe nur durch virtuelle Tastatur auf einem Mobilen Computer)
+\item Hohes Gewicht von nicht mobilen Klienten (z.B.: Verwendung eines konventionellen Notebooks als mobile Lösung, für Arbeiten im stehen oder Laufen aber zu schwer)
 \end{itemize}
-But nevertheless, this usergroup has the most challenging requirements on the system when speaking about visualisation options or analysis computation in advance. It is the central target usergroup for this system, therefore it should fit mostly to its requirements.
+Nichtsdestotrotz definiert diese Nutzergruppe die herausfordernsten Anforderungen an das System, beispielsweise durch die Implementierung einer intelligenten Visualisierungsmöglichkeit. Da diese Nutzergruppe die eigentliche Zielgruppe des Systems darstellt, sollten die Anforderungen dieser Gruppe zu gut als möglich erfüllt werden.
 
+\subsubsection{Bürokraft}
+Normalerweise sind die Nutzer Feld- und Büroingenieur vereinigt in einer Person. Projekte die sich mit der Überwachung von Bauwerken befassen können in zwei Teile untergliedert werden. Ein Teil ist für die Installation des Netzwerkes, für etwaige manuelle Messungen und für die Betreuung bestehender Sensornetzwerke zuständig, während sich der andere Teil um die Auswertung der eingehenden Daten, die "Postprozessierung" (DE: Nachbearbeitung) und die Interpretation der Daten kümmert. Durch die meist sehr komfortabel ausgestattete Informationstechnologie in den Büros erwarte ich hier niedrigere technische Anforderungen an das System.
 
-\subsubsection{Office-engineer}
-Usually the field-engineer and the office-engineer are combined in one person. One part of an observation project is dealing with the field-work, the setup, measurements and maintenance. And the other part is the precise analysis of the data, the post processing and its interpretation. Due to a high quality equipment in the offices, this part is mostly better solvable for a software. Here does not the system has to be restricted by the environment, but the system is making its demands on the technical environment.
+\subsection{Anwendungsfälle}
+Die Abbildung \ref{fig:model_functionalities} zeigt die grundlegenden unterschiedlichen Anwendungsfälle der zwei im vorherigen Kapitel beschriebenen Nutzergruppen. Anwendungsfälle die in der Abbildung genannt werden repräsentieren Handlungsfolgen des jeweiligen Nutzers, die innerhalb des Anwendungsfalles abgeschlossen sein müssen, also ein festgelegtes Ziel erreichen müssen. Ich werde nun die Anwendungsfälle wie bereits erwähnt in tabellarischer Form mit weiteren Parametern beschreiben. Dieser Arbeitsschritt ist essentiell für Planung und Konzeption eines Systems, da hierdurch der tatsächliche Bedarf der Nutzer und damit die zu implementierenden Funktionalitäten beschrieben werden.
 
+Ich werde alle Anwendungsfälle zunächst mit einem Text einleiten, und dann in der Tabelle die wichtigsten Eigenschaften beschreiben. Dazu gehören das festgelegte Ziel eines Anwendungsfalles oder die sogenannte Nachbedingung, die beschreibt in welcher Situation sich das System nach dem erfolgreichem Durchlaufen eines Anwendungsfalles befindet. Anschließend werden die einzelnen zu durchlaufenden Schritte der Anwendungsfälle in einem UML Aktivitäten Diagramm veranschaulicht.
 
-\subsection{Use Cases}
-The Figure \ref{fig:model_functionalities} is showing the different basic use cases of the described two usergroups. Use cases shown in this figure are representing activities of the user which have to be complete with it own defined target. I want now describe the use cases in detail with further parameter. This is important for the further proceeding of the system conception, because use cases are defining the users interests of a system.
+Ich habe die verschiedenen Anwendungsfälle in drei Gruppen gegliedert. Jeweils zwei Anwendungsfälle decken die Gebiete des Daten Managements, der Daten Analyse und der eigentlichen Messung ab.
 
-The following part will describe the selected use cases in detail. All the use cases will be described with tables for the textual description which are containing information about the use case goal, the postcondition and further more. For the description of the the chronological task flow of the use cases also a activity diagram will depict each use case.
-
-Important to know is, that the diagrams are not representing all possible activity flows which are available. They are representing one possible option which could solve the problem and will be implemented in the prototype.
-
-The use cases are divided into three different groups. There are use cases dealing with central data management functionalities, others are describing main measurement functionalities and the last are describing the data analysis functionalities.
-
+Die hier vorgestellten Anwendungsfälle repräsentieren keinesfalls alle Arbeitsabläufe die möglich sind, sondern sollen nur einen möglichen Lösungsweg beschreiben, der in dem Prototyp implementiert werden könnte.
 
 \subsubsection{Management}
-There are several use cases with central management functionalities of the system. Management stands for both, data management and system management.  
+Management soll hier sowohl für das Management von Daten als auch für das Einrichten und die Betreuung des Systems stehen. Erster Anwendungsfall soll das Aufsetzen eines Sensornetzwerkes beschreiben. Das kann auch als initiale Handlung bei der Verwendung des Systems gesehen werden, und ist damit eine Art Vorbedingung für alle nachfolgenden Anwendungsfälle. Die Tabelle \ref{table:use case description of "Set up network"} beinhaltet die zentralen Eigenschaften dieses Anwendungsfalles.
 
-First use case within the system is the setting up of the network. It can be understood as the initial task and therefore a kind of a precondition for all other use cases.The table \ref{table:use case description of "Set up network"} is describing central features of this use case. 
-
-The export of the data is another major task within the management field. It could be denoted as the final task interacting with the system. The second table \ref{table:use case description of "Export data"} is showing detailed information about the "Export data" use case.
+Das Datenmanagement ist ein erforderlicher Teil eines Systems das sich mit Daten und Metadaten befasst. Daten zu sammeln ohne sie nutzen zu können würde keinen Sinn ergeben, somit ist ein Export der Daten aus dem System heraus eine obligatorische Funktion des Systems. Dieser Anwendungsfall kann also auch als finale Handlung gesehen werden, die unter Verwendung des Systems durchgeführt werden wird. Die zweite Tabelle \ref{table:use case description of "Export data"} beinhaltet detailierte Informationen über diesen "Datenexport" genannten Anwendungsfall.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Set up network\\ \hline 
-Usergroup & Field engineer\\ \hline 
-Goal & Input all metadata about connected sensors and initialise network\\ \hline 
-Precondition & Network physically existing and able to correspond with system\\ \hline 
-Postcondition & working network with all sensors\\ 
+Name & Einrichtung des Netzwerkes\\ \hline 
+Nutzergruppe & Feldingenieur\\ \hline 
+Ziel & Eingabe aller Metadaten über die verbundenen Sensoren und Initialisierung des Netzwerkes\\ \hline 
+Vorbedingung & Das Netzwerk existiert, ist eingerichtet und ist mit dem System verbunden\\ \hline 
+Nachbedingung & Funktionierendes Netzwerk mit allen Sensoren\\ 
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Einrichtung des Netzwerkes"} 
 \label{table:use case description of "Set up network"}
 \end{table}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Export data\\ \hline 
-Usergroup & Office Engineer\\ \hline 
-Goal & Specify data by parameter and specify output format\\ \hline 
-Precondition & Specified data and output format\\ \hline 
-Postcondition & complete dataset in specific format offline\\ 
+Name & Datenexport\\ \hline 
+Nutzergruppe & Bürokraft\\ \hline 
+Ziel & Auswahl der Daten und Export in einem bestimmten Format\\ \hline 
+Vorbedingung & Auswahl der Daten nach bestimmten Parametern und spezifiziertes Exportformat\\ \hline 
+Nachbedingung & Ausgewählte Daten liegen vollständig physikalisch im definiertem Format vor\\ 
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Datenexport"} 
 \label{table:use case description of "Export data"}
 \end{table}
 
-Figure \ref{fig:bpmn_use-case_management} is showing the systems management use cases in a two line activity diagram. The both activity flows do not have any interaction in between, but chronologically must the setup use case performed before the export use case.
+Die Abbildung \ref{fig:bpmn_use-case_management} zeigt die Anwendungsfälle die sich mit der Thematik des Managements befassen in einem UML Aktivitätsdiagramm. Die beiden Abläufe weisen keine Interaktionen untereinander auf und sind damit vollständig unabhängig voneinander. Chronologisch hingegen sollte das Einrichten des Netzwerkes vor dem Datenexport erfolgen.
 
-The activity flow of the setup use case is showing two main tasks: The database-setup and the input of the sensor-parameter. Those are the central parts and their success or failure is leading to an overall success or failure. An edit of an existing network is leading to a restart of the full procedure. This could be interpreted as an assistant which is leading through the different configurations and is taking care of possible errors.
+Der Ablauf des Einrichtens des Netzwerkes beinhaltet zwei wichtige Aktionen: Zum Einen das Einrichten der Datenbank und zum Anderen die Eingabe der Sensorparameter. Dies sind die zwei zentralen teile dieses Anwendungsfalls, und ein scheitern nur eines dieser Aktionen würde zu einem nicht funktionierendem Netzwerk führen. Die Bearbeitung der "Netzwerkeinstellungen", also der einzelnen eingegebenen Parameter, führt zu einem erneutem Durchlaufen der gesamten Prozesskette. Damit sollen fehlerhafte Eingaben vermieden werden, diese Funktion stellt eine Art Assistenzsystem dar, das durch alle wichtigen Einstellmöglichkeiten führt.
 
-The export use case is much easier, it is simply the normal flow which is equal to most of the download assistants which can be found online. The only important information about that is the determination of the export datasets time-frame.
+Der Anwendungsfall "Datenexport" ist um Einiges einfacher als der vorherige, im Prinzip ähnelt er den meisten klassischen Exportfunktionen oder Speicherfunktionen. Einzig die Auswahl der zu exportierenden Daten durch das setzen eines Zeitrahmens stellt eine größere Herausforderung an das System dar.
 
 \begin{figure}[H]
 	\centering
  	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_management.jpg} 
-	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central management proceedings. By F. H. Euteneuer 2013}
+	\caption{BPMN (Business Process Model and Notation) Modell der Management Anwendungsfälle, F. H. Euteneuer 2013}
 	 \label{fig:bpmn_use-case_management}
 \end{figure}
 
 
-\subsubsection{Measuring}
+\subsubsection{Messungen}
+Der Teil des Systems der sich mit den eigentlichen Messungen beschäftigt, könnte als der wichtigste Teil gesehen werden, stellt aber an sich keine wesentliche Innovation dar. Dieser Teil beschreibt als Einziger die manuelle Bearbeitung oder Veränderung der Daten in der Datenbank.
 
-The measurement part might be the most important one within the system. This part is the only one which is describing a manual manipulation of the data in the database.
+In diesem Teil habe ich zwei wichtige Anwendungsfälle identifiziert: Der Erste beschäftigt sich mit dem initialen "Dateninput", also der Eingabe von Daten, produziert durch Messungen. Die Charakteristiken dieses Anwendungsfalles sind in der Tabelle \ref{table:use case description of "Measure data"} beschrieben. Im Gegensatz zu den automatischen Messungen beschreibt dieser Anwendungsfall die manuelle Eingabe von nur einem Datensatz.
 
-There are two identified use cases: The first is dealing with the initial data input which is the measurement see table \ref{table:use case description of "Measure data"}. In contrast to the automatic measurements, this is describing a discrete manual measurement, and the input of the data by hand.
-
-And the second one is editing already existing data in the database see table \ref{table:use case description of "Edit data"}. This is a merely a standard operation for database related systems. Nevertheless, this task is related to the measurement task, in case of re-measuring data or validation of data.
+Der Zweit Anwendungsfall behandelt das manuelle bearbeiten der bereits in der Datenbank gespeicherten werte. Die Tabelle \ref{table:use case description of "Edit data"} beinhaltet alle wichtigen Informationen dazu. Das Bearbeiten von Daten gehört zu den Standardoperationen für System die sich auf Datenbanken stützen. Dennoch ist es wichtig zu beschreiben, wie dieser Anwendungsfall mit dem der Messungen zusammenhängt. Im Falle von Neumessungen bestimmter Werte oder des Validieren von Daten wird die Prozesskette der Messung durchlaufen obwohl es im Grunde eine Bearbeitung bereits bestehender Werte ist.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Measure data\\ \hline 
-Usergroup & Field engineer\\ \hline 
-Goal & Input all data by hand  getting from standalone measurement device\\ \hline 
-Precondition & Running system and access to database\\ \hline 
-Postcondition & valid data in the database with full set of metadata\\ 
+Name & Messung\\ \hline 
+Nutzergruppe & Feldingenieur\\ \hline 
+Ziel & Eingabe aller Messergebnisse von Einzelmessungen per Hand\\ \hline 
+Vorbedingung & Lauffähiges System mit Verbindung zur Datenbank\\ \hline 
+Nachbedingung & Gültige Daten in der Datenbank mit vollständigen Metadaten\\ 
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Messung"} 
 \label{table:use case description of "Measure data"}
 \end{table}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Edit data\\ \hline 
-Usergroup & Office Engineer\\ \hline 
-Goal & Specify data by parameter and input new values by hand or measurement\\ \hline 
-Precondition & Running system and access to database\\ \hline 
-Postcondition & changed data in the database with full set of metadata\\ 
+Name & Datenbearbeitung\\ \hline 
+Nutzergruppe & Bürokraft\\ \hline 
+Ziel & Auswahl der Datensätze nach Parametern und Bearbeitung der Werte per Hand oder durch Neumessung\\ \hline 
+Vorbedingung & Lauffähiges System mit Verbindung zur Datenbank\\ \hline 
+Nachbedingung & Veränderte Daten in der Datenbank mit vollständigen Metadaten\\ 
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Datenbearbeitung"} 
 \label{table:use case description of "Edit data"}
 \end{table}
 
-When performing a manual measurement, most of the task described in the first line of the figure \ref{fig:bpmn_use-case_measuring} will be mandatory tasks. In the end the system will perform a quick analysis of the inserted data in order to validate the measurement. After this step the system will either point out possible errors, or it will approve the measurements, and write them into the database. The second line, the editing flow, is offering two options, one is a manual insert of new data, another would lead to a re-entering of the manual measurement flow, in order to overwrite the selected datasets with new measurements.
+Bei manuellen Messungen sind die Aktionen die in der oberen Reihe des Aktivitätendiagrammes \ref{fig:bpmn_use-case_measuring} angegeben werden unabdingbar. Das System wird nach der Durchführung der Messungen eine schnelle Analyse der Messergebnisse durchführen um deren Qualität zu bewerten. Nach diesem Schritt wird das System entweder auf mögliche Fehler in der Messung hinweisen, oder die Messwerte direkt in die Datenbank schreiben. 
+
+Die zweite Linie des Diagramms beschreibt die Handlungskette der Datenbearbeitung. Der Nutzer hat zwei Möglichkeiten Daten nachträglich zu bearbeiten, zum Einen durch die erneute Messung der Daten, zum Anderen durch das manuelle Bearbeiten, also die Eingabe neuer Werte und das Überschreiben der alten Werte. 
 
 \begin{figure}[H]
 	\centering
  	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_measurement.jpg} 
-	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central measuring proceedings. By F. H. Euteneuer 2013}
+	\caption{BPMN (Business Process Model and Notation) Modell der Anwendungsfälle des Teiles Messungen, F. H. Euteneuer 2013}
 	 \label{fig:bpmn_use-case_measuring}
 \end{figure}
 
-\subsubsection{Analysis}
+\subsubsection{Analyse}
+In den vorherigen Kapiteln habe ich oft von einer Analyse der Daten gesprochen, bislang aber nichts Genaueres dazu gesagt. Die Analyse stellt den wohl schwierigsten Teil der Konzeption dar, weil dieser die eigentliche Innovation darstellt. Die Analyse die ich hier beschreiben werde unterscheidet sich allerdings von der auch oft erwähnten Überprüfungen der Daten. Diese "ad hoc" Statistiken stellen lediglich eine schnelle und unpräzise Vorabinformation über die Qualität der Daten dar. Um die Frage beantworten zu können ob Messungen einen Sinn ergeben, also die Konsistenz der Daten beurteilen zu können, bedarf es komplexere Algorithmen, die außer den eigentlich zu beurteilenden Daten auch die vorhergegangenen Beobachtungen (Epochen) mit einbeziehen. Diese Algorithmen erzeugen trotzdem nur eine schnelle Übersicht über Mögliche Abweichungen oder Ereignisse, nichtsdestotrotz wird der Nutzer mithilfe dieser Analysen in der Lage sein Mögliche Verfahrensfehler bei den Messungen direkt im Feld zu identifizieren. Die Funktionalität wird in der tabellarischen Beschreibung \ref{table:use case description of "Analyse data"} des Anwendungsfalls "Datenanalyse" charakterisiert.
 
-A complex part is the analysis functionalities of the system which will be described in this section. The analysis described here will be slightly different to the "ad hoc" statistics in the previous part which are leading to approved or discarded measurements. Those are checking the coherence of the performed measurements. The analysis described here are producing also easy and quick statistics, but in comparison to historical data see table \ref{table:use case description of "Analyse data"}. The user will be able to recheck if the measurements are leading to similar results, or if the measurements are possibly done with wrong parameters. 
-
-The other analysis part is a visual analysis of the data (see table \ref{table:use case description "Visualise data"}). The system will here produce some graphics representing the measurement, the observed object and the related statistics. An optical validation of the performed measurements, and additionally to that, an optical representation of real-time data is a big advantage for the field-engineer (as described in the overall introduction).
+Der zweite Teil des Analyse Bereiches basiert auf einer visuellen Analyse der Daten durch den Nutzer. Kern dieser Funktionalität sind eine Visualisierung des zu überwachenden Objektes und der Ergebnisse bereits erfolgter Analysen und werden in der Tabelle \ref{table:use case description "Visualise data"} charakterisiert. Das System wird eine grafisches Modell des zu überwachenden Objektes generieren, und die Optionen anbieten Messergebnisse und berechnete Statistiken ebenfalls in die Grafik zu integrieren. Der Nutzer ist dann in der Lage Messungen in Echtzeit zu überwachen, und beispielsweise auch Auswirkungen von Experimenten zu verfolgen. Die Art und Weise der Visualisierung von Objekt, Messung und Statistik wird genauer im methodischen Teil der Arbeit beschrieben.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Visualise data\\ \hline 
-Usergroup & Field engineer\\ \hline 
-Goal & Getting support by visualising measurements and interpretation\\ \hline 
-Precondition & Existing meatadata for measurements\\ \hline 
-Postcondition & meaningful and „supporting“ graphic\\
+Name & Datenvisualisierung\\ \hline 
+Nutzergruppe & Feldingenieur\\ \hline 
+Ziel & Visuelle Unterstützung bei Messungen und Interpretation\\ \hline 
+Vorbedingung & Vorhandene Metadaten für die Betreffende Messung (z.B. verwendeter Sensor, Orientierung, ..)\\ \hline 
+Nachbedingung & Aussagekräftige und "unterstützende" Grafik der ausgewählten Daten\\
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Datenvisualisierung"} 
 \label{table:use case description "Visualise data"}
 \end{table}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{l | p{11cm}}
-Name & Analyse data\\ \hline 
-Usergroup & Field engineer\\ \hline 
-Goal & Getting information about validity of data in comparison to historical data\\ \hline 
-Precondition & Amount of measurements higher then two\\ \hline 
-Postcondition & information about validity of the data\\ 
+Name & Datenanalyse\\ \hline 
+Nutzergruppe & Feldingenieur\\ \hline 
+Ziel & Erhalt von Informationen über Gültigkeit der Daten verglichen mit vergangenen Epochen\\ \hline 
+Vorbedingung & Bereits mehr als zwei Messungen liegen vor\\ \hline 
+Nachbedingung & Informationen über Gültigkeit der Messergebnisse\\ 
 \end{tabular}
-\caption{Use Cases tabular description of characteristics} 
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Datenanalyse\\"} 
 \label{table:use case description of "Analyse data"}
 \end{table}
 
-Figure \ref{fig:bpmn_use-case_analysis} is showing the two flows of the analysis part. The first line is describing the single steps of the analysis. For the analysis of data in context of historical data, the history has to be well defined. Therefore this is also part of the work-flow analysis.
+Die Abbildung \ref{fig:bpmn_use-case_analysis} zeigt die Ereignisabläufe der beiden ausgewählten und beschriebenen Anwendungsfälle des Analyseteils des Systems. In der ersten Reihe ist als wichtiger Schritt die Definition der historischen Daten hervorzuheben. Erst damit werden Werte aussagekräftig.
 
-The visualisation is divided into two different types of visualisations. The user can select a visualisation of the measured data. This might be represented by single geographic points. The type of visualisation is strongly depending on the type of the measurement instrument (e.g. an accelerometer is not changing its position, but it is changing the positions attributes). The second option is the visualisation of the statistics. Therefore the visualisation workflow is "calling" the function analysis in order to get the dataset specific statistics for its visualisation.
+Die Visualisierung der Daten ins untergliedert in zwei Typen. Der Nutzer kann zwischen der Visualisierung der gemessenen Werte und der berechneten Statistiken wählen. Für die Visualisierung der Statistiken müssen die Statistiken bereits berechnet worden sein. Die Durchführung der Analyse kann auch aus der Visualisierungsfunktion heraus aufgerufen werden.
 
 \begin{figure}[H]
 	\centering
  	 \includegraphics[scale=0.24]{graphics/bpmn_use-cases_analysis.jpg} 
-	\caption{BPMN (Business Process Model and Notation) Model of the use cases describing central analysis proceedings. By F. H. Euteneuer 2013}
+	\caption{BPMN (Business Process Model and Notation) Modell der Anwendungsfälle des Teiles Analyse, F. H. Euteneuer 2013}
 	 \label{fig:bpmn_use-case_analysis}
 \end{figure}
 
 
-\section{Product functionalities}
-This part will describe the non-functional requirements of the system. This can be understood as a description of where the system will operate and how the software will operate. Non-functional requirements are requirements on a system which are not a technical functionality but a feature of the system.
+\section{Produktfunktionen}
+In diesem Kapitel beschreibe ich die nicht-funktionalen Anforderungen an das System beschreiben. Nicht-funktional bedeutet, dass beschrieben wird wie das System wo eingesetzt werden soll. Es handelt sich also um Eigenschaften des Systems, die keine technischen Funktionen sind.
 
-The following list is describing those non-functional requirements:
-
+Im Folgenden werden die nicht-funktionalen Anforderungen aufgelistet und beschrieben:
 \begin{description}
-\item[portability] Since the system will be based on mobile devices, and those are not in any case running under windows, the software will be platform independent. Nevertheless also a web-based system is not possible, because the necessary internet connection will not be permanently available in field.
-\item[performance] As described in the point before, the system will use different mobile platforms. Those do not have a hardware with a hight performance. Therefore the systems mobile part will be planed for a low performance.
-\item[simplicity] The system will be used from field engineers which are working often under lots of negative influences of the environment. The system will be constructed as simply as possible to avoid unnecessary time costs for searching the right systems functionality.
-
+\item[Portabilität] Da das System besonders auf die Kommunikation zwischen der Arbeit im Feld und der Auswertung im Büro zugeschnitten ist, werden besondere Anforderungen an die Möglichkeit der Portierung auf verschiedene Betriebssysteme der mobilen Klienten gestellt. Das System soll damit Plattform-unabhängig sein. 
+\item[Rechenleistung] Wie im Punkt zuvor beschrieben soll das System auf unterschiedlichen mobilen Klienten eingesetzt werden können. Deren Auslegung auf die Mobilität geht meist zu Lasten der Rechenleistung der Hardware. Damit das Arbeiten mit dem System dennoch effizient und einfach gehalten werden kann, muss der mobile Teil des Systems für diese kleine Rechenleistung zugeschnitten werden.
+\item[Einfachheit] Die Hauptnutzer des Systems werden Ingenieure sein, die oft unter schwierigen Bedingungen arbeiten müssen. Die Bedienung eines IT-Systems sollte demnach so intuitiv und einfach wie möglich gestaltet werden, damit der Nutzer nicht unnötig Zeit in die Suche von Funktionen oder das Verstehen von Grafiken aufbringen muss.
 \end{description}
+
+
+
+

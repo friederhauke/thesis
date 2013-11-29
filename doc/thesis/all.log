@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.8)  18 NOV 2013 13:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.8)  24 NOV 2013 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,7 +554,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+)
 \tf@toc=\write4
 \openout4 = `all.toc'.
 
@@ -564,7 +569,16 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 [1
 
-] (./all.lof)
+] (./all.lof
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+)
 \tf@lof=\write5
 \openout5 = `all.lof'.
 
@@ -583,10 +597,77 @@ Writing nomenclature file all.nlo
 No file all.nls.
 Chapter 1.
 (./chapters/introduction.tex
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+
 
 Package natbib Warning: Citation `worden_overview_2004' on page 1 undefined on 
-input line 6.
+input line 8.
 
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
@@ -594,96 +675,549 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 
+l.9 
      [1
 
-] <graphics/model_of_issue.jpg, id=101, 647.41875pt x 422.57875pt>
-File: graphics/model_of_issue.jpg Graphic file (type jpg)
-
-<use graphics/model_of_issue.jpg>
-Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 15.
-(pdftex.def)             Requested size: 388.45424pt x 253.5492pt.
+]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [2]
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+ <graphics/model_of_issue.jpg, id=111, 647.41875pt x 422.57875pt>
+File: graphics/model_of_issue.jpg Graphic file (type jpg)
 
+<use graphics/model_of_issue.jpg>
+Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 22.
+(pdftex.def)             Requested size: 388.45424pt x 253.5492pt.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
 
-[3 <./graphics/model_of_issue.jpg>]
-<graphics/bpmn_business-processes.jpg, id=115, 2532.46124pt x 594.22pt>
-File: graphics/bpmn_business-processes.jpg Graphic file (type jpg)
-
-<use graphics/bpmn_business-processes.jpg>
-Package pdftex.def Info: graphics/bpmn_business-processes.jpg used on input lin
-e 32.
-(pdftex.def)             Requested size: 506.48328pt x 118.84189pt.
-
-Overfull \hbox (37.01282pt too wide) in paragraph at lines 32--33
- [][] 
+Overfull \hbox (22.41832pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/m/n/10.95 Als Klient des Ser-vices kann im Prinzip jede Art von mo-b
+ilen Sys-te-men einge-setzt wer-den. Angeschlossen
  []
 
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[4 <./graphics/bpmn_business-processes.jpg>]
-<graphics/uml_functionalities.jpg, id=122, 668.4975pt x 604.2575pt>
-File: graphics/uml_functionalities.jpg Graphic file (type jpg)
+[3 <./graphics/model_of_issue.jpg>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no ¤ in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
 
-<use graphics/uml_functionalities.jpg>
-Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 52
-.
-(pdftex.def)             Requested size: 401.1016pt x 362.5573pt.
+<graphics/bpmn_business-processes.jpg, id=116, 2532.46124pt x 594.22pt>
+File: graphics/bpmn_business-processes.jpg Graphic file (type jpg)
+
+<use graphics/bpmn_business-processes.jpg>
+Package pdftex.def Info: graphics/bpmn_business-processes.jpg used on input lin
+e 39.
+(pdftex.def)             Requested size: 506.48328pt x 118.84189pt.
+
+Overfull \hbox (37.01282pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[5 <./graphics/uml_functionalities.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+[4]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no „ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[5 <./graphics/bpmn_business-processes.jpg>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+
+<graphics/uml_functionalities.jpg, id=127, 668.4975pt x 604.2575pt>
+File: graphics/uml_functionalities.jpg Graphic file (type jpg)
+
+<use graphics/uml_functionalities.jpg>
+Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 60
+.
+(pdftex.def)             Requested size: 401.1016pt x 362.5573pt.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[6 <./graphics/uml_functionalities.jpg>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmbx10!
+Missing character: There is no ¼ in font cmbx10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
 
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[6]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [7]
-<graphics/bpmn_use-cases_management.jpg, id=147, 1877.0125pt x 767.86874pt>
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no ¤ in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[8]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[9]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Ÿ in font cmr10!
+
+<graphics/bpmn_use-cases_management.jpg, id=156, 1877.0125pt x 767.86874pt>
 File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_management.jpg>
 Package pdftex.def Info: graphics/bpmn_use-cases_management.jpg used on input l
-ine 125.
+ine 128.
 (pdftex.def)             Requested size: 450.4922pt x 184.29225pt.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[8 <./graphics/bpmn_use-cases_management.jpg>]
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+[10 <./graphics/bpmn_use-cases_management.jpg>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no œ in font cmr10!
 
-
-[9] <graphics/bpmn_use-cases_measurement.jpg, id=162, 2123.935pt x 692.5875pt>
+<graphics/bpmn_use-cases_measurement.jpg, id=168, 2123.935pt x 692.5875pt>
 File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_measurement.jpg>
 Package pdftex.def Info: graphics/bpmn_use-cases_measurement.jpg used on input 
-line 169.
+line 173.
 (pdftex.def)             Requested size: 509.75482pt x 166.2244pt.
 
-Overfull \hbox (40.28436pt too wide) in paragraph at lines 169--170
+Overfull \hbox (40.28436pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[11]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ž in font cmr10!
@@ -694,29 +1228,29 @@ Missing character: There is no œ in font cmr10!
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[10 <./graphics/bpmn_use-cases_measurement.jpg>]
-<graphics/bpmn_use-cases_analysis.jpg, id=174, 1596.96625pt x 640.3925pt>
+[12 <./graphics/bpmn_use-cases_measurement.jpg>]
+<graphics/bpmn_use-cases_analysis.jpg, id=183, 1596.96625pt x 640.3925pt>
 File: graphics/bpmn_use-cases_analysis.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_analysis.jpg>
 Package pdftex.def Info: graphics/bpmn_use-cases_analysis.jpg used on input lin
-e 212.
+e 216.
 (pdftex.def)             Requested size: 383.27974pt x 153.69733pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[11])
+[13 <./graphics/bpmn_use-cases_analysis.jpg>])
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[12 <./graphics/bpmn_use-cases_analysis.jpg>]
+[14]
 Chapter 2.
 (./chapters/methods.tex)
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[13
+[15
 
 ] (./all.bbl
 Underfull \hbox (badness 2856) in paragraph at lines 27--33
@@ -733,7 +1267,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[14
+[16
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
@@ -741,17 +1275,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `all.out' has not changed.
-(rerunfilecheck)             Checksum: 5DDDFD0B5449D177A1D2CCB349E0B7D5;674.
+(rerunfilecheck)             Checksum: 9D4425525F98A1FCACA00611E1BC9370;690.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 9913 strings out of 495031
- 147240 string characters out of 6181531
- 248041 words of memory out of 5000000
+ 9915 strings out of 495031
+ 147254 string characters out of 6181531
+ 248183 words of memory out of 5000000
  12917 multiletter control sequences out of 15000+600000
  11885 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,11n,42p,1562b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,42p,1392b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -759,10 +1293,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on all.pdf (17 pages, 530308 bytes).
+Output written on all.pdf (19 pages, 538140 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
