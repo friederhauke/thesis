@@ -1,6 +1,5 @@
--This chapter will describe how the system will be designed, how the Field of application can be modelled, what functionalities can be planned-
-
 \section{Einsatzgebiet}
+
 Um präzise beschreiben zu können was das System tun können muss, ist es notwendig vorher konkret die vorliegende Situation oder das existierende Problem zu definieren. Solche eine Definition sollte eine Beschreibung der Umgebung beinhalten in der das System eingesetzt werden soll. Nimmt man eine Modellierungssprache zur Hilfe, um die Umgebung zu beschrieben, ist es später einfacher daraus Rückschlüsse auf mögliche Probleme zu ziehen. Für ein solches Modell müssen die Fragen beantwortet werden, in welche Objekte sich die Umgebung aufgliedert, wie diese interagieren und welche Funktionalitäten diese dafür verwenden.Aber auch die teilhabenden Akteure und ihre konkreten Anforderungen an das System müssen modelliert werden. Mit Hilfe von exemplarischen Anwendungsfällen werde ich beschreiben was der tatsächliche Bedarf des Nutzers ist, und wie dieser gedeckt werden kann.
 
 Bevor ich mit dem technischen Ausformulieren der Modellierung beginne, möchte ich kurz in die Thematik einleiten: Das System welches ich mit dieser Arbeit konzeptioniere soll Feldingenieuren helfen im Feld mit den Messungen und Daten verschiedener Sensoren zu arbeiten. Als konkretes Beispiel werde ich den Einsatz des Systems bei der Bauwerksüberwachung mithilfe eines Sensornetzwerkes beschreiben.
@@ -9,13 +8,34 @@ Die Überwachung von Bauwerken mittels eines Netzwerkes aus verschiedenen Sensor
 
 Für das bessere Verständnis möchte ich hier ein Beispielfall beschreiben: Ein Brücke erreicht ihre letzten Jahre der Betriebserlaubnis. Danach müssen entweder die Verkehrssicherheit erneut umfangreich geprüft, und zahlreiche Verschleißteile, deren Zustand schlecht zu beurteilen ist, ersetzt werden, oder die Verkehrssicherheit muss auf andere Art überprüft werden. Zahlreiche Sensoren werden an den einzelnen wichtigen Gebäudeteilen eingerichtet, und überwachen nun automatisch über einen bestimmten Zeitraum deren Verhalten und Veränderungen. In periodischen Abständen werden automatisch Diagnosen erstellt, basierend auf der Analyse der Messwerte, der Überprüfung des Materialverschleißes und einiger anderer Einflussgrößen. Eine detailliertere Beschreibung der verwendeten Messungen, Zeitskalen und Analysemethoden werden in den nachfolgenden Kapiteln beschrieben.
 
-In der Einleitung der Arbeit möchte ich mich am Verlauf der Erstellung eines Pflichtenheftes für die Softwareentwicklung orientieren , da so am besten modelliert werden kann wie der Bedarf des Nutzers gedeckt werden kann, siehe auch \citep{gregor_engels_vorlesung_2006}. Beginnen werde ich mit einer textuellen Beschreibung der Situation. Danach folgt eine Modellierung der Prozesse und der Akteure mit ihren jeweiligen Anwendungsfällen. Zum Abschluss werde ich dann die daraus abgeleiteten notwendigen Funktionalitäten des System beschreiben.
+In der Einleitung der Arbeit möchte ich mich am Verlauf der Erstellung eines 
+\newglossaryentry{Pflichtenheft}
+{
+  name={Pflichtenheft},
+  description={Form der Beschreibung was eine Software können muss, und was der Auftraggeber erwarten darf.},
+  sort=Pflichtenheft
+}
+\gls{Pflichtenheft}es für die Softwareentwicklung orientieren , da so am besten modelliert werden kann wie der Bedarf des Nutzers gedeckt werden kann, siehe auch \citep{gregor_engels_vorlesung_2006}. Beginnen werde ich mit einer textuellen Beschreibung der Situation. Danach folgt eine Modellierung der Prozesse und der Akteure mit ihren jeweiligen Anwendungsfällen. Zum Abschluss werde ich dann die daraus abgeleiteten notwendigen Funktionalitäten des System beschreiben.
 
 
 \subsection{Modell des Problembereichs}
-Die Abbildung \ref{fig:model_domain} zeigt ein UML Diagramm (Unified Modeling Language) das die im folgenden beschrieben verschiedenen Objekte des Systems beinhaltet. Das Modell beschreibt die Beziehungen der einzelnen Objekte untereinander und modelliert keine Aktivitäten oder Funktionen.
+Die Abbildung \ref{fig:model_domain} zeigt ein \newacronym{UML}{UML}{Unified Modeling Language} \gls{UML} Diagramm das die im folgenden beschrieben verschiedenen Objekte des Systems beinhaltet. Das Modell beschreibt die Beziehungen der einzelnen Objekte untereinander und modelliert keine Aktivitäten oder Funktionen.
 
-Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten Server, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen Server, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der Server kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den Server beziehungsweise über den Server an die dem Server angeschlossene Datenbank, oder der Server ruft die Daten aktiv ab, und speichert diese dann in der Datenbank.
+Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten 
+\newglossaryentry{Server}
+{
+  name={Server},
+  description={Elektronisches System mit dem über das TCP/IP kommuniziert werden kann, und das aktiv und passiv Dienste anbietet bzw. ausführt.},
+  sort=Server
+}
+\gls{Server}, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen \gls{Server}, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der \gls{Server} kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den \gls{Server} beziehungsweise über den \gls{Server} an die dem \gls{Server} angeschlossene 
+\newglossaryentry{Datenbank}
+{
+  name={Datenbank},
+  description={Elektronisches System zur Speicherung großer Datenmengen.},
+  sort=Datenbank
+}
+\gls{Datenbank}, oder der \gls{Server} ruft die Daten aktiv ab, und speichert diese dann in der Datenbank.
 
 \begin{figure}[H]
 	\centering
@@ -24,9 +44,9 @@ Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschie
 	 \label{fig:model_domain}
 \end{figure}
 
-Die Datenbank die and den Server angeschlossen ist speichert sowohl Metadaten zu den Sensoren, als auch die gemessenen Werte. Unter Metadaten sind alle Informationen zu verstehen, die die Sensoren eindeutig beschreiben, und die für weitere Analysen der Messerwerte erforderlich sind (siehe auch im Glossar "Metadaten". Beispielsweise sind das die Positionen der Sensoren, die Messintervalle, die Sensortypen oder die übermittelten Datentypen.
+Die Datenbank die and den \gls{Server} angeschlossen ist speichert sowohl Metadaten zu den Sensoren, als auch die gemessenen Werte. Unter Metadaten sind alle Informationen zu verstehen, die die Sensoren eindeutig beschreiben, und die für weitere Analysen der Messerwerte erforderlich sind (siehe auch im Glossar "Metadaten". Beispielsweise sind das die Positionen der Sensoren, die Messintervalle, die Sensortypen oder die übermittelten Datentypen.
 
-Als Klient des Services kann im Prinzip jede Art von mobilen Systemen eingesetzt werden. Angeschlossen an die Datenbank dienen diese dann als bildgebender Teil des Systems. Da die Verknüpfung mit einem Server meist über das Protokoll TCP/IP geschieht, müssen mobile Geräte über eine Internetverbindung verfügen. Die Verwendung dieser Geräte bleibt dadurch begrenzt auf Gebiete innerhalb der Handynetz-Abdeckung. Für manuelle Messungen dient der mobile Klient zusätzlich als Eingabegerät für die Messwerte, sofern dies nicht über das Gerät selber erfolgen kann. Dadurch wird der mobile Klient in dem Modell sowohl als bildgebender Teil des Systems, als auch als Sensor behandelt, und ererbt damit die Eigenschaften des Sensor Objekts.
+Als Klient des Services kann im Prinzip jede Art von mobilen Systemen eingesetzt werden. Angeschlossen an die Datenbank dienen diese dann als bildgebender Teil des Systems. Da die Verknüpfung mit einem \gls{Server} meist über das Protokoll \newacronym{TCP/IP}{TCP/IP}{Transmission Control Protocol/Internet Protocol} \gls{TCP/IP} geschieht, müssen mobile Geräte über eine Internetverbindung verfügen. Die Verwendung dieser Geräte bleibt dadurch begrenzt auf Gebiete innerhalb der Handynetz-Abdeckung. Für manuelle Messungen dient der mobile Klient zusätzlich als Eingabegerät für die Messwerte, sofern dies nicht über das Gerät selber erfolgen kann. Dadurch wird der mobile Klient in dem Modell sowohl als bildgebender Teil des Systems, als auch als Sensor behandelt, und ererbt damit die Eigenschaften des Sensor Objekts.
 
 Das System will einen ganzheitlichen Ansatz verfolgen, und beinhaltet somit auch einen Teil der für die umfangreicheren Analysen zuständig ist, sowie durch eine Datenexportfunktion als Schnittstelle zu weiteren Algorithmen und System dient. Dieser Teil des System wird in dem Modell durch den "Desktop-Computer" repräsentiert. Die eigentliche Einrichtung und Planung des Systems wird erwartungsgemäß von diesem, dem bequemeren Arbeitsplatz (verglichen mit dem mobilen Klienten), durchgeführt werden. Zusätzlich zu den Eigenschaften des Feldcomputers sind somit erweiterte Verwaltungs- und Analysefunktionen als Eigenschaften dieses Objektes definiert.
 
@@ -41,7 +61,7 @@ Wichtigste Entscheidungshilfe für die Nutzung solch eines Systems wird die Eige
 	 \label{fig:model_business-processes}
 \end{figure}
 
-Ich habe drei verschiedene Hauptaktionen identifiziert, die ein Nutzer durchführen könnte: Das manuelle Messen von Werten, das manuelle Editieren bereits gemessener Werte, und das automatische kontinuierliche Messen. Die Abbildung \ref{fig:model_business-processes} veranschaulicht mittels eines UML Activity Diagrams (UML Aktivitäten Diagramm) die einzelnen Abläufe dieser Aktionen.
+Ich habe drei verschiedene Hauptaktionen identifiziert, die ein Nutzer durchführen könnte: Das manuelle Messen von Werten, das manuelle Editieren bereits gemessener Werte, und das automatische kontinuierliche Messen. Die Abbildung \ref{fig:model_business-processes} veranschaulicht mittels eines \gls{UML} Activity Diagrams (\gls{UML} Aktivitäten Diagramm) die einzelnen Abläufe dieser Aktionen.
 
 Die manuelle Messung beginnt mir der normalen Messung der Werte. Im zweiten Schritt erfolgt die Eingabe der Werte in das System. Die Werte werden automatisch auf ihre Validität hin überprüft, und erste einfache statistische Analysen werden erstellt. Diese erste Statistik ist erforderlich um Informationen über die Qualität der Messung zu erhalten, und dem System die Möglichkeit zu bieten fehlerhafte Messungen zu bemängeln und Neumessungen vorzuschlagen.
 
@@ -80,7 +100,7 @@ Normalerweise sind die Nutzer Feld- und Büroingenieur vereinigt in einer Person
 \subsection{Anwendungsfälle}
 Die Abbildung \ref{fig:model_functionalities} zeigt die grundlegenden unterschiedlichen Anwendungsfälle der zwei im vorherigen Kapitel beschriebenen Nutzergruppen. Anwendungsfälle die in der Abbildung genannt werden repräsentieren Handlungsfolgen des jeweiligen Nutzers, die innerhalb des Anwendungsfalles abgeschlossen sein müssen, also ein festgelegtes Ziel erreichen müssen. Ich werde nun die Anwendungsfälle wie bereits erwähnt in tabellarischer Form mit weiteren Parametern beschreiben. Dieser Arbeitsschritt ist essentiell für Planung und Konzeption eines Systems, da hierdurch der tatsächliche Bedarf der Nutzer und damit die zu implementierenden Funktionalitäten beschrieben werden.
 
-Ich werde alle Anwendungsfälle zunächst mit einem Text einleiten, und dann in der Tabelle die wichtigsten Eigenschaften beschreiben. Dazu gehören das festgelegte Ziel eines Anwendungsfalles oder die sogenannte Nachbedingung, die beschreibt in welcher Situation sich das System nach dem erfolgreichem Durchlaufen eines Anwendungsfalles befindet. Anschließend werden die einzelnen zu durchlaufenden Schritte der Anwendungsfälle in einem UML Aktivitäten Diagramm veranschaulicht.
+Ich werde alle Anwendungsfälle zunächst mit einem Text einleiten, und dann in der Tabelle die wichtigsten Eigenschaften beschreiben. Dazu gehören das festgelegte Ziel eines Anwendungsfalles oder die sogenannte Nachbedingung, die beschreibt in welcher Situation sich das System nach dem erfolgreichem Durchlaufen eines Anwendungsfalles befindet. Anschließend werden die einzelnen zu durchlaufenden Schritte der Anwendungsfälle in einem \gls{UML} Aktivitäten Diagramm veranschaulicht.
 
 Ich habe die verschiedenen Anwendungsfälle in drei Gruppen gegliedert. Jeweils zwei Anwendungsfälle decken die Gebiete des Daten Managements, der Daten Analyse und der eigentlichen Messung ab.
 
@@ -113,11 +133,11 @@ Ziel & Auswahl der Daten und Export in einem bestimmten Format\\ \hline
 Vorbedingung & Auswahl der Daten nach bestimmten Parametern und spezifiziertes Exportformat\\ \hline 
 Nachbedingung & Ausgewählte Daten liegen vollständig physikalisch im definiertem Format vor\\ 
 \end{tabular}
-\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfalls "Datenexport"} 
-\label{table:use case description of "Export data"}
+\caption{Tabellarisierte Beschreibung aller Charakteristika des Anwendungsfa'
+lls "Datenexport"}\label{table:use case description of "Export data"}
 \end{table}
 
-Die Abbildung \ref{fig:bpmn_use-case_management} zeigt die Anwendungsfälle die sich mit der Thematik des Managements befassen in einem UML Aktivitätsdiagramm. Die beiden Abläufe weisen keine Interaktionen untereinander auf und sind damit vollständig unabhängig voneinander. Chronologisch hingegen sollte das Einrichten des Netzwerkes vor dem Datenexport erfolgen.
+Die Abbildung \ref{fig:bpmn_use-case_management} zeigt die Anwendungsfälle die sich mit der Thematik des Managements befassen in einem \gls{UML} Aktivitätsdiagramm. Die beiden Abläufe weisen keine Interaktionen untereinander auf und sind damit vollständig unabhängig voneinander. Chronologisch hingegen sollte das Einrichten des Netzwerkes vor dem Datenexport erfolgen.
 
 Der Ablauf des Einrichtens des Netzwerkes beinhaltet zwei wichtige Aktionen: Zum Einen das Einrichten der Datenbank und zum Anderen die Eingabe der Sensorparameter. Dies sind die zwei zentralen teile dieses Anwendungsfalls, und ein scheitern nur eines dieser Aktionen würde zu einem nicht funktionierendem Netzwerk führen. Die Bearbeitung der "Netzwerkeinstellungen", also der einzelnen eingegebenen Parameter, führt zu einem erneutem Durchlaufen der gesamten Prozesskette. Damit sollen fehlerhafte Eingaben vermieden werden, diese Funktion stellt eine Art Assistenzsystem dar, das durch alle wichtigen Einstellmöglichkeiten führt.
 

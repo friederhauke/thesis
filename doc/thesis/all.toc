@@ -1,16 +1,19 @@
-\contentsline {section}{List of Figures}{ii}{chapter*.1}
-\contentsline {section}{List of Abbreviations}{1}{chapter*.2}
-\contentsline {chapter}{\numberline {1}Introduction and Motivation}{1}{chapter.1}
+\select@language {german}
+\contentsline {section}{Abbildungsverzeichnis}{ii}{chapter*.1}
+\contentsline {section}{Tabellenverzeichnis}{iii}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Einleitung und Motivation}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Einsatzgebiet}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Modell des Problembereichs}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Geschäftsprozesse}{4}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Produktfunktionen}{6}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Nutzergruppen}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.1.2}Gesch\IeC {\"a}ftsprozesse}{4}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Produktfunktionen}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Nutzergruppen}{6}{subsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.1.1}Feldingenieure}{7}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}Bürokraft}{7}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}Anwendungsfälle}{8}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.1.2}B\IeC {\"u}rokraft}{7}{subsubsection.1.2.1.2}
+\contentsline {subsection}{\numberline {1.2.2}Anwendungsf\IeC {\"a}lle}{7}{subsection.1.2.2}
 \contentsline {subsubsection}{\numberline {1.2.2.1}Management}{8}{subsubsection.1.2.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2.2}Messungen}{10}{subsubsection.1.2.2.2}
 \contentsline {subsubsection}{\numberline {1.2.2.3}Analyse}{12}{subsubsection.1.2.2.3}
-\contentsline {section}{\numberline {1.3}Product functionalities}{14}{section.1.3}
-\contentsline {chapter}{\numberline {2}Methods}{15}{chapter.2}
+\contentsline {section}{\numberline {1.3}Produktfunktionen}{14}{section.1.3}
+\contentsline {chapter}{\numberline {2}Methoden}{15}{chapter.2}
+\contentsline {chapter}{Glossar}{16}{section*.16}
+\contentsline {chapter}{Akronyme}{17}{section*.18}
