@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  29 NOV 2013 19:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  1 DEC 2013 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,7 +907,7 @@ Package: glossary-tree 2012/09/21 v3.03 (NLCT)
 \glo@acronym@file=\write4
 \openout4 = `all.acn'.
 
-Package glossaries Info: Writing glossary file all.acn on input line 37.
+Package glossaries Info: Writing glossary file all.acn on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2013/07/11 v1.3a Package for typesetting indices in a synchro
@@ -1354,29 +1354,29 @@ Package: scrpage2 2010/04/22 v2.5 LaTeX2e KOMA-Script package
 ) (./all.aux)
 \openout1 = `all.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    ... okay on input line 79.
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1386,9 +1386,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count201
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (./all.out) (./all.out)
 \@outlinefile=\write6
@@ -1514,70 +1514,68 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 [3
 
 ]
-Kapitel 1.
-(./chapters/introduction.tex
-
-Package natbib Warning: Citation `worden_overview_2004' on page 1 undefined on 
-input line 7.
-
-
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 
-     [1
+l.140 \part{Einleitung und Motivation}
+                                       [1
+
+] (./chapters/introduction.tex
+Kapitel 1.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[2
 
 ]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[2] <graphics/model_of_issue.jpg, id=157, 647.41875pt x 422.57875pt>
+[3]
+Kapitel 2.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[4
+
+]
+
+Package natbib Warning: Citation `worden_overview_2004' on page 5 undefined on 
+input line 32.
+
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[5] <graphics/model_of_issue.jpg, id=184, 647.41875pt x 422.57875pt>
 File: graphics/model_of_issue.jpg Graphic file (type jpg)
 
 <use graphics/model_of_issue.jpg>
-Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 42.
+Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 60.
 (pdftex.def)             Requested size: 388.45424pt x 253.5492pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[3 <./graphics/model_of_issue.jpg>]
-<graphics/bpmn_business-processes.jpg, id=171, 2532.46124pt x 594.22pt>
+[6 <./graphics/model_of_issue.jpg>]
+<graphics/bpmn_business-processes.jpg, id=194, 2532.46124pt x 594.22pt>
 File: graphics/bpmn_business-processes.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_business-processes.jpg>
 Package pdftex.def Info: graphics/bpmn_business-processes.jpg used on input lin
-e 59.
+e 77.
 (pdftex.def)             Requested size: 506.48328pt x 118.84189pt.
 
-Overfull \hbox (37.01282pt too wide) in paragraph at lines 59--60
+Overfull \hbox (37.01282pt too wide) in paragraph at lines 77--78
  [][] 
  []
 
 
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[4 <./graphics/bpmn_business-processes.jpg>]
-<graphics/uml_functionalities.jpg, id=179, 668.4975pt x 604.2575pt>
-File: graphics/uml_functionalities.jpg Graphic file (type jpg)
-
-<use graphics/uml_functionalities.jpg>
-Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 80
-.
-(pdftex.def)             Requested size: 401.1016pt x 362.5573pt.
-
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[5]
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[6 <./graphics/uml_functionalities.jpg>]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
@@ -1585,36 +1583,23 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[8]
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+[8 <./graphics/bpmn_business-processes.jpg>]
+<graphics/uml_functionalities.jpg, id=208, 668.4975pt x 604.2575pt>
+File: graphics/uml_functionalities.jpg Graphic file (type jpg)
 
-
-[9]
-<graphics/bpmn_use-cases_management.jpg, id=212, 1877.0125pt x 767.86874pt>
-File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
-
-<use graphics/bpmn_use-cases_management.jpg>
-Package pdftex.def Info: graphics/bpmn_use-cases_management.jpg used on input l
-ine 148.
-(pdftex.def)             Requested size: 450.4922pt x 184.29225pt.
+<use graphics/uml_functionalities.jpg>
+Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 98
+.
+(pdftex.def)             Requested size: 401.1016pt x 362.5573pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[10 <./graphics/bpmn_use-cases_management.jpg>]
-<graphics/bpmn_use-cases_measurement.jpg, id=221, 2123.935pt x 692.5875pt>
-File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
-
-<use graphics/bpmn_use-cases_measurement.jpg>
-Package pdftex.def Info: graphics/bpmn_use-cases_measurement.jpg used on input 
-line 193.
-(pdftex.def)             Requested size: 509.75482pt x 166.2244pt.
-
-Overfull \hbox (40.28436pt too wide) in paragraph at lines 193--194
- [][] 
- []
+[9 <./graphics/uml_functionalities.jpg>]
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
+[10]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
@@ -1622,56 +1607,87 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[12 <./graphics/bpmn_use-cases_measurement.jpg>]
-<graphics/bpmn_use-cases_analysis.jpg, id=234, 1596.96625pt x 640.3925pt>
+[12]
+<graphics/bpmn_use-cases_management.jpg, id=236, 1877.0125pt x 767.86874pt>
+File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
+
+<use graphics/bpmn_use-cases_management.jpg>
+Package pdftex.def Info: graphics/bpmn_use-cases_management.jpg used on input l
+ine 166.
+(pdftex.def)             Requested size: 450.4922pt x 184.29225pt.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[13 <./graphics/bpmn_use-cases_management.jpg>]
+<graphics/bpmn_use-cases_measurement.jpg, id=245, 2123.935pt x 692.5875pt>
+File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
+
+<use graphics/bpmn_use-cases_measurement.jpg>
+Package pdftex.def Info: graphics/bpmn_use-cases_measurement.jpg used on input 
+line 211.
+(pdftex.def)             Requested size: 509.75482pt x 166.2244pt.
+
+Overfull \hbox (40.28436pt too wide) in paragraph at lines 211--212
+ [][] 
+ []
+
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[14]
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[15 <./graphics/bpmn_use-cases_measurement.jpg>]
+<graphics/bpmn_use-cases_analysis.jpg, id=259, 1596.96625pt x 640.3925pt>
 File: graphics/bpmn_use-cases_analysis.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_analysis.jpg>
 Package pdftex.def Info: graphics/bpmn_use-cases_analysis.jpg used on input lin
-e 235.
+e 253.
 (pdftex.def)             Requested size: 383.27974pt x 153.69733pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[13])
+[16])
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[14 <./graphics/bpmn_use-cases_analysis.jpg>]
-Kapitel 2.
-(./chapters/methods.tex) (./all.acr
+[17 <./graphics/bpmn_use-cases_analysis.jpg>]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[15
+[18
 
-]) (./all.acr
+] (./chapters/methods.tex) (./all.acr) (./all.acr
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[16
+[19
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{glo:Datenban
 k}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 \glsXpageXglsnumberformat{}{3}}}
+l.27 \glsXpageXglsnumberformat{}{6}}}
                                      \glsgroupskippdfTeX warning (ext4): destin
 ation with the same identifier (name{glo:Pflichtenheft}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \glsXpageXglsnumberformat{}{2}}}
+l.30 \glsXpageXglsnumberformat{}{5}}}
                                      \glsgroupskippdfTeX warning (ext4): destin
 ation with the same identifier (name{glo:Server}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.33 \glsXpageXglsnumberformat{}{3}}}
+l.35 \glsXpageXglsnumberformat{}{7}}}
                                      \glsgroupskip
-Underfull \hbox (badness 1430) in paragraph at lines 33--33
+Underfull \hbox (badness 1430) in paragraph at lines 35--35
 []|\T1/cmr/m/n/10.95 Elektronisches Sy-stem mit dem über das
  []
 
@@ -1679,18 +1695,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{glo:TCP/IP})
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \glsXpageXglsnumberformat{}{3}}}
+l.38 \glsXpageXglsnumberformat{}{7}}}
                                      \glsgroupskippdfTeX warning (ext4): destin
 ation with the same identifier (name{glo:UML}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.42 \glsXpageXglsnumberformat{}{9}}}
-                                     %)
+l.44 \glsXpageXglsnumberformat{}{12}}}
+                                      %)
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[17
+[20
 
 
 ] (./all.bbl
@@ -1713,41 +1729,42 @@ Underfull \hbox (badness 1762) in paragraph at lines 27--33
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[18
+[21
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
  (./all.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `all.out' has not changed.
-(rerunfilecheck)             Checksum: C13366C171D5DEB1885204742E0E2728;782.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+(rerunfilecheck)             Checksum: 3A2B3ED0F7F47C2EA5B6C30D81C9BFE9;932.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
- 20166 strings out of 494979
- 316940 string characters out of 6179170
- 459194 words of memory out of 5000000
- 22942 multiletter control sequences out of 15000+600000
+ 20176 strings out of 494979
+ 317026 string characters out of 6179170
+ 458202 words of memory out of 5000000
+ 22947 multiletter control sequences out of 15000+600000
  18189 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,10n,96p,1453b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,10n,96p,1453b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
  </tmp/texfonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </tmp/texfonts/pk/ljfou
-r/jknappen/ec/ecti1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/tcrm1095.600
-pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </tmp/texfonts/pk/ljfo
-ur/jknappen/ec/ecsl1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx2074.60
+r/jknappen/ec/ecti1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecsl1095.600
+pk> </tmp/texfonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </tmp/texfonts/pk/ljfo
+ur/jknappen/ec/ecbx2074.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1200.60
 0pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </tmp/texfonts/pk/ljf
 our/jknappen/ec/ecbx1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm1095.6
-00pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>
-Output written on all.pdf (22 pages, 542852 bytes).
+00pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on all.pdf (25 pages, 558843 bytes).
 PDF statistics:
- 667 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

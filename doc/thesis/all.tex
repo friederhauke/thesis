@@ -28,11 +28,6 @@
 
 
 %--- Abreviations ---
-%\usepackage[refpage]{nomencl}
-%\usepackage[printonlyused]{acronym}				% Load Aronym list for only used acronyms
-%\usepackage{nomencl}
-%\makenomenclature
-
 \usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
 \makeglossaries
 \usepackage[xindy]{imakeidx}
@@ -142,10 +137,10 @@
 \setcounter{secnumdepth}{4}
 
 
-\chapter{Einleitung und Motivation}
+\part{Einleitung und Motivation}
 \input{chapters/introduction}
 
-\chapter{Methoden}
+\part{Methoden}
 \input{chapters/methods}
 
 %\section{relevant studies}
@@ -161,19 +156,14 @@
 % -------------------
 % --- Glossar	 ---
 % -------------------
-%\printglossary[type=\acronymtype] % prints just the list of acronyms
-%\printglossary % if no option is supplied the default glossary is printed.
-%\printglossaries
 %\glsaddall
 
 % Glossary
 \printglossary[style=altlist,title=Glossar]
 
 % Acronyms
-%\deftranslation[to=German]{Acronyms}{Akronyme}
 \printglossary[type=\acronymtype,style=long,title=Akronyme]
 
-%\printnomenclature
 
 % -------------------
 % --- References	 ---

@@ -1,5 +1,30 @@
-\section{Einsatzgebiet}
+\chapter{Einführung in die Problematik}
+Diese Masterarbeit beschreibt den potentiellen Nutzen eines grafischen Management Systems für die Gebäudeüberwachung mittels verschiedener stationärer und mobiler Sensoren. Anhand eines Beispieles soll geklärt werden welche Technologien eingesetzt werden müssten um diese Aufgabe zu lösen, und worin genau der Mehrwert eines solchen Systems gegenüber konventioneller Vermessungssoftware liegt. Die vorgeschlagenen Technologien werden zum Abschluss der Arbeit teilweise praktisch angewandt respektive umgesetzt. Dieser Prototyp soll exemplarisch demonstrieren wie solch ein System arbeiten wird. Kernfragen der Masterarbeit ist, wie kann dieses System Feldingenieuren, die im Bereich der Gebäudeüberwachung arbeiten, generell in den folgenden Bereichen unterstützen:
+\begin{itemize}
+\item Planung und Optimierung der allgemeinen Arbeiten im Feld
+\item Datenkommunikation mit dem Büro
+\item Vorabauswertung der Messwerte direkt im Feld
+\end{itemize}
+Die Klassische Arbeit von Vermessungsingenieuren besteht aus dem praktischen Teil der im Feld durchgeführt wird, und den anschließenden Auswertungen und der Interpretation im Büro. Durch die räumliche Trennung dieser Beiden dennoch sehr ineinander verzahnten Aufgaben entsteht oftmals eine Verzögerung in den Abläufen und erhöhtes Risiko für vermeidbare Fehler in den Arbeitsabläufen. Das System soll so konzeptioniert sein, dass es die Lücke schließt, zum Einen um die Effizienz der Arbeiten zu erhöhen, und zum Anderen um Fehler bei den Messungen oder der Datenmigration zu erkennen oder von vorn herein zu vermeiden. 
 
+Heutzutage ist das Bearbeiten von unterschiedlichen Arbeiten an einem Ort zur gleichen Zeit keine Vision mehr. Mobile Endgeräte wie "Smartphones" oder "Tablet-Computer" vereinfachen Arbeitsabläufe, und helfen Zeit zu sparen. Bei den Arbeiten im Feld sind mobile Endgeräte bereits ständig präsent, dennoch helfen sie lediglich bei wenigen Aufgaben wie der papierlosen Bürokratie, der Email-Kommunikation mit dem Büro oder den betrachten vorheriger Messerergebnisse. Das hier konzipierte System hingegen weißt folgende drei Hauptvorteile gegenüber der aktuellen Nutzung von mobilen Endgeräte auf:
+\begin{itemize}
+\item Kernfunktionalität ist das Assistieren des Vermessungsingenieurs. Das heißt es soll Hilfestellung beim Verstehen der Messungen geben (zum Beispiel durch den Vergleich der aktuellen Messungen mit vergangenen Messreihen). $\rightarrow$ Das Teilen von Informationen zwischen Feld und Büro führt zu einem besseren Kenntnisstand während der Arbeiten im Feld.
+\item Fehlmessungen wie sie etwa beim vertauschen von Positionen geschehen sollen vermieden werden indem die Messergebnisse direkt nach Eingabe in das System auf ihre Konsistenz hin überprüft werden.
+\item Für die Aufnahmen im Feld brauchen vorherige Messreihen nicht umständlich exportiert zu werden, sondern diese können von dem Mobilen System direkt von dem gemeinsamen Daten-
+\newglossaryentry{Server}
+{
+  name={Server},
+  description={Elektronisches System mit dem über das TCP/IP kommuniziert werden kann, und das aktiv und passiv Dienste anbietet bzw. ausführt.},
+  sort=Server
+} \gls{Server} abgerufen werden.
+\end{itemize}
+Das hier konzeptionierte System ist keine Alternative für klassische Vermessungssoftware, ist es eine Ergänzung und eine Brücke von den Sensoren direkt zu dem System. Es ermöglicht die Kombination von klassischer Ingenieurvermessung mit Sensornetzwerken.
+
+\chapter{Softwareanforderungen}
+Die Konzeptions eines Systems muss den Anforderungen der Nutzer entsprechen, und darf nicht an dem bestehenden Bedürfnissen "vorbei geplant" werden. Die Anforderungen an das System ergeben sich aus technischen Anforderungen, Erwartungen potentieller Nutzer und die damit einhergehenden Beispielfunktionen des Systems. Der Aufbau des Anforderungskataloges besteht aus einer Beschreibung des Einsatzgebietes, einer Beschreibung des Systems und den daraus abzuleitenden funktionalen und nicht-funktionalen Anforderungen.
+
+\section{Einsatzgebiet}
 Um präzise beschreiben zu können was das System tun können muss, ist es notwendig vorher konkret die vorliegende Situation oder das existierende Problem zu definieren. Solche eine Definition sollte eine Beschreibung der Umgebung beinhalten in der das System eingesetzt werden soll. Nimmt man eine Modellierungssprache zur Hilfe, um die Umgebung zu beschrieben, ist es später einfacher daraus Rückschlüsse auf mögliche Probleme zu ziehen. Für ein solches Modell müssen die Fragen beantwortet werden, in welche Objekte sich die Umgebung aufgliedert, wie diese interagieren und welche Funktionalitäten diese dafür verwenden.Aber auch die teilhabenden Akteure und ihre konkreten Anforderungen an das System müssen modelliert werden. Mit Hilfe von exemplarischen Anwendungsfällen werde ich beschreiben was der tatsächliche Bedarf des Nutzers ist, und wie dieser gedeckt werden kann.
 
 Bevor ich mit dem technischen Ausformulieren der Modellierung beginne, möchte ich kurz in die Thematik einleiten: Das System welches ich mit dieser Arbeit konzeptioniere soll Feldingenieuren helfen im Feld mit den Messungen und Daten verschiedener Sensoren zu arbeiten. Als konkretes Beispiel werde ich den Einsatz des Systems bei der Bauwerksüberwachung mithilfe eines Sensornetzwerkes beschreiben.
@@ -21,14 +46,7 @@ In der Einleitung der Arbeit möchte ich mich am Verlauf der Erstellung eines
 \subsection{Modell des Problembereichs}
 Die Abbildung \ref{fig:model_domain} zeigt ein \newacronym{UML}{UML}{Unified Modeling Language} \gls{UML} Diagramm das die im folgenden beschrieben verschiedenen Objekte des Systems beinhaltet. Das Modell beschreibt die Beziehungen der einzelnen Objekte untereinander und modelliert keine Aktivitäten oder Funktionen.
 
-Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten 
-\newglossaryentry{Server}
-{
-  name={Server},
-  description={Elektronisches System mit dem über das TCP/IP kommuniziert werden kann, und das aktiv und passiv Dienste anbietet bzw. ausführt.},
-  sort=Server
-}
-\gls{Server}, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen \gls{Server}, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der \gls{Server} kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den \gls{Server} beziehungsweise über den \gls{Server} an die dem \gls{Server} angeschlossene 
+Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten \gls{Server}, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen \gls{Server}, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der \gls{Server} kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den \gls{Server} beziehungsweise über den \gls{Server} an die dem \gls{Server} angeschlossene 
 \newglossaryentry{Datenbank}
 {
   name={Datenbank},
@@ -156,7 +174,7 @@ Der Teil des Systems der sich mit den eigentlichen Messungen beschäftigt, könn
 
 In diesem Teil habe ich zwei wichtige Anwendungsfälle identifiziert: Der Erste beschäftigt sich mit dem initialen "Dateninput", also der Eingabe von Daten, produziert durch Messungen. Die Charakteristiken dieses Anwendungsfalles sind in der Tabelle \ref{table:use case description of "Measure data"} beschrieben. Im Gegensatz zu den automatischen Messungen beschreibt dieser Anwendungsfall die manuelle Eingabe von nur einem Datensatz.
 
-Der Zweit Anwendungsfall behandelt das manuelle bearbeiten der bereits in der Datenbank gespeicherten werte. Die Tabelle \ref{table:use case description of "Edit data"} beinhaltet alle wichtigen Informationen dazu. Das Bearbeiten von Daten gehört zu den Standardoperationen für System die sich auf Datenbanken stützen. Dennoch ist es wichtig zu beschreiben, wie dieser Anwendungsfall mit dem der Messungen zusammenhängt. Im Falle von Neumessungen bestimmter Werte oder des Validieren von Daten wird die Prozesskette der Messung durchlaufen obwohl es im Grunde eine Bearbeitung bereits bestehender Werte ist.
+Der Zweite Anwendungsfall behandelt das manuelle Bearbeiten der bereits in der Datenbank gespeicherten Werte. Die Tabelle \ref{table:use case description of "Edit data"} beinhaltet alle wichtigen Informationen dazu. Das Bearbeiten von Daten gehört zu den Standardoperationen für System die sich auf Datenbanken stützen. Dennoch ist es wichtig zu beschreiben, wie dieser Anwendungsfall mit dem der Messungen zusammenhängt. Im Falle von Neumessungen bestimmter Werte oder des Validieren von Daten wird die Prozesskette der Messung durchlaufen obwohl es im Grunde eine Bearbeitung bereits bestehender Werte ist.
 
 \begin{table}[H]
 \centering
