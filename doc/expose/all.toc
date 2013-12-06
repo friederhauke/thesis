@@ -1,12 +1,12 @@
-\contentsline {section}{List of Abbreviations}{1}{section*.1}
-\contentsline {section}{\numberline {1}Introduction and Motivation}{1}{section.1}
-\contentsline {section}{\numberline {2}Methods}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Data Insertion}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Complex Data}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Time Series}{3}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Data Streaming and Visualisation}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Data Analysis}{4}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Feature Extraction}{4}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Testside}{4}{subsection.2.7}
-\contentsline {section}{\numberline {3}Expected Results}{5}{section.3}
-\contentsline {section}{\numberline {4}Expected Problems}{5}{section.4}
+\select@language {german}
+\contentsline {section}{\numberline {0.1}Introduction and Motivation}{1}{section.0.1}
+\contentsline {section}{\numberline {0.2}Methods}{2}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Data Insertion}{2}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}Complex Data}{3}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {0.2.3}Time Series}{3}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {0.2.4}Data Streaming and Visualisation}{3}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {0.2.5}Data Analysis}{4}{subsection.0.2.5}
+\contentsline {subsection}{\numberline {0.2.6}Feature Extraction}{4}{subsection.0.2.6}
+\contentsline {subsection}{\numberline {0.2.7}Testside}{4}{subsection.0.2.7}
+\contentsline {section}{\numberline {0.3}Expected Results}{5}{section.0.3}
+\contentsline {section}{\numberline {0.4}Expected Problems}{5}{section.0.4}

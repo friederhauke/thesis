@@ -11,49 +11,36 @@ Heutzutage ist das Bearbeiten von unterschiedlichen Arbeiten an einem Ort zur gl
 \begin{itemize}
 \item Kernfunktionalität ist das Assistieren des Vermessungsingenieurs. Das heißt es soll Hilfestellung beim Verstehen der Messungen geben (zum Beispiel durch den Vergleich der aktuellen Messungen mit vergangenen Messreihen). $\rightarrow$ Das Teilen von Informationen zwischen Feld und Büro führt zu einem besseren Kenntnisstand während der Arbeiten im Feld.
 \item Fehlmessungen wie sie etwa beim vertauschen von Positionen geschehen sollen vermieden werden indem die Messergebnisse direkt nach Eingabe in das System auf ihre Konsistenz hin überprüft werden.
-\item Für die Aufnahmen im Feld brauchen vorherige Messreihen nicht umständlich exportiert zu werden, sondern diese können von dem Mobilen System direkt von dem gemeinsamen Daten-
-\newglossaryentry{Server}
-{
-  name={Server},
-  description={Elektronisches System mit dem über das TCP/IP kommuniziert werden kann, und das aktiv und passiv Dienste anbietet bzw. ausführt.},
-  sort=Server
-} \gls{Server} abgerufen werden.
+\item Für die Aufnahmen im Feld brauchen vorherige Messreihen nicht umständlich exportiert zu werden, sondern diese können von dem Mobilen System direkt von dem gemeinsamen Daten-Server abgerufen werden.
 \end{itemize}
 Das hier konzeptionierte System ist keine Alternative für klassische Vermessungssoftware, ist es eine Ergänzung und eine Brücke von den Sensoren direkt zu dem System. Es ermöglicht die Kombination von klassischer Ingenieurvermessung mit Sensornetzwerken.
 
+
+\section{Vergleichbare Systeme}
+-GITEWS
+-..
+
+
 \chapter{Softwareanforderungen}
 Die Konzeptions eines Systems muss den Anforderungen der Nutzer entsprechen, und darf nicht an dem bestehenden Bedürfnissen "vorbei geplant" werden. Die Anforderungen an das System ergeben sich aus technischen Anforderungen, Erwartungen potentieller Nutzer und die damit einhergehenden Beispielfunktionen des Systems. Der Aufbau des Anforderungskataloges besteht aus einer Beschreibung des Einsatzgebietes, einer Beschreibung des Systems und den daraus abzuleitenden funktionalen und nicht-funktionalen Anforderungen.
+
 
 \section{Einsatzgebiet}
 Um präzise beschreiben zu können was das System tun können muss, ist es notwendig vorher konkret die vorliegende Situation oder das existierende Problem zu definieren. Solche eine Definition sollte eine Beschreibung der Umgebung beinhalten in der das System eingesetzt werden soll. Nimmt man eine Modellierungssprache zur Hilfe, um die Umgebung zu beschrieben, ist es später einfacher daraus Rückschlüsse auf mögliche Probleme zu ziehen. Für ein solches Modell müssen die Fragen beantwortet werden, in welche Objekte sich die Umgebung aufgliedert, wie diese interagieren und welche Funktionalitäten diese dafür verwenden.Aber auch die teilhabenden Akteure und ihre konkreten Anforderungen an das System müssen modelliert werden. Mit Hilfe von exemplarischen Anwendungsfällen werde ich beschreiben was der tatsächliche Bedarf des Nutzers ist, und wie dieser gedeckt werden kann.
 
 Bevor ich mit dem technischen Ausformulieren der Modellierung beginne, möchte ich kurz in die Thematik einleiten: Das System welches ich mit dieser Arbeit konzeptioniere soll Feldingenieuren helfen im Feld mit den Messungen und Daten verschiedener Sensoren zu arbeiten. Als konkretes Beispiel werde ich den Einsatz des Systems bei der Bauwerksüberwachung mithilfe eines Sensornetzwerkes beschreiben.
 
-Die Überwachung von Bauwerken mittels eines Netzwerkes aus verschiedenen Sensoren hilft ihre Sicherheit ohne den Einsatz großer Bautechnischer Überprüfungen einschätzen zu können. Damit ist es möglich Bauwerke auch weit über ihre geplante Lebensdauer hinweg zu erhalten. Ohne den Einsatz solcher Sensor Netzwerke können die zuständigen Gutachter bei Ablauf der geplanten Lebensdauer nicht darauf vertrauen, dass das Gebäude auch weiterhin den kontinuierlichen Belastungen gewachsen ist, und somit werden entweder umfangreiche Sanierungen Nötig, oder Gebäude werde geschlossen. Die Überwachung basiert auf der Messung von Veränderungen von verschiedenen Parametern wie zum Beispiel der Position , der Temperatur oder Feuchtigkeit von Bauteile oder der Abweichungen von charakteristischen Bewegungsmustern von Bauteilen, gemessen durch Beschleunigungssensoren. Die Parameter werden sowohl punktuell  verteilt über das gesamt Bauwerk, als auch gesamtheitlich die Struktur des Bauwerkes miteinbeziehend erhoben, siehe auch  \citep{worden_overview_2004} \citep{farrar_introduction_2007} \citep{boller_structural_2004}. Für die Messungen werden zum einen automatisch kontinuierlich messende Systeme eingesetzt, und zum anderen seltenere manuelle Messungen, deren Ergebnisse manuelle in das System eingegeben werden. 
+Die Überwachung von Bauwerken mittels eines Netzwerkes aus verschiedenen Sensoren hilft ihre Sicherheit ohne den Einsatz großer Bautechnischer Überprüfungen einschätzen zu können. Damit ist es möglich Bauwerke auch weit über ihre geplante Lebensdauer hinweg zu erhalten. Ohne den Einsatz solcher Sensor Netzwerke können die zuständigen Gutachter bei Ablauf der geplanten Lebensdauer nicht darauf vertrauen, dass das Gebäude auch weiterhin den kontinuierlichen Belastungen gewachsen ist, und somit werden entweder umfangreiche Sanierungen Nötig, oder Gebäude werde geschlossen. Die Überwachung basiert auf der Messung von Veränderungen von verschiedenen Parametern wie zum Beispiel der Position , der Temperatur oder Feuchtigkeit von Bauteile oder der Abweichungen von charakteristischen Bewegungsmustern von Bauteilen, gemessen durch Beschleunigungssensoren. Die Parameter werden sowohl punktuell  verteilt über das gesamt Bauwerk, als auch gesamtheitlich die Struktur des Bauwerkes miteinbeziehend erhoben, siehe auch \citep{farrar_introduction_2007} \citep{worden_overview_2004} \citep{boller_structural_2004}Für die Messungen werden zum einen automatisch kontinuierlich messende Systeme eingesetzt, und zum anderen seltenere manuelle Messungen, deren Ergebnisse manuelle in das System eingegeben werden. 
 
 Für das bessere Verständnis möchte ich hier ein Beispielfall beschreiben: Ein Brücke erreicht ihre letzten Jahre der Betriebserlaubnis. Danach müssen entweder die Verkehrssicherheit erneut umfangreich geprüft, und zahlreiche Verschleißteile, deren Zustand schlecht zu beurteilen ist, ersetzt werden, oder die Verkehrssicherheit muss auf andere Art überprüft werden. Zahlreiche Sensoren werden an den einzelnen wichtigen Gebäudeteilen eingerichtet, und überwachen nun automatisch über einen bestimmten Zeitraum deren Verhalten und Veränderungen. In periodischen Abständen werden automatisch Diagnosen erstellt, basierend auf der Analyse der Messwerte, der Überprüfung des Materialverschleißes und einiger anderer Einflussgrößen. Eine detailliertere Beschreibung der verwendeten Messungen, Zeitskalen und Analysemethoden werden in den nachfolgenden Kapiteln beschrieben.
 
-In der Einleitung der Arbeit möchte ich mich am Verlauf der Erstellung eines 
-\newglossaryentry{Pflichtenheft}
-{
-  name={Pflichtenheft},
-  description={Form der Beschreibung was eine Software können muss, und was der Auftraggeber erwarten darf.},
-  sort=Pflichtenheft
-}
-\gls{Pflichtenheft}es für die Softwareentwicklung orientieren , da so am besten modelliert werden kann wie der Bedarf des Nutzers gedeckt werden kann, siehe auch \citep{gregor_engels_vorlesung_2006}. Beginnen werde ich mit einer textuellen Beschreibung der Situation. Danach folgt eine Modellierung der Prozesse und der Akteure mit ihren jeweiligen Anwendungsfällen. Zum Abschluss werde ich dann die daraus abgeleiteten notwendigen Funktionalitäten des System beschreiben.
+In der Einleitung der Arbeit möchte ich mich am Verlauf der Erstellung eines Pflichtenheftes für die Softwareentwicklung orientieren , da so am besten modelliert werden kann wie der Bedarf des Nutzers gedeckt werden kann, siehe auch \citep{engels_vorlesung_2006}. Beginnen werde ich mit einer textuellen Beschreibung der Situation. Danach folgt eine Modellierung der Prozesse und der Akteure mit ihren jeweiligen Anwendungsfällen. Zum Abschluss werde ich dann die daraus abgeleiteten notwendigen Funktionalitäten des System beschreiben.
 
 
 \subsection{Modell des Problembereichs}
 Die Abbildung \ref{fig:model_domain} zeigt ein \newacronym{UML}{UML}{Unified Modeling Language} \gls{UML} Diagramm das die im folgenden beschrieben verschiedenen Objekte des Systems beinhaltet. Das Modell beschreibt die Beziehungen der einzelnen Objekte untereinander und modelliert keine Aktivitäten oder Funktionen.
 
-Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten \gls{Server}, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen \gls{Server}, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der \gls{Server} kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den \gls{Server} beziehungsweise über den \gls{Server} an die dem \gls{Server} angeschlossene 
-\newglossaryentry{Datenbank}
-{
-  name={Datenbank},
-  description={Elektronisches System zur Speicherung großer Datenmengen.},
-  sort=Datenbank
-}
-\gls{Datenbank}, oder der \gls{Server} ruft die Daten aktiv ab, und speichert diese dann in der Datenbank.
+Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschiedenen Arten von Objekten und deren Beziehungen untereinander. Zentrales Objekt ist der Daten Server, der als Knoten für die Kommunikation zwischen den einzelnen Kompartimente dient. Diese sind hauptsächlich die Sensoren selbst, die jedoch ohne einen Server, der als Steuerungseinheit für jeden Sensor dient, nicht selbständig messen können. Der Server kontrolliert die Sensoren indem er sie aktiviert und deaktiviert. Nichtsdestotrotz können Sensoren in einem separiertem eigenem Netzwerk organisiert sein, das dann wiederum als einzelner Sensor behandelt wird. Die Sensoren senden ihre gemessenen Daten entweder aktiv an den Server beziehungsweise über den Server an die dem Server angeschlossene Datenbank, oder der Server ruft die Daten aktiv ab, und speichert diese dann in der Datenbank.
 
 \begin{figure}[H]
 	\centering
@@ -62,9 +49,9 @@ Die Umgebung in der das System eingesetzt werden wird besteht aus fünf verschie
 	 \label{fig:model_domain}
 \end{figure}
 
-Die Datenbank die and den \gls{Server} angeschlossen ist speichert sowohl Metadaten zu den Sensoren, als auch die gemessenen Werte. Unter Metadaten sind alle Informationen zu verstehen, die die Sensoren eindeutig beschreiben, und die für weitere Analysen der Messerwerte erforderlich sind (siehe auch im Glossar "Metadaten". Beispielsweise sind das die Positionen der Sensoren, die Messintervalle, die Sensortypen oder die übermittelten Datentypen.
+Die Datenbank die and den Server angeschlossen ist speichert sowohl Metadaten zu den Sensoren, als auch die gemessenen Werte. Unter Metadaten sind alle Informationen zu verstehen, die die Sensoren eindeutig beschreiben, und die für weitere Analysen der Messerwerte erforderlich sind (siehe auch im Glossar "Metadaten". Beispielsweise sind das die Positionen der Sensoren, die Messintervalle, die Sensortypen oder die übermittelten Datentypen.
 
-Als Klient des Services kann im Prinzip jede Art von mobilen Systemen eingesetzt werden. Angeschlossen an die Datenbank dienen diese dann als bildgebender Teil des Systems. Da die Verknüpfung mit einem \gls{Server} meist über das Protokoll \newacronym{TCP/IP}{TCP/IP}{Transmission Control Protocol/Internet Protocol} \gls{TCP/IP} geschieht, müssen mobile Geräte über eine Internetverbindung verfügen. Die Verwendung dieser Geräte bleibt dadurch begrenzt auf Gebiete innerhalb der Handynetz-Abdeckung. Für manuelle Messungen dient der mobile Klient zusätzlich als Eingabegerät für die Messwerte, sofern dies nicht über das Gerät selber erfolgen kann. Dadurch wird der mobile Klient in dem Modell sowohl als bildgebender Teil des Systems, als auch als Sensor behandelt, und ererbt damit die Eigenschaften des Sensor Objekts.
+Als Klient des Services kann im Prinzip jede Art von mobilen Systemen eingesetzt werden. Angeschlossen an die Datenbank dienen diese dann als bildgebender Teil des Systems. Da die Verknüpfung mit einem Server meist über das Protokoll \newacronym{TCP/IP}{TCP/IP}{Transmission Control Protocol/Internet Protocol} \gls{TCP/IP} geschieht, müssen mobile Geräte über eine Internetverbindung verfügen. Die Verwendung dieser Geräte bleibt dadurch begrenzt auf Gebiete innerhalb der Handynetz-Abdeckung. Für manuelle Messungen dient der mobile Klient zusätzlich als Eingabegerät für die Messwerte, sofern dies nicht über das Gerät selber erfolgen kann. Dadurch wird der mobile Klient in dem Modell sowohl als bildgebender Teil des Systems, als auch als Sensor behandelt, und ererbt damit die Eigenschaften des Sensor Objekts.
 
 Das System will einen ganzheitlichen Ansatz verfolgen, und beinhaltet somit auch einen Teil der für die umfangreicheren Analysen zuständig ist, sowie durch eine Datenexportfunktion als Schnittstelle zu weiteren Algorithmen und System dient. Dieser Teil des System wird in dem Modell durch den "Desktop-Computer" repräsentiert. Die eigentliche Einrichtung und Planung des Systems wird erwartungsgemäß von diesem, dem bequemeren Arbeitsplatz (verglichen mit dem mobilen Klienten), durchgeführt werden. Zusätzlich zu den Eigenschaften des Feldcomputers sind somit erweiterte Verwaltungs- und Analysefunktionen als Eigenschaften dieses Objektes definiert.
 
@@ -110,7 +97,7 @@ Die Gruppe der Feldingenieure kann als die Gruppe der Ausführenden Personen bes
 \item Fehlende oder mangelhafte Eingabemöglichkeiten (z.B.: Eingabe nur durch virtuelle Tastatur auf einem Mobilen Computer)
 \item Hohes Gewicht von nicht mobilen Klienten (z.B.: Verwendung eines konventionellen Notebooks als mobile Lösung, für Arbeiten im stehen oder Laufen aber zu schwer)
 \end{itemize}
-Nichtsdestotrotz definiert diese Nutzergruppe die herausfordernsten Anforderungen an das System, beispielsweise durch die Implementierung einer intelligenten Visualisierungsmöglichkeit. Da diese Nutzergruppe die eigentliche Zielgruppe des Systems darstellt, sollten die Anforderungen dieser Gruppe zu gut als möglich erfüllt werden.
+Nichtsdestotrotz definiert diese Nutzergruppe die herausfordernsten Anforderungen an das System, beispielsweise durch die Implementierung einer intelligenten Möglichkeit zur Visualisierung. Da diese Nutzergruppe die eigentliche Zielgruppe des Systems darstellt, sollten die Anforderungen dieser Gruppe zu gut als möglich erfüllt werden.
 
 \subsubsection{Bürokraft}
 Normalerweise sind die Nutzer Feld- und Büroingenieur vereinigt in einer Person. Projekte die sich mit der Überwachung von Bauwerken befassen können in zwei Teile untergliedert werden. Ein Teil ist für die Installation des Netzwerkes, für etwaige manuelle Messungen und für die Betreuung bestehender Sensornetzwerke zuständig, während sich der andere Teil um die Auswertung der eingehenden Daten, die "Postprozessierung" (DE: Nachbearbeitung) und die Interpretation der Daten kümmert. Durch die meist sehr komfortabel ausgestattete Informationstechnologie in den Büros erwarte ich hier niedrigere technische Anforderungen an das System.
@@ -246,7 +233,7 @@ Nachbedingung & Informationen über Gültigkeit der Messergebnisse\\
 
 Die Abbildung \ref{fig:bpmn_use-case_analysis} zeigt die Ereignisabläufe der beiden ausgewählten und beschriebenen Anwendungsfälle des Analyseteils des Systems. In der ersten Reihe ist als wichtiger Schritt die Definition der historischen Daten hervorzuheben. Erst damit werden Werte aussagekräftig.
 
-Die Visualisierung der Daten ins untergliedert in zwei Typen. Der Nutzer kann zwischen der Visualisierung der gemessenen Werte und der berechneten Statistiken wählen. Für die Visualisierung der Statistiken müssen die Statistiken bereits berechnet worden sein. Die Durchführung der Analyse kann auch aus der Visualisierungsfunktion heraus aufgerufen werden.
+Die Visualisierung der Daten ins untergliedert in zwei Typen. Der Nutzer kann zwischen der Visualisierung der gemessenen Werte und der berechneten Statistiken wählen. Für die Visualisierung der Statistiken müssen die Statistiken bereits berechnet worden sein. Die Durchführung der Analyse kann auch aus der Visualisierungs-Funktion heraus aufgerufen werden.
 
 \begin{figure}[H]
 	\centering
@@ -256,16 +243,21 @@ Die Visualisierung der Daten ins untergliedert in zwei Typen. Der Nutzer kann zw
 \end{figure}
 
 
-\section{Produktfunktionen}
+\section{Nicht-funktionale Anforderungen}
 In diesem Kapitel beschreibe ich die nicht-funktionalen Anforderungen an das System beschreiben. Nicht-funktional bedeutet, dass beschrieben wird wie das System wo eingesetzt werden soll. Es handelt sich also um Eigenschaften des Systems, die keine technischen Funktionen sind.
 
-Im Folgenden werden die nicht-funktionalen Anforderungen aufgelistet und beschrieben:
 \begin{description}
 \item[Portabilität] Da das System besonders auf die Kommunikation zwischen der Arbeit im Feld und der Auswertung im Büro zugeschnitten ist, werden besondere Anforderungen an die Möglichkeit der Portierung auf verschiedene Betriebssysteme der mobilen Klienten gestellt. Das System soll damit Plattform-unabhängig sein. 
 \item[Rechenleistung] Wie im Punkt zuvor beschrieben soll das System auf unterschiedlichen mobilen Klienten eingesetzt werden können. Deren Auslegung auf die Mobilität geht meist zu Lasten der Rechenleistung der Hardware. Damit das Arbeiten mit dem System dennoch effizient und einfach gehalten werden kann, muss der mobile Teil des Systems für diese kleine Rechenleistung zugeschnitten werden.
 \item[Einfachheit] Die Hauptnutzer des Systems werden Ingenieure sein, die oft unter schwierigen Bedingungen arbeiten müssen. Die Bedienung eines IT-Systems sollte demnach so intuitiv und einfach wie möglich gestaltet werden, damit der Nutzer nicht unnötig Zeit in die Suche von Funktionen oder das Verstehen von Grafiken aufbringen muss.
 \end{description}
 
+Diese Liste beschreibt sehr grundlegende Anforderungen an ein System. Vor Allem wenn es sich um ein System handelt, das eine mobile Komponente beinhaltet. Dennoch sind dies sehr zentrale Anforderungen die in den nachfolgenden Kapiteln der Arbeit detaillierter aufgegriffen werden. Bei der näheren Beschreibung der Komponenten und ihrer Funktionsweise wird überprüft inwieweit diese den nicht-funktionalen Anforderungen gerecht wird. Ein System dass funktioniert, aber nicht in der geplanten Umgebung eingesetzt werden kann, erfüllt genauso wenig die Anforderungen, wie ein System dass den funktionalen Anforderungen nicht entspricht.
 
 
+\chapter{Prototyp}
+Ein Prototyp stellt in diesem Fall eine Software dar, die demonstrieren soll wie die Architektur und ein Teil der geplanten und beschriebenen Funktionen aussehen könnten. Mit Hilfe dieses Prototypen kann auch leicht evaluiert werden inwieweit die Funktionen die Probleme lösen können, und ob eine Weiterentwicklung in der eingeschlagenen Richtung Sinn machen würde. Üblicherweise stellt ein Prototyp lediglich einen Ausschnitt des Gesamtkonzeptes dar, im Folgenden möchte ich festlegen worauf ich mich mich verstärkt konzentrieren werde, und was in dem Prototypen enthalten sein wird. Die Grundlage für meine Auswahl waren zum Einen die Realisierbarkeit einer Implementierung in der kürze der Zeit und zum Anderen die mir zur Verfügung stehenden Mittel.
 
+In der Grafik \ref{fig:model_domain} habe ich die einzelnen Teile des Systems beschrieben. Für das Komplettsystem sind zweifelsohne alle Teile wichtig. Die Verbindung aus Server, mobiler Klient und automatische Sensoren stellt jedoch den Teil mit der größten Innovation dar. Ohne die beiden anderen Teile vollständig außer Acht zu lassen werde ich mich in den nachfolgenden Kapiteln verstärkt mit dieser Verbindung und der Beschreibung der drei Teile befassen.
+
+Die Architektur und Funktionsweise des Prototypen wird im dritten Teil der Arbeit beschrieben. Dort werden auch die in diesem Teil beschriebenen Arbeitsabläufe getestet und evaluiert. Am Ende soll eine Aussage darüber möglich sein, ob das System funktionstüchtig konzipiert wurde, ob alle wesentliche Teile enthalten sind, und ob für die Nutzergruppen ein Mehrwert geschaffen wurde.

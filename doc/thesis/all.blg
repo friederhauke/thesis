@@ -6,7 +6,7 @@ Database file #1: references.bib
 Warning--I didn't find a database entry for "worden_overview_2004"
 You've used 3 entries,
             2773 wiz_defined-function locations,
-            616 strings with 5640 characters,
+            616 strings with 5632 characters,
 and the built_in function-call counts, 1640 in all, are:
 = -- 166
 > -- 52

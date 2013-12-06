@@ -1,90 +1,127 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{jeff_de_la_beaujardiere_opengis_2006}
-{\sc de~la Beaujardiere, J.}
+\bibitem[de~la Beaujardiere(2006)]{jeff_de_la_beaujardiere_opengis_2006}
+Jeff de~la Beaujardiere.
 \newblock {OpenGIS{\textregistered}} web map server implementation
-  specification, Mar. 2006.
+  specification, March 2006.
 
-\bibitem{douglas_nebert_opengis_2007}
-{\sc {Douglas Nebert}, {Arliss Whiteside}, and {Panagiotis (Peter) Vretanos}}.
-\newblock {OpenGIS{\textregistered}} catalogue services specification, Feb.
+\bibitem[Erwig et~al.(1999)Erwig, Gu, Schneider, and
+  Vazirgiannis]{erwig_spatio-temporal_1999}
+Martin Erwig, Ralf~Hartmut Gu, Markus Schneider, and Michalis Vazirgiannis.
+\newblock Spatio-temporal data types: An approach to modeling and querying
+  moving objects in databases.
+\newblock \emph{{GeoInformatica}}, 3\penalty0 (3):\penalty0
+  269{\textendash}296, 1999.
+\newblock URL \url{http://link.springer.com/article/10.1023/A:1009805532638}.
+\newblock 00392.
+
+\bibitem[Gr{\"o}ger et~al.(2012)Gr{\"o}ger, Kolbe, Nagel, and
+  H{\"a}fele]{gerhard_groger_ogc_2012}
+Gerhard Gr{\"o}ger, Thomas~H. Kolbe, Claus Nagel, and Karl-Heinz H{\"a}fele.
+\newblock {OGC} city geography markup language ({CityGML)} encoding standard.
+\newblock April 2012.
+\newblock URL
+  \url{http://opportunity.bv.tu-berlin.de/gis-projects/attachments/1045/12-019_OGC_City_Geography_Markup_Language_CityGML_Encoding_Standard.pdf}.
+
+\bibitem[Gumhold et~al.(2001)Gumhold, Wang, and
+  {MacLeod}]{gumhold_feature_2001}
+Stefan Gumhold, Xinlong Wang, and Rob {MacLeod}.
+\newblock Feature extraction from point clouds.
+\newblock volume 2001, 2001.
+\newblock URL \url{http://www.cs.utah.edu/~sgumhold/Finals/fe_preprint.pdf}.
+\newblock 00186.
+
+\bibitem[Kolbe and Schilling(2009)]{kolbe_draft_2009}
+Thomas~H. Kolbe and Arne Schilling.
+\newblock Draft for {OpenGIS{\textregistered}} web {3D} service implementation
+  standard, November 2009.
+\newblock 00000.
+
+\bibitem[Kolbe et~al.(2009)Kolbe, K{\"o}nig, Nagel, and
+  Stadler]{kolbe_3d-geo-database_2009}
+Thomas~H. Kolbe, Gerhard K{\"o}nig, Claus Nagel, and Alexandra Stadler.
+\newblock {3D-Geo-Database} for {CityGML}.
+\newblock \emph{Institute for Geodesy and Geoinformation Science Technische
+  Universit{\"a}t Berlin, Documentation}, 2009.
+\newblock URL
+  \url{http://opportunity.bv.tu-berlin.de/svn/3dcitydb-imp-exp/tags/1.4.0-postgis/resources/manual/3DCityDB-Documentation-v2_0.pdf}.
+\newblock 00005.
+
+\bibitem[Koubarakis(2003)]{koubarakis_spatio-temporal_2003}
+Manolis Koubarakis.
+\newblock \emph{Spatio-temporal databases: The {CHOROCHRONOS} approach}, volume
+  2520.
+\newblock Springer, 2003.
+\newblock URL
+  \url{http://books.google.de/books?hl=de&lr=&id=nesBMrZyy5oC&oi=fnd&pg=PA1&dq=Spatio-Temporal+Conceptual+Models+&ots=stnDFqXZZu&sig=jN1pjIwLmIQis4fED7UalLz2kU4}.
+
+\bibitem[Nebert et~al.(2007)Nebert, Whiteside, and
+  Vretanos]{douglas_nebert_opengis_2007}
+Douglas Nebert, Arliss Whiteside, and Panagiotis~(Peter) Vretanos.
+\newblock {OpenGIS{\textregistered}} catalogue services specification, February
   2007.
 \newblock 00074.
 
-\bibitem{erwig_spatio-temporal_1999}
-{\sc Erwig, M., Gu, R.~H., Schneider, M., and Vazirgiannis, M.}
-\newblock Spatio-temporal data types: An approach to modeling and querying
-  moving objects in databases.
-\newblock {\em {GeoInformatica} 3}, 3 (1999), 269{\textendash}296.
-\newblock 00392.
-
-\bibitem{gerhard_groger_ogc_2012}
-{\sc Gr{\"o}ger, G., Kolbe, T.~H., Nagel, C., and H{\"a}fele, K.-H.}
-\newblock {OGC} city geography markup language ({CityGML)} encoding standard.
-
-\bibitem{gumhold_feature_2001}
-{\sc Gumhold, S., Wang, X., and {MacLeod}, R.}
-\newblock Feature extraction from point clouds.
-\newblock vol.~2001.
-\newblock 00186.
-
-\bibitem{kolbe_3d-geo-database_2009}
-{\sc Kolbe, T.~H., K{\"o}nig, G., Nagel, C., and Stadler, A.}
-\newblock {3D-Geo-Database} for {CityGML}.
-\newblock {\em Institute for Geodesy and Geoinformation Science Technische
-  Universit{\"a}t Berlin, Documentation\/} (2009).
-\newblock 00005.
-
-\bibitem{thomas_h._kolbe_draft_2009}
-{\sc {Kolbe, T. H. }, and {Schilling, A.}}
-\newblock Draft for {OpenGIS{\textregistered}} web {3D} service implementation
-  standard, Nov. 2009.
-\newblock 00000.
-
-\bibitem{koubarakis_spatio-temporal_2003}
-{\sc Koubarakis, M.}
-\newblock {\em Spatio-temporal databases: The {CHOROCHRONOS} approach},
-  vol.~2520.
-\newblock Springer, 2003.
-
-\bibitem{papazoglou_web_2008}
-{\sc Papazoglou, M.}
-\newblock {\em Web services: principles and technology}.
+\bibitem[Papazoglou(2008)]{papazoglou_web_2008}
+Michael Papazoglou.
+\newblock \emph{Web services: principles and technology}.
 \newblock Pearson Education, 2008.
+\newblock URL
+  \url{http://books.google.de/books?hl=de&lr=&id=0qLX9nl87EwC&oi=fnd&pg=PR19&dq=Papazoglou,+Micheal+(2008).+Web+Services:+Principles+and+Technology.+Pearson+Education.&ots=CmZLTuM4Uw&sig=z6Z73NhEeSND6I1T6GoRwBwxH1E}.
 \newblock 00619.
 
-\bibitem{schnabel_efficient_2010}
-{\sc Schnabel, R.}
-\newblock {\em Efficient point-cloud processing with primitive shapes.}
+\bibitem[Schnabel(2010)]{schnabel_efficient_2010}
+Ruwen Schnabel.
+\newblock \emph{Efficient point-cloud processing with primitive shapes.}
 \newblock PhD thesis, University of Bonn, 2010.
+\newblock URL \url{http://hss.ulb.uni-bonn.de/2010/2319/2319a.pdf}.
 \newblock 00001.
 
-\bibitem{schnabel_efficient_2007}
-{\sc Schnabel, R., Wahl, R., and Klein, R.}
+\bibitem[Schnabel et~al.(2007)Schnabel, Wahl, and
+  Klein]{schnabel_efficient_2007}
+Ruwen Schnabel, Roland Wahl, and Reinhard Klein.
 \newblock Efficient {RANSAC} for point-cloud shape detection.
-\newblock vol.~26, p.~214{\textendash}226.
+\newblock volume~26, page 214{\textendash}226, 2007.
+\newblock URL
+  \url{http://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2007.01016.x/full}.
 
-\bibitem{strobl_geodatenmanagement_2007}
-{\sc Strobl, C., Kiefl, R., Riedlinger, T., and Strunz, G.}
+\bibitem[Strobl et~al.(2007)Strobl, Kiefl, Riedlinger, and
+  Strunz]{strobl_geodatenmanagement_2007}
+Christian Strobl, Ralph Kiefl, Torsten Riedlinger, and G{\"u}nter Strunz.
 \newblock Geodatenmanagement und-dienste am beispiel des
   tsunami-fr{\"u}hwarnsystems f{\"u}r den indischen ozean.
+\newblock 2007.
+\newblock URL
+  \url{http://www.preagro.de/ezai/index.php/eZAI/article/viewArticle/25}.
 
-\bibitem{panagiotis_a._vretanos_opengis_2005}
-{\sc Vretanos, P.~A.}
+\bibitem[Vretanos(2005)]{panagiotis_a._vretanos_opengis_2005}
+Panagiotis~A. Vretanos.
 \newblock {OpenGIS{\textregistered}} filter encoding implementation
   specification, May 2005.
 
-\bibitem{yuan_temporal_1996}
-{\sc Yuan, M.}
+\bibitem[Vretanos(2010)]{panagiotis_a._vretanos_opengis_2010}
+Panagiotis~A. Vretanos.
+\newblock {OpenGIS} web feature service 2.0 interface standard, November 2010.
+
+\bibitem[Yuan(1996)]{yuan_temporal_1996}
+May Yuan.
 \newblock Temporal {GIS} and spatio-temporal modeling.
-\newblock In {\em Proceedings of Third International Conference Workshop on
-  Integrating {GIS} and Environment Modeling, Santa Fe, {NM}\/} (1996).
+\newblock In \emph{Proceedings of Third International Conference Workshop on
+  Integrating {GIS} and Environment Modeling, Santa Fe, {NM}}, 1996.
+\newblock URL \url{http://loi.sscc.ru/gis/data_model/may.html}.
 \newblock 00102.
 
-\bibitem{zienkiewicz_finite_1977}
-{\sc Zienkiewicz, O.~C., and Taylor, R.~L.}
-\newblock {\em The finite element method}, vol.~3.
+\bibitem[Zienkiewicz and Taylor(1977)]{zienkiewicz_finite_1977}
+Olgierd~Cecil Zienkiewicz and Robert~Leroy Taylor.
+\newblock \emph{The finite element method}, volume~3.
 \newblock {McGraw-hill} London, 1977.
+\newblock URL
+  \url{http://www.dandelon.com/servlet/download/attachments/dandelon/ids/DE001C964953B446034A0C1257276003D0A31.pdf}.
 \newblock 19608.
 
 \end{thebibliography}

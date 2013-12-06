@@ -29,10 +29,7 @@
 
 %--- Abreviations ---
 \usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
-\makeglossaries
-\usepackage[xindy]{imakeidx}
-\makeindex
-
+\makeglossary
 
 %--- Figures, Captions, Labels ---
 %\usepackage[bf]{caption2}
@@ -127,6 +124,10 @@
 \addcontentsline{toc}{section}{Tabellenverzeichnis}
 \listoftables
 
+\newpage
+\printglossary[title=Akronyme]
+
+
 
 % -------------------------------
 % --- main body of the thesis ---
@@ -154,15 +155,10 @@
 
 
 % -------------------
-% --- Glossar	 ---
+% ---Akronyme	 ---
 % -------------------
-%\glsaddall
-
-% Glossary
-\printglossary[style=altlist,title=Glossar]
-
 % Acronyms
-\printglossary[type=\acronymtype,style=long,title=Akronyme]
+
 
 
 % -------------------

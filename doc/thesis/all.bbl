@@ -14,6 +14,14 @@ Christian Boller and W.~J. Staszewski.
   \url{http://www.gruppofrattura.it/pdf/eventi/2008/SHM%20Cracow.PDF.pdf}.
 \newblock 00012.
 
+\bibitem[Engels(2006)]{engels_vorlesung_2006}
+Gregor Engels.
+\newblock Vorlesung softwareentwurf - {AG} engels, datenbank- und
+  informationssysteme, 2006.
+\newblock URL
+  \url{http://www2.cs.uni-paderborn.de/cs/ag-engels/ag_dt/Courses/Lehrveranstaltungen/WS0607/SE/unterlagen.html}.
+\newblock 00000.
+
 \bibitem[Farrar and Worden(2007)]{farrar_introduction_2007}
 Charles~R. Farrar and Keith Worden.
 \newblock An introduction to structural health monitoring.
@@ -22,13 +30,5 @@ Charles~R. Farrar and Keith Worden.
   (1851):\penalty0 303{\textendash}315, 2007.
 \newblock URL
   \url{http://rsta.royalsocietypublishing.org/content/365/1851/303.short}.
-
-\bibitem[{Gregor Engels}(2006)]{gregor_engels_vorlesung_2006}
-{Gregor Engels}.
-\newblock Vorlesung softwareentwurf - {AG} engels, datenbank- und
-  informationssysteme, 2006.
-\newblock URL
-  \url{http://www2.cs.uni-paderborn.de/cs/ag-engels/ag_dt/Courses/Lehrveranstaltungen/WS0607/SE/unterlagen.html}.
-\newblock 00000.
 
 \end{thebibliography}

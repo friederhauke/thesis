@@ -1,34 +1,54 @@
-\documentclass[a4paper,11pt]{article}
 
-\usepackage{amsmath,amssymb,amsfonts,amsthm}    % Typical maths resource packages
-\usepackage{graphicx}                           % Packages to allow inclusion of graphics
-\usepackage{hyperref}                           % For creating hyperlinks in cross references
-\usepackage{url}
-\usepackage{alltt}
-\usepackage{listings}
-\usepackage{rotating}
+\documentclass[a4paper,11pt]{report}
 
-\usepackage{multicol,multirow}
-\usepackage{graphicx}
-\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
-%\geometry{landscape}                % Activate for for rotated page geometry
-\usepackage[parfill]{parskip}        % Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{subfig}
-\usepackage{epstopdf}
-\usepackage{float}
-\usepackage{color}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}    	% Typical maths resource packages
 
-\usepackage[refpage]{nomencl}
-%\usepackage[printonlyused]{acronym}	% Load Aronym list for only used acronyms
-%\usepackage{glossaries}
+\usepackage{url}									% Enter URL like \url{...}
+\usepackage{hyperref}                           	% For creating hyperlinks in cross references
+
+\usepackage{listings}                           	% Packages to allow inclusion of lists
+\usepackage{rotating}                           	% Packages to allow rotations
+
+\usepackage{multicol,multirow}                   % Packages to allow multi collum / row text
+\usepackage{geometry}							% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{landscape}							% Activate for for rotated page geometry
+\usepackage[parfill]{parskip}        			% Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{epstopdf}							% eneables use of eps with PDFtoLatex
+\usepackage{float}								% use big tables, figures broken by page-change
+%\floatstyle{style: plained, plaintop, boxed, ruled)} % Specification for sutom float style
+%\newfloat{type}{placement}{ext}[outer counter]	% Specification for sutom float style
+
+%--- Encodings & Fonts ---
+\usepackage[utf8]{inputenc}						% Input Encodings of the used Editor
+\usepackage[T1]{fontenc}							% font encoding (e.g. for textcopy out of PDFs)
+\usepackage{textcomp}							% for special characters like (degree, euro-symbol, greek-symbols, ..)
+%\usepackage{verbatim}							% "wörtlich" writes with /begin and /end verbatim paragraphes in normal form
+\usepackage{alltt}								% as verbatim but slightly different
+%\usepackage{color}								% Enable use of colored texts
 
 
-% -------------------------------
-\usepackage[round]{natbib}		% literature reference style --> round mean author,year citation style!
-% -------------------------------
+%--- Abreviations ---
+\usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\makeglossaries
+\usepackage[xindy]{imakeidx}
+\makeindex
 
-% define topline
+
+%--- Figures, Captions, Labels ---
+%\usepackage[bf]{caption2}
+\usepackage{subfig}								% enables small figures order within one header figure
+\usepackage{graphicx}                           	% Packages to allow inclusion of graphics
+
+
+%--- Language ---
+\usepackage[german]{babel}
+
+
+%--- citation and literature ---
+\usepackage[round]{natbib}						% literature reference style --> round mean author,year citation style!
+
+
+%--- define topline ---
 \usepackage[automark]{scrpage2}
 \pagestyle{scrheadings}
 \automark{section}
@@ -36,10 +56,8 @@
 \ohead{\headmark}
 \cfoot{\pagemark}
 
-% define citation style
 
-
-% define page size, margin size
+%--- define page size, margin size ---
 \setlength{\headheight}{1.1\baselineskip}
 \voffset=-3cm
 \hoffset=-3cm
@@ -55,32 +73,6 @@
 % define second level for `itemizing'
 \renewcommand{\labelitemii}{-}
 
-% --------------------------------------
-% --------------------------------------
-% --------------------------------------
-% --- the structure the tex document ---
-% ---  (this our recommendation) -------
-% frontmatter:
-%   - titlepage (mandatory),
-%   - acknowledgement,
-%   - abstract,
-%   - table of contents (mandatory),
-%   - list of abbreviations (not mandatory),
-%   - list of figures (not mandatory),
-%   - list of tables  (not mandatory) .
-%
-% body of the thesis (the structure of the thesis body is not mandatory, but the list of literature is mandatory):
-%   - introduction,
-%   - methods,
-%   - data,
-%   - results,
-%   - conclusion,
-%   - literature (mandatory),
-%   - appendix (figures, tables).
-%
-% last page:
-%   - declaration of authorship (mandatory).
-% --------------------------------------
 % --------------------------------------
 % --------------------------------------
 
@@ -123,7 +115,7 @@
 % --- frontmatter: List of Figures (not mandatory) ---
 % ----------------------------------------------------
 %\newpage
-%\addcontentsline{toc}{section}{List of Figures}
+%\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 %\ohead[]{\rightmark}
 %\listoffigures
 
@@ -132,25 +124,16 @@
 % --- frontmatter: List of Tables (not mandatory) ---
 % ---------------------------------------------------
 %\newpage
-%\addcontentsline{toc}{section}{List of Tables}
+%\addcontentsline{toc}{section}{Tabellenverzeichnis}
 %\listoftables
-
-
-% ----------------------------------------------------
-% --- frontmatter: List of Figures (not mandatory) ---
-% ----------------------------------------------------
-\newpage
-\addcontentsline{toc}{section}{List of Abbreviations}
-\makenomenclature
-\printnomenclature
 
 
 % -------------------------------
 % --- main body of the thesis ---
 % -------------------------------
 \newpage
-\setcounter{page}{1}    % start page numbering anew
-\pagenumbering{arabic}  % page numbers in arabic style
+\setcounter{page}{1}    								% start page numbering anew
+\pagenumbering{arabic}  								% page numbers in arabic style
 \setcounter{secnumdepth}{4}
 
 
@@ -160,9 +143,6 @@
 \section{Methods}
 \input{methods}
 
-%\section{relevant studies}
-%\input{studies}
-
 \section{Expected Results}
 \input{results}
 
@@ -170,9 +150,18 @@
 \input{problems}
 
 
+% -------------------
+% ---Akronyme	 ---
+% -------------------
+% Acronyms
+%\printglossary[title=Akronyme]
 
+
+% -------------------
+% --- References	 ---
+% -------------------
 \pagebreak
-\bibliographystyle{acm}
+\bibliographystyle{plainnat}
 \bibliography{references}{}
 
 \end{document}
