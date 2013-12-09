@@ -4,45 +4,46 @@ The top-level auxiliary file: all.aux
 The style file: plainnat.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "worden_overview_2004"
-You've used 3 entries,
+Warning--empty journal in strobl_geodatenmanagement_2007
+You've used 7 entries,
             2773 wiz_defined-function locations,
-            616 strings with 5632 characters,
-and the built_in function-call counts, 1640 in all, are:
-= -- 166
-> -- 52
+            642 strings with 6761 characters,
+and the built_in function-call counts, 4228 in all, are:
+= -- 377
+> -- 298
 < -- 4
-+ -- 18
-- -- 15
-* -- 96
-:= -- 220
-add.period$ -- 13
-call.type$ -- 3
-change.case$ -- 14
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 89
-empty$ -- 141
-format.name$ -- 22
-if$ -- 375
++ -- 100
+- -- 93
+* -- 351
+:= -- 647
+add.period$ -- 30
+call.type$ -- 7
+change.case$ -- 52
+chr.to.int$ -- 7
+cite$ -- 15
+duplicate$ -- 172
+empty$ -- 285
+format.name$ -- 104
+if$ -- 888
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 27
-num.names$ -- 12
-pop$ -- 31
+missing$ -- 6
+newline$ -- 52
+num.names$ -- 28
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 45
 quote$ -- 0
-skip$ -- 91
+skip$ -- 164
 stack$ -- 0
-substring$ -- 93
-swap$ -- 35
+substring$ -- 144
+swap$ -- 39
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 33
-warning$ -- 0
-while$ -- 11
+type$ -- 77
+warning$ -- 1
+while$ -- 27
 width$ -- 0
-write$ -- 53
-(There was 1 warning)
+write$ -- 113
+(There were 2 warnings)

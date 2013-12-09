@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,5 +30,42 @@ Charles~R. Farrar and Keith Worden.
   (1851):\penalty0 303{\textendash}315, 2007.
 \newblock URL
   \url{http://rsta.royalsocietypublishing.org/content/365/1851/303.short}.
+
+\bibitem[Lauterjung et~al.(2011)Lauterjung, Hanka, Sch{\"o}ne, Ramatschi,
+  Babeyko, W{\"a}chter, Falck, Milkereit, M{\"u}nch, and
+  Rudloff]{lauterjung_gitewstsunami-fruhwarnsystem_2011}
+J.~Lauterjung, W.~Hanka, T.~Sch{\"o}ne, M.~Ramatschi, A.~Babeyko,
+  J.~W{\"a}chter, C.~Falck, C.~Milkereit, U.~M{\"u}nch, and A.~Rudloff.
+\newblock {GITEWS{\textendash}das} tsunami-fr{\"u}hwarnsystem f{\"u}r den
+  indischen ozean.
+\newblock \emph{{GFZ} - System Erde}, 1:\penalty0 48, 2011.
+\newblock 00001.
+
+\bibitem[L{\"u}hr et~al.(2011)L{\"u}hr, Milkereit, Parolai, Picozzi, Woith,
+  Strollo, Ansal, and Zschau]{luhr_sekunden_2011}
+B-G. L{\"u}hr, C.~Milkereit, S.~Parolai, M.~Picozzi, H.~Woith, A.~Strollo,
+  A.~Ansal, and J.~Zschau.
+\newblock Sekunden f{\"u}r istanbul.
+\newblock \emph{{GFZ} - System Erde}, 1:\penalty0 18, 2011.
+
+\bibitem[Spahn et~al.(2010)Spahn, Hoppe, Vidiarina, and
+  Usdianto]{spahn_experience_2010}
+H.~Spahn, M.~Hoppe, H.~D. Vidiarina, and B.~Usdianto.
+\newblock Experience from three years of local capacity development for tsunami
+  early warning in indonesia: challenges, lessons and the way ahead.
+\newblock \emph{Natural Hazards and Earth System Science}, 10\penalty0
+  (7):\penalty0 1411--1429, July 2010.
+\newblock ISSN 1684-9981.
+\newblock \doi{10.5194/nhess-10-1411-2010}.
+\newblock URL \url{http://www.nat-hazards-earth-syst-sci.net/10/1411/2010/}.
+
+\bibitem[Strobl et~al.(2007)Strobl, Kiefl, Riedlinger, and
+  Strunz]{strobl_geodatenmanagement_2007}
+Christian Strobl, Ralph Kiefl, Torsten Riedlinger, and G{\"u}nter Strunz.
+\newblock Geodatenmanagement und-dienste am beispiel des
+  tsunami-fr{\"u}hwarnsystems f{\"u}r den indischen ozean.
+\newblock 2007.
+\newblock URL
+  \url{http://www.preagro.de/ezai/index.php/eZAI/article/viewArticle/25}.
 
 \end{thebibliography}

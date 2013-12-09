@@ -3,13 +3,14 @@
 \BOOKMARK [0][-]{section*.4}{Akronyme}{}% 3
 \BOOKMARK [-1][-]{part.1}{I Einleitung und Motivation}{}% 4
 \BOOKMARK [0][-]{chapter.1}{Einf\374hrung in die Problematik}{part.1}% 5
-\BOOKMARK [0][-]{chapter.2}{Softwareanforderungen}{part.1}% 6
-\BOOKMARK [1][-]{section.2.1}{Einsatzgebiet}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{Modell des Problembereichs}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{Gesch\344ftsprozesse}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{Produktfunktionen}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{Nutzergruppen}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.2}{Anwendungsf\344lle}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Nicht-funktionale Anforderungen}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{Prototyp}{part.1}% 14
-\BOOKMARK [-1][-]{part.2}{II Methoden}{}% 15
+\BOOKMARK [1][-]{section.1.1}{Vergleichbare Systeme}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Softwareanforderungen}{part.1}% 7
+\BOOKMARK [1][-]{section.2.1}{Einsatzgebiet}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Modell des Problembereichs}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{Gesch\344ftsprozesse}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Produktfunktionen}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Nutzergruppen}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Anwendungsf\344lle}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Nicht-funktionale Anforderungen}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Prototyp}{part.1}% 15
+\BOOKMARK [-1][-]{part.2}{II Methoden}{}% 16
