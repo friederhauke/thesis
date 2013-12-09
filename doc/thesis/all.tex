@@ -74,15 +74,15 @@
 % --------------------------------------
 % --------------------------------------
 
+
 \begin{document}
+
 
 % -------------------------------
 % --- frontmatter: Title page ---
 % -------------------------------
 \thispagestyle{empty}
-
 \input{chapters/titlepage}
-
 
 
 % ------------------------------------
@@ -93,12 +93,12 @@
 \setcounter{page}{1}    % start page numbering
 %\input{acknowledgement}
 
+
 % -----------------------------
 % --- frontmatter: Abstract ---
 % -----------------------------
 %\newpage
 %\input{abstract}
-
 
 
 % -----------------------------
@@ -113,7 +113,7 @@
 % --- frontmatter: List of Figures (not mandatory) ---
 % ----------------------------------------------------
 \newpage
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \ohead[]{\rightmark}
 \listoffigures
 
@@ -122,9 +122,13 @@
 % --- frontmatter: List of Tables (not mandatory) ---
 % ---------------------------------------------------
 \newpage
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables
 
+
+% ------------------------------
+% --- frontmatter: Acronyms	---
+% ------------------------------
 \newpage
 \printglossary[title=Akronyme]
 
@@ -139,27 +143,14 @@
 \setcounter{secnumdepth}{4}
 
 
-\part{Einleitung und Motivation}
+\part{Einleitung}
 \input{chapters/introduction}
 
-\part{Methoden}
+\part{Anforderungen}
+\input{chapters/requirements}
+
+\part{Architektur}
 \input{chapters/methods}
-
-%\section{relevant studies}
-%\input{studies}
-
-%\section{Expected Results}
-%\input{chapters/results}
-%
-%\section{Expected Problems}
-%\input{chapters/problems}
-
-
-% -------------------
-% ---Akronyme	 ---
-% -------------------
-% Acronyms
-
 
 
 % -------------------

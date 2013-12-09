@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  8 DEC 2013 19:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  9 DEC 2013 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,15 +1107,21 @@ Package scrpage2 Warning: seems you are using a very small headheight.
 \openout3 = `all.xdy'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./all.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[1
+
+])
 \tf@toc=\write6
 \openout6 = `all.toc'.
 
@@ -1123,9 +1129,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[1
-
-] (./all.lof)
+[2] (./all.lof)
 \tf@lof=\write7
 \openout7 = `all.lof'.
 
@@ -1133,7 +1137,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[2
+[3
 
 ] (./all.lot)
 \tf@lot=\write8
@@ -1143,13 +1147,13 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[3
+[4
 
 ] (./all.acr)
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[4
+[5
 
 
 ]
@@ -1159,8 +1163,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \part{Einleitung und Motivation}
-                                       [1
+l.142 \part{Einleitung}
+                        [1
 
 ] (./chapters/introduction.tex
 Kapitel 1.
@@ -1174,7 +1178,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[3] <graphics/GITEWS_Warning_Centre_01.jpg, id=183, 507.8975pt x 337.26pt>
+[3] <graphics/GITEWS_Warning_Centre_01.jpg, id=237, 507.8975pt x 337.26pt>
 File: graphics/GITEWS_Warning_Centre_01.jpg Graphic file (type jpg)
 
 <use graphics/GITEWS_Warning_Centre_01.jpg>
@@ -1182,7 +1186,7 @@ Package pdftex.def Info: graphics/GITEWS_Warning_Centre_01.jpg used on input li
 ne 24.
 (pdftex.def)             Requested size: 228.55176pt x 151.7656pt.
 
-<graphics/SOSEWIN_Sensor_Bridge.jpg, id=193, 693.59125pt x 438.63875pt>
+<graphics/SOSEWIN_Sensor_Bridge.jpg, id=247, 693.59125pt x 438.63875pt>
 File: graphics/SOSEWIN_Sensor_Bridge.jpg Graphic file (type jpg)
 
 <use graphics/SOSEWIN_Sensor_Bridge.jpg>
@@ -1193,47 +1197,56 @@ Package pdftex.def Info: graphics/SOSEWIN_Sensor_Bridge.jpg used on input line
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[4 <./graphics/GITEWS_Warning_Centre_01.jpg>]
+[4 <./graphics/GITEWS_Warning_Centre_01.jpg>])
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [5 <./graphics/SOSEWIN_Sensor_Bridge.jpg>]
-Kapitel 2.
-
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [6
 
-]
+] (./chapters/requirements.tex
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
-Package natbib Warning: Citation `worden_overview_2004' on page 7 undefined on 
-input line 51.
+
+[7]
+Kapitel 2.
+
+Package natbib Warning: Citation `worden_overview_2004' on page 8 undefined on 
+input line 9.
 
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[7] <graphics/model_of_issue.jpg, id=229, 647.41875pt x 422.57875pt>
+[8
+
+]
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[9] <graphics/model_of_issue.jpg, id=291, 647.41875pt x 422.57875pt>
 File: graphics/model_of_issue.jpg Graphic file (type jpg)
 
 <use graphics/model_of_issue.jpg>
-Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 65.
+Package pdftex.def Info: graphics/model_of_issue.jpg used on input line 23.
 (pdftex.def)             Requested size: 388.45424pt x 253.5492pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[8 <./graphics/model_of_issue.jpg>]
-<graphics/bpmn_business-processes.jpg, id=235, 2532.46124pt x 594.22pt>
+[10 <./graphics/model_of_issue.jpg>]
+<graphics/bpmn_business-processes.jpg, id=297, 2532.46124pt x 594.22pt>
 File: graphics/bpmn_business-processes.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_business-processes.jpg>
 Package pdftex.def Info: graphics/bpmn_business-processes.jpg used on input lin
-e 82.
+e 40.
 (pdftex.def)             Requested size: 506.48328pt x 118.84189pt.
 
-Overfull \hbox (37.01282pt too wide) in paragraph at lines 82--83
+Overfull \hbox (37.01282pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
@@ -1241,60 +1254,34 @@ Overfull \hbox (37.01282pt too wide) in paragraph at lines 82--83
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[9]
+[11 <./graphics/bpmn_business-processes.jpg>]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[10 <./graphics/bpmn_business-processes.jpg>]
-<graphics/uml_functionalities.jpg, id=246, 668.4975pt x 604.2575pt>
+[12]
+Kapitel 3.
+<graphics/uml_functionalities.jpg, id=309, 668.4975pt x 604.2575pt>
 File: graphics/uml_functionalities.jpg Graphic file (type jpg)
 
 <use graphics/uml_functionalities.jpg>
-Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 10
-3.
+Package pdftex.def Info: graphics/uml_functionalities.jpg used on input line 61
+.
 (pdftex.def)             Requested size: 401.1016pt x 362.5573pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[11 <./graphics/uml_functionalities.jpg>]
+[13
+
+]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[12]
+[14 <./graphics/uml_functionalities.jpg>]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[13]
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[14]
-<graphics/bpmn_use-cases_management.jpg, id=272, 1877.0125pt x 767.86874pt>
-File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
-
-<use graphics/bpmn_use-cases_management.jpg>
-Package pdftex.def Info: graphics/bpmn_use-cases_management.jpg used on input l
-ine 171.
-(pdftex.def)             Requested size: 450.4922pt x 184.29225pt.
-
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[15 <./graphics/bpmn_use-cases_management.jpg>]
-<graphics/bpmn_use-cases_measurement.jpg, id=282, 2123.935pt x 692.5875pt>
-File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
-
-<use graphics/bpmn_use-cases_measurement.jpg>
-Package pdftex.def Info: graphics/bpmn_use-cases_measurement.jpg used on input 
-line 216.
-(pdftex.def)             Requested size: 509.75482pt x 166.2244pt.
-
-Overfull \hbox (40.28436pt too wide) in paragraph at lines 216--217
- [][] 
- []
-
-
+[15]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
@@ -1302,44 +1289,124 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[17 <./graphics/bpmn_use-cases_measurement.jpg>]
-<graphics/bpmn_use-cases_analysis.jpg, id=295, 1596.96625pt x 640.3925pt>
+[17]
+<graphics/bpmn_use-cases_management.jpg, id=336, 1877.0125pt x 767.86874pt>
+File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
+
+<use graphics/bpmn_use-cases_management.jpg>
+Package pdftex.def Info: graphics/bpmn_use-cases_management.jpg used on input l
+ine 129.
+(pdftex.def)             Requested size: 450.4922pt x 184.29225pt.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[18 <./graphics/bpmn_use-cases_management.jpg>]
+<graphics/bpmn_use-cases_measurement.jpg, id=344, 2123.935pt x 692.5875pt>
+File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
+
+<use graphics/bpmn_use-cases_measurement.jpg>
+Package pdftex.def Info: graphics/bpmn_use-cases_measurement.jpg used on input 
+line 174.
+(pdftex.def)             Requested size: 509.75482pt x 166.2244pt.
+
+Overfull \hbox (40.28436pt too wide) in paragraph at lines 174--175
+ [][] 
+ []
+
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[19]
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[20 <./graphics/bpmn_use-cases_measurement.jpg>]
+<graphics/bpmn_use-cases_analysis.jpg, id=357, 1596.96625pt x 640.3925pt>
 File: graphics/bpmn_use-cases_analysis.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_analysis.jpg>
 Package pdftex.def Info: graphics/bpmn_use-cases_analysis.jpg used on input lin
-e 258.
+e 216.
 (pdftex.def)             Requested size: 383.27974pt x 153.69733pt.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[18]
+[21]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[19 <./graphics/bpmn_use-cases_analysis.jpg>]
+[22 <./graphics/bpmn_use-cases_analysis.jpg>]
+Kapitel 4.
+
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[20]
-Kapitel 3.
-)
-Overfull \vbox (6.78236pt too high) has occurred while \output is active []
-
-
-[21
+[23
 
 ]
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[22
+[24]
+Kapitel 5.
+)
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
-] (./chapters/methods.tex) (./all.bbl
+
+[25
+
+]
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[26
+
+] (./chapters/methods.tex
+Kapitel 6.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[27
+
+]
+Kapitel 7.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[28
+
+]
+Kapitel 8.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[29
+
+]
+Kapitel 9.
+
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[30
+
+]
+Kapitel 10.
+)
+Overfull \vbox (6.78236pt too high) has occurred while \output is active []
+
+
+[31
+
+] (./all.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 2846) in paragraph at lines 18--24
@@ -1357,42 +1424,42 @@ Underfull \hbox (badness 1762) in paragraph at lines 18--24
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[23
+[32
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
  (./all.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `all.out' has not changed.
-(rerunfilecheck)             Checksum: 01C2C233BC37CF13BDD0C3A1827C2647;1006.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+(rerunfilecheck)             Checksum: 06421F7E8DBCA03005B7E29C4E59580B;1539.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 14823 strings out of 494979
- 213574 string characters out of 6179170
- 370620 words of memory out of 5000000
- 17666 multiletter control sequences out of 15000+600000
+ 14851 strings out of 494979
+ 213798 string characters out of 6179170
+ 369630 words of memory out of 5000000
+ 17676 multiletter control sequences out of 15000+600000
  18189 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,10n,96p,1462b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,10n,96p,1462b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
  </tmp/texfonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </tmp/texfonts/pk/ljfou
-r/jknappen/ec/ecti1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecsl1095.600
-pk> </tmp/texfonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </tmp/texfonts/pk/ljfo
-ur/jknappen/ec/ecbx2074.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1200.60
+r/jknappen/ec/ecti1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/tcrm1095.600
+pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </tmp/texfonts/pk/ljfo
+ur/jknappen/ec/ecsl1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1200.60
 0pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </tmp/texfonts/pk/ljf
 our/jknappen/ec/ecbx1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm1095.6
 00pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on all.pdf (28 pages, 705299 bytes).
+Output written on all.pdf (38 pages, 717436 bytes).
 PDF statistics:
- 756 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
