@@ -1,49 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: all.aux
+A level-1 auxiliary file: chapters/methods_bauwerksueberwachung.aux
+A level-1 auxiliary file: chapters/methods_sensortypen.aux
+A level-1 auxiliary file: chapters/methods_entscheidungs-unterstuetzung.aux
+A level-1 auxiliary file: chapters/methods_sensornetzwerke.aux
+A level-1 auxiliary file: chapters/methods_dateninfrastruktur.aux
+A level-1 auxiliary file: chapters/methods_analysemethoden.aux
+A level-1 auxiliary file: chapters/methods_mobile-dienste.aux
+A level-1 auxiliary file: chapters/softwareentwurf.aux
 The style file: plainnat.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "worden_overview_2004"
 Warning--empty journal in strobl_geodatenmanagement_2007
-You've used 7 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            642 strings with 6761 characters,
-and the built_in function-call counts, 4228 in all, are:
-= -- 377
-> -- 298
-< -- 4
-+ -- 100
-- -- 93
-* -- 351
-:= -- 647
-add.period$ -- 30
-call.type$ -- 7
-change.case$ -- 52
-chr.to.int$ -- 7
-cite$ -- 15
-duplicate$ -- 172
-empty$ -- 285
-format.name$ -- 104
-if$ -- 888
-int.to.chr$ -- 1
+            670 strings with 7889 characters,
+and the built_in function-call counts, 5957 in all, are:
+= -- 537
+> -- 406
+< -- 5
++ -- 137
+- -- 126
+* -- 510
+:= -- 916
+add.period$ -- 47
+call.type$ -- 10
+change.case$ -- 72
+chr.to.int$ -- 9
+cite$ -- 21
+duplicate$ -- 237
+empty$ -- 416
+format.name$ -- 142
+if$ -- 1247
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 52
-num.names$ -- 28
-pop$ -- 98
+missing$ -- 9
+newline$ -- 75
+num.names$ -- 40
+pop$ -- 130
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 62
 quote$ -- 0
-skip$ -- 164
+skip$ -- 209
 stack$ -- 0
-substring$ -- 144
-swap$ -- 39
+substring$ -- 226
+swap$ -- 46
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 77
+type$ -- 110
 warning$ -- 1
-while$ -- 27
+while$ -- 39
 width$ -- 0
-write$ -- 113
-(There were 2 warnings)
+write$ -- 167
+(There was 1 warning)

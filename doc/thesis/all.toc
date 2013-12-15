@@ -7,21 +7,52 @@
 \contentsline {section}{\numberline {1.1}Vergleichbare Systeme}{3}{section.1.1}
 \contentsline {part}{II\hspace {1em}Anforderungen}{6}{part.2}
 \contentsline {chapter}{\numberline {2}Einsatzgebiet}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Modell des Problembereichs}{9}{section.2.1}
+\contentsline {section}{\numberline {2.1}Modell des Problembereichs}{10}{section.2.1}
 \contentsline {section}{\numberline {2.2}Gesch\IeC {\"a}ftsprozesse}{11}{section.2.2}
-\contentsline {chapter}{\numberline {3}Produktfunktionen}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Nutzergruppen}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Feldingenieure}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}B\IeC {\"u}rokraft}{15}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Anwendungsf\IeC {\"a}lle}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Management}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Messungen}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Analyse}{20}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Nicht-funktionale Anforderungen}{23}{chapter.4}
-\contentsline {chapter}{\numberline {5}Prototyp}{25}{chapter.5}
-\contentsline {part}{III\hspace {1em}Architektur}{26}{part.3}
-\contentsline {chapter}{\numberline {6}Softwaredesign}{27}{chapter.6}
-\contentsline {chapter}{\numberline {7}Sensornetzwerk}{28}{chapter.7}
-\contentsline {chapter}{\numberline {8}Datenanalyse}{29}{chapter.8}
-\contentsline {chapter}{\numberline {9}Visualisierung}{30}{chapter.9}
-\contentsline {chapter}{\numberline {10}Oberfl\IeC {\"a}che}{31}{chapter.10}
+\contentsline {chapter}{\numberline {3}Produktfunktionen}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Nutzergruppen}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Feldingenieure}{15}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}B\IeC {\"u}rokraft}{16}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Anwendungsf\IeC {\"a}lle}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Management}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Messungen}{19}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Analyse}{21}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Nicht-funktionale Anforderungen}{24}{chapter.4}
+\contentsline {chapter}{\numberline {5}Prototyp}{26}{chapter.5}
+\contentsline {part}{III\hspace {1em}Architektur}{27}{part.3}
+\contentsline {chapter}{\numberline {6}Werkzeuge}{28}{chapter.6}
+\contentsline {section}{\numberline {6.1}Bauwerks\IeC {\"u}berwachung}{28}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Sensortypen}{30}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}manuelle Sensoren}{31}{subsubsection.6.1.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.2}automatische Sensoren}{31}{subsubsection.6.1.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Relevante Eigenschaften}{31}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Entscheidungs-Unterst\IeC {\"u}tzung}{32}{section.6.2}
+\contentsline {section}{\numberline {6.3}Sensornetzwerke}{33}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}autonome Sensornetzwerke}{35}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}nicht-autonome Sensornetzwerke}{35}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}IT Konzepte}{35}{subsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.1}SensorML}{35}{subsubsection.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.3.2}Metadaten}{35}{subsubsection.6.3.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3.3}Sensor Web Enablement}{35}{subsubsection.6.3.3.3}
+\contentsline {paragraph}{\numberline {6.3.3.3.1}52North}{35}{paragraph.6.3.3.3.1}
+\contentsline {paragraph}{\numberline {6.3.3.3.2}istSOS}{35}{paragraph.6.3.3.3.2}
+\contentsline {section}{\numberline {6.4}Dateninfrastruktur}{36}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Datentypen und Datenformate}{37}{subsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.1.1}Keyhole Markup Language}{37}{subsubsection.6.4.1.1}
+\contentsline {subsubsection}{\numberline {6.4.1.2}Geographic Markup Language}{37}{subsubsection.6.4.1.2}
+\contentsline {subsection}{\numberline {6.4.2}Geodatenbanken}{37}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}PostGIS}{37}{subsubsection.6.4.2.1}
+\contentsline {subsubsection}{\numberline {6.4.2.2}Oracle Spatial}{37}{subsubsection.6.4.2.2}
+\contentsline {subsection}{\numberline {6.4.3}Webdienste}{37}{subsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3.1}Web Map Service}{37}{subsubsection.6.4.3.1}
+\contentsline {subsubsection}{\numberline {6.4.3.2}Web Feature Service}{37}{subsubsection.6.4.3.2}
+\contentsline {subsubsection}{\numberline {6.4.3.3}Web Catalogue Service}{37}{subsubsection.6.4.3.3}
+\contentsline {section}{\numberline {6.5}Analysemethoden}{38}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Methode der finiten Elemente}{39}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Datenkonsistenz}{39}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Mobile Dienste}{40}{section.6.6}
+\contentsline {chapter}{\numberline {7}Softwareentwurf}{42}{chapter.7}
+\contentsline {section}{\numberline {7.1}Sensor Web Enablement}{43}{section.7.1}
+\contentsline {section}{\numberline {7.2}Datenanalyse}{43}{section.7.2}
+\contentsline {section}{\numberline {7.3}Visualisierung}{43}{section.7.3}
+\contentsline {section}{\numberline {7.4}Benutzeroberfl\IeC {\"a}che}{43}{section.7.4}

@@ -19,8 +19,25 @@
 \BOOKMARK [0][-]{chapter.4}{Nicht-funktionale Anforderungen}{part.2}% 19
 \BOOKMARK [0][-]{chapter.5}{Prototyp}{part.2}% 20
 \BOOKMARK [-1][-]{part.3}{III Architektur}{}% 21
-\BOOKMARK [0][-]{chapter.6}{Softwaredesign}{part.3}% 22
-\BOOKMARK [0][-]{chapter.7}{Sensornetzwerk}{part.3}% 23
-\BOOKMARK [0][-]{chapter.8}{Datenanalyse}{part.3}% 24
-\BOOKMARK [0][-]{chapter.9}{Visualisierung}{part.3}% 25
-\BOOKMARK [0][-]{chapter.10}{Oberfl\344che}{part.3}% 26
+\BOOKMARK [0][-]{chapter.6}{Werkzeuge}{part.3}% 22
+\BOOKMARK [1][-]{section.6.1}{Bauwerks\374berwachung}{chapter.6}% 23
+\BOOKMARK [2][-]{subsection.6.1.1}{Sensortypen}{section.6.1}% 24
+\BOOKMARK [2][-]{subsection.6.1.2}{Relevante Eigenschaften}{section.6.1}% 25
+\BOOKMARK [1][-]{section.6.2}{Entscheidungs-Unterst\374tzung}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.3}{Sensornetzwerke}{chapter.6}% 27
+\BOOKMARK [2][-]{subsection.6.3.1}{autonome Sensornetzwerke}{section.6.3}% 28
+\BOOKMARK [2][-]{subsection.6.3.2}{nicht-autonome Sensornetzwerke}{section.6.3}% 29
+\BOOKMARK [2][-]{subsection.6.3.3}{IT Konzepte}{section.6.3}% 30
+\BOOKMARK [1][-]{section.6.4}{Dateninfrastruktur}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.4.1}{Datentypen und Datenformate}{section.6.4}% 32
+\BOOKMARK [2][-]{subsection.6.4.2}{Geodatenbanken}{section.6.4}% 33
+\BOOKMARK [2][-]{subsection.6.4.3}{Webdienste}{section.6.4}% 34
+\BOOKMARK [1][-]{section.6.5}{Analysemethoden}{chapter.6}% 35
+\BOOKMARK [2][-]{subsection.6.5.1}{Methode der finiten Elemente}{section.6.5}% 36
+\BOOKMARK [2][-]{subsection.6.5.2}{Datenkonsistenz}{section.6.5}% 37
+\BOOKMARK [1][-]{section.6.6}{Mobile Dienste}{chapter.6}% 38
+\BOOKMARK [0][-]{chapter.7}{Softwareentwurf}{part.3}% 39
+\BOOKMARK [1][-]{section.7.1}{Sensor Web Enablement}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.2}{Datenanalyse}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.3}{Visualisierung}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.4}{Benutzeroberfl\344che}{chapter.7}% 43

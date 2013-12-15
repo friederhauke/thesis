@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,6 +13,27 @@ Christian Boller and W.~J. Staszewski.
 \newblock URL
   \url{http://www.gruppofrattura.it/pdf/eventi/2008/SHM%20Cracow.PDF.pdf}.
 \newblock 00012.
+
+\bibitem[Breunig et~al.(2003{\natexlab{a}})Breunig, Malaka, Reinhardt, and
+  Wiesel]{breunig_entwicklung_2003}
+Martin Breunig, Rainer Malaka, Wolfgang Reinhardt, and Joachim Wiesel.
+\newblock Entwicklung mobiler geodienste.
+\newblock \emph{Geodaten-und Geodienste-Infrastrukturen-von der Forschung zur
+  praktischen Anwendung, Beitr{\"a}ge zu den M{\"u}nsteraner {GI-Tagen}},
+  18:\penalty0 253{\textendash}264, 2003{\natexlab{a}}.
+\newblock URL
+  \url{http://gi-tage.de/archive/2004/downloads/gitage2003/tagungsband/breunig.pdf}.
+\newblock 00002.
+
+\bibitem[Breunig et~al.(2003{\natexlab{b}})Breunig, Malaka, Reinhardt, Wiesel,
+  and Geoinformationssysteme]{breunig_vision_2003}
+Martin Breunig, Rainer Malaka, Wolfgang Reinhardt, Joachim Wiesel, and
+  Arbeitsgemeinschaft Geoinformationssysteme.
+\newblock Vision mobiler geodienste.
+\newblock In \emph{Mobilit{\"a}t und Informationssysteme}, 2003{\natexlab{b}}.
+\newblock URL
+  \url{http://pdf.aminer.org/000/488/508/vision_mobiler_geodienste.pdf}.
+\newblock 00002.
 
 \bibitem[Engels(2006)]{engels_vorlesung_2006}
 Gregor Engels.
@@ -67,5 +88,15 @@ Christian Strobl, Ralph Kiefl, Torsten Riedlinger, and G{\"u}nter Strunz.
 \newblock 2007.
 \newblock URL
   \url{http://www.preagro.de/ezai/index.php/eZAI/article/viewArticle/25}.
+
+\bibitem[Worden and Dulieu-Barton(2004)]{worden_overview_2004}
+K.~Worden and J.~M. Dulieu-Barton.
+\newblock An overview of intelligent fault detection in systems and structures.
+\newblock \emph{Structural Health Monitoring}, 3\penalty0 (1):\penalty0 85--98,
+  January 2004.
+\newblock ISSN 1475-9217, 1741-3168.
+\newblock \doi{10.1177/1475921704041866}.
+\newblock URL \url{http://shm.sagepub.com/content/3/1/85}.
+\newblock 00138.
 
 \end{thebibliography}
