@@ -1,56 +1,51 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: all.aux
-A level-1 auxiliary file: chapters/methods_bauwerksueberwachung.aux
-A level-1 auxiliary file: chapters/methods_sensortypen.aux
-A level-1 auxiliary file: chapters/methods_entscheidungs-unterstuetzung.aux
-A level-1 auxiliary file: chapters/methods_sensornetzwerke.aux
-A level-1 auxiliary file: chapters/methods_dateninfrastruktur.aux
-A level-1 auxiliary file: chapters/methods_analysemethoden.aux
-A level-1 auxiliary file: chapters/methods_mobile-dienste.aux
-A level-1 auxiliary file: chapters/softwareentwurf.aux
+A level-1 auxiliary file: chapters/methods.aux
 The style file: plainnat.bst
 Database file #1: references.bib
+Warning--empty journal in resch_standardisierte_2012
 Warning--empty journal in strobl_geodatenmanagement_2007
-You've used 10 entries,
+Warning--empty journal in voigt_illustration_2013
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            670 strings with 7889 characters,
-and the built_in function-call counts, 5957 in all, are:
-= -- 537
-> -- 406
-< -- 5
-+ -- 137
-- -- 126
-* -- 510
-:= -- 916
-add.period$ -- 47
-call.type$ -- 10
-change.case$ -- 72
-chr.to.int$ -- 9
-cite$ -- 21
-duplicate$ -- 237
-empty$ -- 416
-format.name$ -- 142
-if$ -- 1247
+            697 strings with 8874 characters,
+and the built_in function-call counts, 8721 in all, are:
+= -- 804
+> -- 543
+< -- 9
++ -- 184
+- -- 168
+* -- 713
+:= -- 1312
+add.period$ -- 71
+call.type$ -- 15
+change.case$ -- 101
+chr.to.int$ -- 14
+cite$ -- 33
+duplicate$ -- 380
+empty$ -- 627
+format.name$ -- 189
+if$ -- 1855
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 75
-num.names$ -- 40
-pop$ -- 130
+missing$ -- 14
+newline$ -- 109
+num.names$ -- 60
+pop$ -- 184
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 86
 quote$ -- 0
-skip$ -- 209
+skip$ -- 340
 stack$ -- 0
-substring$ -- 226
-swap$ -- 46
-text.length$ -- 1
+substring$ -- 340
+swap$ -- 91
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
-warning$ -- 1
-while$ -- 39
+type$ -- 165
+warning$ -- 3
+while$ -- 57
 width$ -- 0
-write$ -- 167
-(There was 1 warning)
+write$ -- 247
+(There were 3 warnings)

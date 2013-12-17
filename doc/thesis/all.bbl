@@ -1,9 +1,19 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akyildiz et~al.(2002)Akyildiz, Su, Sankarasubramaniam, and
+  Cayirci]{akyildiz_survey_2002}
+Ian~F. Akyildiz, Weilian Su, Yogesh Sankarasubramaniam, and Erdal Cayirci.
+\newblock A survey on sensor networks.
+\newblock \emph{Communications magazine, {IEEE}}, 40\penalty0 (8):\penalty0
+  102{\textendash}114, 2002.
+\newblock URL
+  \url{http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1024422}.
+\newblock 11174.
 
 \bibitem[Boller and Staszewski(2004)]{boller_structural_2004}
 Christian Boller and W.~J. Staszewski.
@@ -69,6 +79,15 @@ B-G. L{\"u}hr, C.~Milkereit, S.~Parolai, M.~Picozzi, H.~Woith, A.~Strollo,
 \newblock Sekunden f{\"u}r istanbul.
 \newblock \emph{{GFZ} - System Erde}, 1:\penalty0 18, 2011.
 
+\bibitem[{RESCH}(2012)]{resch_standardisierte_2012}
+Bernd {RESCH}.
+\newblock Standardisierte geosensornetzwerke f{\"u}r umweltbeobachtung in naher
+  echtzeit.
+\newblock 2012.
+\newblock URL
+  \url{http://www.berndresch.com/download/work/publications/resch_geosensornetzwerke_rt-gis_2013.pdf}.
+\newblock 00000.
+
 \bibitem[Spahn et~al.(2010)Spahn, Hoppe, Vidiarina, and
   Usdianto]{spahn_experience_2010}
 H.~Spahn, M.~Hoppe, H.~D. Vidiarina, and B.~Usdianto.
@@ -88,6 +107,34 @@ Christian Strobl, Ralph Kiefl, Torsten Riedlinger, and G{\"u}nter Strunz.
 \newblock 2007.
 \newblock URL
   \url{http://www.preagro.de/ezai/index.php/eZAI/article/viewArticle/25}.
+
+\bibitem[Vieira et~al.(2003)Vieira, Coelho~Jr, da~Silva~Jr, and
+  da~Mata]{vieira_survey_2003}
+Marcos Augusto~M. Vieira, Claudionor~N. Coelho~Jr, Di{\'o}genes~Cecilio
+  da~Silva~Jr, and Jos{\'e}~Monteiro da~Mata.
+\newblock Survey on wireless sensor network devices.
+\newblock In \emph{Emerging Technologies and Factory Automation, 2003.
+  Proceedings. {ETFA'03.} {IEEE} Conference}, volume~1, page
+  537{\textendash}544, 2003.
+\newblock URL
+  \url{http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1247753}.
+\newblock 00281.
+
+\bibitem[Voigt(2013)]{voigt_illustration_2013}
+Benjamin Voigt.
+\newblock Illustration von ereigniserkennung in aktuellen forschungsprojekten.
+\newblock July 2013.
+\newblock URL
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.172.2267&rep=rep1&type=pdf}.
+
+\bibitem[Voigt et~al.(2012)Voigt, Kurth, Brockmann, and
+  Lissek]{voigt_autarkes_2012}
+Sven Voigt, S.~Kurth, C.~Brockmann, and S.~Lissek.
+\newblock Autarkes sensornetzwerk zum monitoring von hochspannungsleitungen.
+\newblock \emph{Produktion von Leiterplatten und Systemen}, 14\penalty0
+  (3):\penalty0 646, 2012.
+\newblock URL \url{http://leuze-verlag.de/dmdocuments/646-656_PLUS_0312.pdf}.
+\newblock 00000.
 
 \bibitem[Worden and Dulieu-Barton(2004)]{worden_overview_2004}
 K.~Worden and J.~M. Dulieu-Barton.
