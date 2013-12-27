@@ -1,7 +1,6 @@
 \select@language {german}
 \contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.1}
 \contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.2}
-\contentsline {chapter}{Akronyme}{v}{section*.4}
 \contentsline {part}{I\hspace {1em}Einleitung}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung in die Problematik}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Vergleichbare Systeme}{3}{section.1.1}
@@ -28,27 +27,5 @@
 \contentsline {subsection}{\numberline {6.1.2}Relevante Eigenschaften}{28}{subsection.6.1.2}
 \contentsline {section}{\numberline {6.2}Entscheidungs-Unterst\IeC {\"u}tzung}{28}{section.6.2}
 \contentsline {section}{\numberline {6.3}Sensornetzwerke}{28}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}autonome Sensornetzwerke}{30}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}nicht-autonome Sensornetzwerke}{31}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}IT Konzepte}{31}{subsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.3.1}SensorML}{31}{subsubsection.6.3.3.1}
-\contentsline {subsubsection}{\numberline {6.3.3.2}Metadaten}{31}{subsubsection.6.3.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3.3}Sensor Web Enablement}{31}{subsubsection.6.3.3.3}
-\contentsline {paragraph}{\numberline {6.3.3.3.1}52North}{31}{paragraph.6.3.3.3.1}
-\contentsline {paragraph}{\numberline {6.3.3.3.2}istSOS}{31}{paragraph.6.3.3.3.2}
-\contentsline {section}{\numberline {6.4}Dateninfrastruktur}{32}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Datentypen und Datenformate}{32}{subsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.1.1}Keyhole Markup Language}{32}{subsubsection.6.4.1.1}
-\contentsline {subsubsection}{\numberline {6.4.1.2}Geographic Markup Language}{32}{subsubsection.6.4.1.2}
-\contentsline {subsection}{\numberline {6.4.2}Geodatenbanken}{32}{subsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.2.1}PostGIS}{32}{subsubsection.6.4.2.1}
-\contentsline {subsubsection}{\numberline {6.4.2.2}Oracle Spatial}{32}{subsubsection.6.4.2.2}
-\contentsline {subsection}{\numberline {6.4.3}Webdienste}{32}{subsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.3.1}Web Map Service}{32}{subsubsection.6.4.3.1}
-\contentsline {subsubsection}{\numberline {6.4.3.2}Web Feature Service}{32}{subsubsection.6.4.3.2}
-\contentsline {subsubsection}{\numberline {6.4.3.3}Web Catalogue Service}{32}{subsubsection.6.4.3.3}
-\contentsline {section}{\numberline {6.5}Analysemethoden}{32}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Methode der finiten Elemente}{32}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Datenkonsistenz}{32}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Mobile Dienste}{32}{section.6.6}
-\contentsline {chapter}{\numberline {7}Softwareentwurf}{34}{chapter.7}
+\contentsline {subsection}{\numberline {6.3.1}nicht-autonome Sensornetzwerke}{30}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}autonome Sensornetzwerke}{31}{subsection.6.3.2}

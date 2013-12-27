@@ -1,39 +1,28 @@
 \BOOKMARK [0][-]{chapter*.1}{Abbildungsverzeichnis}{}% 1
 \BOOKMARK [0][-]{chapter*.2}{Tabellenverzeichnis}{}% 2
-\BOOKMARK [0][-]{section*.4}{Akronyme}{}% 3
-\BOOKMARK [-1][-]{part.1}{I Einleitung}{}% 4
-\BOOKMARK [0][-]{chapter.1}{Einf\374hrung in die Problematik}{part.1}% 5
-\BOOKMARK [1][-]{section.1.1}{Vergleichbare Systeme}{chapter.1}% 6
-\BOOKMARK [-1][-]{part.2}{II Anforderungen}{}% 7
-\BOOKMARK [0][-]{chapter.2}{Einsatzgebiet}{part.2}% 8
-\BOOKMARK [1][-]{section.2.1}{Modell des Problembereichs}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{Gesch\344ftsprozesse}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Produktfunktionen}{part.2}% 11
-\BOOKMARK [1][-]{section.3.1}{Nutzergruppen}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Feldingenieure}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.2}{B\374rokraft}{section.3.1}% 14
-\BOOKMARK [1][-]{section.3.2}{Anwendungsf\344lle}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.2.1}{Management}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{Messungen}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.3}{Analyse}{section.3.2}% 18
-\BOOKMARK [0][-]{chapter.4}{Nicht-funktionale Anforderungen}{part.2}% 19
-\BOOKMARK [0][-]{chapter.5}{Prototyp}{part.2}% 20
-\BOOKMARK [-1][-]{part.3}{III Architektur}{}% 21
-\BOOKMARK [0][-]{chapter.6}{Werkzeuge}{part.3}% 22
-\BOOKMARK [1][-]{section.6.1}{Bauwerks\374berwachung}{chapter.6}% 23
-\BOOKMARK [2][-]{subsection.6.1.1}{Sensortypen}{section.6.1}% 24
-\BOOKMARK [2][-]{subsection.6.1.2}{Relevante Eigenschaften}{section.6.1}% 25
-\BOOKMARK [1][-]{section.6.2}{Entscheidungs-Unterst\374tzung}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.3}{Sensornetzwerke}{chapter.6}% 27
-\BOOKMARK [2][-]{subsection.6.3.1}{autonome Sensornetzwerke}{section.6.3}% 28
-\BOOKMARK [2][-]{subsection.6.3.2}{nicht-autonome Sensornetzwerke}{section.6.3}% 29
-\BOOKMARK [2][-]{subsection.6.3.3}{IT Konzepte}{section.6.3}% 30
-\BOOKMARK [1][-]{section.6.4}{Dateninfrastruktur}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.4.1}{Datentypen und Datenformate}{section.6.4}% 32
-\BOOKMARK [2][-]{subsection.6.4.2}{Geodatenbanken}{section.6.4}% 33
-\BOOKMARK [2][-]{subsection.6.4.3}{Webdienste}{section.6.4}% 34
-\BOOKMARK [1][-]{section.6.5}{Analysemethoden}{chapter.6}% 35
-\BOOKMARK [2][-]{subsection.6.5.1}{Methode der finiten Elemente}{section.6.5}% 36
-\BOOKMARK [2][-]{subsection.6.5.2}{Datenkonsistenz}{section.6.5}% 37
-\BOOKMARK [1][-]{section.6.6}{Mobile Dienste}{chapter.6}% 38
-\BOOKMARK [0][-]{chapter.7}{Softwareentwurf}{part.3}% 39
+\BOOKMARK [-1][-]{part.1}{I Einleitung}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Einf\374hrung in die Problematik}{part.1}% 4
+\BOOKMARK [1][-]{section.1.1}{Vergleichbare Systeme}{chapter.1}% 5
+\BOOKMARK [-1][-]{part.2}{II Anforderungen}{}% 6
+\BOOKMARK [0][-]{chapter.2}{Einsatzgebiet}{part.2}% 7
+\BOOKMARK [1][-]{section.2.1}{Modell des Problembereichs}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Gesch\344ftsprozesse}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Produktfunktionen}{part.2}% 10
+\BOOKMARK [1][-]{section.3.1}{Nutzergruppen}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Feldingenieure}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{B\374rokraft}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Anwendungsf\344lle}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{Management}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{Messungen}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{Analyse}{section.3.2}% 17
+\BOOKMARK [0][-]{chapter.4}{Nicht-funktionale Anforderungen}{part.2}% 18
+\BOOKMARK [0][-]{chapter.5}{Prototyp}{part.2}% 19
+\BOOKMARK [-1][-]{part.3}{III Architektur}{}% 20
+\BOOKMARK [0][-]{chapter.6}{Werkzeuge}{part.3}% 21
+\BOOKMARK [1][-]{section.6.1}{Bauwerks\374berwachung}{chapter.6}% 22
+\BOOKMARK [2][-]{subsection.6.1.1}{Sensortypen}{section.6.1}% 23
+\BOOKMARK [2][-]{subsection.6.1.2}{Relevante Eigenschaften}{section.6.1}% 24
+\BOOKMARK [1][-]{section.6.2}{Entscheidungs-Unterst\374tzung}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.3}{Sensornetzwerke}{chapter.6}% 26
+\BOOKMARK [2][-]{subsection.6.3.1}{nicht-autonome Sensornetzwerke}{section.6.3}% 27
+\BOOKMARK [2][-]{subsection.6.3.2}{autonome Sensornetzwerke}{section.6.3}% 28

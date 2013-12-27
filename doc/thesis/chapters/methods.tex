@@ -11,7 +11,11 @@ In der Einleitung wurde bereits beschrieben, wozu dieses System dienen soll, und
 \section{Entscheidungs-Unterstützung}
 
 \section{Sensornetzwerke}
-Diese Arbeit beschreibt ein System, das die Arbeit mit einem Netzwerk aus Sensoren organisieren und vereinfachen soll. Der Grund warum Sensoren in einem Netzwerk organisiert werden sollten liegt darin, dass so Datenströme gebündelt werden, die Messdaten durch eine Homogenisierung der Datentypen vergleichbar gemacht werden und der Wartungsaufwand für das Komplettsystem verringert wird, siehe auch \citep{resch_standardisierte_2012}. Werden Sensoren in einem Netzwerk organisiert, übernimmt die Aufgabe des Messens eine Software die den Sensor fernsteuert. Klassischerweise gehört dazu das Messen selbst, das Speichern der Daten und gegebenenfalls die Auswertung der Daten und damit verbunden eine mögliche Ereigniserkennung. Arbeitsabläufe, die für diese Arbeit von Belang sind, wurden in den Anforderungen zu Beginn der Arbeit bereits detailliert beschrieben.
+Diese Arbeit beschreibt ein System, das die Arbeit mit einem Netzwerk aus Sensoren organisieren und vereinfachen soll. Sensornetzwerke sind räumlich verteilte Sensoren die miteinander verbunden sind und über einen Computer gesteuert werden können \citep{botts_ogc_2008}. Der Grund warum Sensoren in einem Netzwerk organisiert werden sollten liegt darin, dass so Datenströme gebündelt werden können, die Messdaten durch eine Homogenisierung der Datentypen vergleichbar gemacht werden und der Wartungsaufwand für das Komplettsystem verringert wird, siehe auch \citep{resch_standardisierte_2012} \citep{bermudez_ogc_2011}. Werden Sensoren in einem Netzwerk organisiert, übernimmt die Aufgabe des Messens eine Software die den Sensor fernsteuert. Klassischerweise gehört dazu das Messen selbst, das Speichern der Daten und gegebenenfalls die Auswertung der Daten und damit verbunden eine mögliche Ereigniserkennung. Arbeitsabläufe, die für diese Arbeit von Belang sind, wurden in den Anforderungen zu Beginn der Arbeit bereits detailliert beschrieben. 
+
+Im Englischen wird oft auch der Begriff des \"Sensor Web\" verwendet, dessen Bedeutung über die des Sensornetzwerkes (englisch \"Sensor Network\" hinaus geht. Um die beiden Begriffe eindeutig voneinander zu unterscheiden werde ich im Folgenden von Sensornetzwerken und von einem Sensor-Web sprechen. Das Sensor-Web besteht aus Sensoren die ebenfalls miteinander verbunden sind, aber auch über das Internet erreichbar sind. Das Sensor-Web stellt somit eine Erweiterung des bloßen Netzwerkes dar, weil über das Internet Sensoren verschiedener Netzwerke miteinander verbunden werden können. Die erfassten Daten der Sensoren werden über das Internet verfügbar gemacht und können über Standard Protokolle oder einer sogenannten \newacronym{API}{API}{Application Programming Interface, deutsch: Programmierschnittstelle} \gls{API} abgerufen werden \citep{botts_ogc_2008}.
+
+Noch weiter ging Kevin Ashton als er 1999 erstmals den Begriff des Internet der Dinge (englisch: \"Internet of things\") verwendete. In seiner Präsentation 1999 zum Thema \newacronym{RFID}{RFID}{Radio-Frequency Identification, deutsch: Identifizierung mit Hilfe elektromagnetischer Wellen} \gls{RFID} bei Procter \& Gamble formulierte er eine These derzufolge in der Zukunft Computer über Sensoren ohne die Mithilfe des Menschen Informationen über die Umwelt sammeln könnten um so den Menschen zu entlasten und ihm sogar noch mehr Wissen zu verschaffen. Ashton begründete dies mit der Aussage, dass das momentane Internet aus reinen Informationen besteht, Dinge wie Lebensmittel oder Brennstoffe aber wesentlich wichtiger sind, und das Internet somit auch über diese Dinge Bescheid wissen sollte \citep{ashton_that_2009}.
 
 Sensornetzwerke spielen bei einer Großzahl der im Alltag integrierten technischen Geräte bereits eine große Rolle. In modernen Autos werden kontinuierlich Parameter wie \"Spritverbrauch\" oder Drehzahl gemessen und dann eine mögliche verbleibende Reichweite errechnet. In Computern drehen die Lüfter erst dann in einer höheren Drehzahl wenn die automatische gemessene Temperatur des Prozessors eine festgelegte stufe erreicht. Und in besonders sensiblen Geräten wie Flugzeugen findet sich eine noch viel größere Anzahl von Sensoren und auch die Auswertung der gelieferten Messerwerte wird durch komplexe Algorithmen im Cockpit für den Piloten verständlich angezeigt. Die hier aufgezählten Beispiele stellen aber jeweils ein in sich geschlossenes System dar, bei dem Datenübermittlung oder Datenmanagement "einfach" geregelt werden kann. "Einfach" soll aber nichts als technische trivial verstanden werden, sondern lediglich darauf hinweisen, dass die dafür verwendete Technologie bereits sehr weit entwickelt ist. 
 
@@ -21,22 +25,54 @@ In Bereichen deren wissenschaftliche Ausrichtung die Überwachung von räumlich 
 
 Grundsätzlich haben sich zwei verschiedene Architekturen von Sensornetzwerken herausgebildet um die technischen Probleme zu lösen. Zum Einen werden Sensoren verwendet die autonom agieren, zum Anderen von einem zentralen Knoten abhängige Sensoren. Ich werde beide Ansätze im Folgenden näher erläutern und gegenüberstellen.
 
+\subsection{nicht-autonome Sensornetzwerke}
+Weiter verbreitet ist die Verwendung von nicht-autonom agierenden Sensoren. Dennoch können die Sensoren durchaus in der Lage sein bestimmte Berechnungen oder automatische Ereigniserkennung durchzuführen. Ganz klar abgegrenzt wird diese Art von Sensornetzwerken von den autonomen Sensornetzwerken durch die Tatsache, dass die Sensoren manuell in das Netzwerk eingebunden werden müssen, und sich nicht selber um die Organisation kümmern. Das Netzwerk ist demnach nicht selbst-verwaltet sondern muss fachlich betreut werden.
+
+Alle gängigen heute bereits verwendeten Netzwerke von Sensoren bestehen im Prinzip aus einer losen Verknüpfung von Sensoren mit einem zentralen Server. Dazu gehören zum Beispiel Video Überwachungsanlagen, Einparkhilfen für PKW oder auch Alarmanlagen für Gebäude.
+
 \subsection{autonome Sensornetzwerke}
 Sensoren in autonomen Netzwerken stellen jeweils für sich einen autonomen Knoten dar. Die Besonderheit ist, dass nicht ein zentraler Knoten alle anderen Organisiert, sondern dass sich das Netzwerk selber organisiert, indem die sich Knoten aktiv einbringen, und Daten senden oder empfangen. Konfigurieren sich die Knoten auch selber spricht man auch von einem sogenannten \"Ad-Hoc Netzwerk\". Autonome Sensornetzwerke wurden ursprünglich für militärische Zwecke entwickelt, werde heutzutage aber auf vielfältige Art im zivilen Bereichen eingesetzt. Die immer komplexeren Anforderungen an die technische Überwachung diverser Phänomene fördert die Entwicklung von autonomen Ad-Hoc Netzwerken. Einen Vorteil, den autonome Sensornetzwerke mit sich bringen, ist die schnelle und bequeme Installation. Dadurch, dass viel Vorarbeit in die Entwicklung der Software und Hardware der Sensoren gesteckt wurde, kommt die Installation ohne manuelle Konfiguration und damit hohem Zeitaufwand aus. Von Nachteil ist allerdings, dass durch den Betrieb von zusätzlicher Hardware die aus dem Sensor einen vollwertigen Knoten machen, der Energieverbrauch meist um ein Vielfaches über dem liegt, was der Sensor alleine benötigt. \citep{voigt_illustration_2013} \citep{akyildiz_survey_2002} \citep{vieira_survey_2003} \citep{resch_standardisierte_2012}
 
-Benjamin Voigt, siehe \citep{voigt_illustration_2013}, beschreibt in seinem Artikel unter anderem ein drahtloses Sensornetzwerk auf einem Vulkan, dessen Zuverlässigkeit in Bezug auf die Erkennung von Ereignissen in einem zeitlich abgegrenztem Experiment untersucht wurde. Alle relevanten Ereignisse wurden zwar zuverlässig erkannt, darüber hinaus aber 99\%  nicht relevante Ereignisse. Zu den schlechten Ergebnissen führten vor Allem Fehler der Software und der Algorithmen. Das lässt den Autoren die Schlussfolgerung ziehen, dass solch ein System noch nicht für den operativen Dienst verwendbar ist. Hauptsächlich auch deshalb, weil die Lösungsansätze (höherer Betreuungsaufwand) bei Netzwerken mit einer realistischen Anzahl von Knoten (<1000) nicht finanzierbar wären.
+Benjamin Voigt, siehe \citep{voigt_illustration_2013}, beschreibt in seinem Artikel unter anderem ein drahtloses Sensornetzwerk zur Überwachung eines Vulkans, dessen Zuverlässigkeit in Bezug auf die Erkennung von Ereignissen in einem zeitlich abgegrenztem Experiment untersucht wurde. Alle relevanten Ereignisse wurden zwar zuverlässig erkannt, darüber hinaus aber 99\%  nicht relevante Ereignisse. Zu den schlechten Ergebnissen führten vor Allem Fehler der Software und der Algorithmen. Das lässt den Autoren die Schlussfolgerung ziehen, dass solch ein System noch nicht für den operativen Dienst verwendbar ist. Hauptsächlich auch deshalb, weil die Lösungsansätze (höherer Betreuungsaufwand) bei Netzwerken mit einer realistischen Anzahl von Knoten (<1000) nicht finanzierbar wären.
 
 Ein weiteres Beispiel für autonome Sensornetzwerke wäre das in der Einleitung beschriebene Projekt \gls{SOSEWIN}. Wie bereits beschrieben wird geplant die bestehenden Netzwerke durch ein Netzwerk aus autonom agierenden Sensoren gerade im städtischen Bereich zu erweitern. Dadurch dass die autonomen Sensoren ohne besonderes Fachwissen installiert werden können, sind auch Privatmenschen in der Lage Sensoren zu erwerben und zu betreiben, und damit zum Schutz der Gemeinschaft vor Katastrophen beizutragen.
 
-\subsection{nicht-autonome Sensornetzwerke}
-Weiter verbreitet ist die Verwendung von nicht-autonom agierenden Sensoren. Dennoch können die Sensoren durchaus in der Lage sein bestimmte Berechnungen oder automatische Ereigniserkennung durchzuführen. Ganz klar abgegrenzt wird diese Art von Sensornetzwerken von den autonomen Sensornetzwerken durch die Tatsache, dass die Sensoren manuelle in das Netzwerk eingebunden werden müssen, und sich nicht selber um die Organisation kümmern. Das Netzwerk ist demnach nicht selbst-verwaltet sondern muss fachlich betreut werden.
+\subsection{OGC Sensor Web Enablement}
+Das \newacronym{SWE}{SWE}{Sensor Web Enablement} \gls{SWE} ist eine Initiative des \newacronym{OGC}{OGC}{Open Geospatial Consortium} \gls{OGC} und beinhaltet die Beschreibung verschiedener Standards zur Vernetzung von Sensoren im Web. Das \gls{OGC} ist die weltweit größte Organisation die sich um die Standardisierung des Datenverkehres von räumlichen Informationen bemüht. Die Standardisierung von Austauschprotokollen, Datentypen und Beschreibungssprachen ermöglicht es räumliche Daten einfacher und plattformübergreifend über das Web zu verbreitet und zu nutzen. Das \gls{SWE} dient nicht nur zur Verknüpfung von Sensoren und zum Aufbau eines Netzwerkes, sondern es ermöglicht, Sensoren in das Web zu integrieren. Da so die bereits vorhandene Infrastruktur des Internet genutzt werden kann entfällt die Aufgabe die Sensoren durch eine eigenen Hardware miteinander zu verknüpfen. Die Architektur des \gls{SWE} beinhaltet Lösungen um Sensoren im Web zu finden und zu beschreiben, um die gemessenen Daten zu lesen und um die Sensoren zu steuern. Damit ist das \gls{SWE} eine Komplettlösung um verschiedenartige Sensoren in eine sogenannte \newacronym{SDI}{SDI}{Spatial Data Infrastructure -deutsch: Geodaten Infrastruktur-} \gls{SDI} einzubinden. Einzelne Standards des \gls{OGC} wurden auch als \newacronym{ISO}{ISO}{International Standardisation Organisation} Standard eingetragen. Dadurch wird eine weltweit einheitliche Verfügbarkeit von Sensordaten gefördert. Siehe auch \citep{botts_ogc_2008}\citep{broring_new_2011} \citep{bermudez_ogc_2011}.
 
 
 
-\subsection{IT Konzepte}
+\begin{description}
+\item[Sensor Daten] Beschreibung der Daten die von den Sensoren geliefert werden können
+\item[Sensor Metadaten] Eigenschaften, Arbeitsweise und Genauigkeit des Sensoren
+\item[Verbindungsinformationen] Basierend auf standardisierten Datenformaten und verbreiteten Anfrage-Mechanismen
+\item[Aufgabenplanung] Für die Steuerung des Sensoren und um die gewünschten Messwerte geliefert zu bekommen
+\end{description}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ l | p{11cm}}
+\multirow{4}{*}{Service} 
+ & Beobachtung\\
+ & Aufgabenplanung \\
+ & Alarmierung\\
+ & Analyse\\ \hline
+\multirow{2}{*}{Registries \% Dictionaries} 
+ & Sensor Description Language\\
+ & Phenomenon Description Language\\
+\end{tabular}
+\caption{Funktionalitäten des OGC Sensor Web Enablement (nach \citep{bermudez_ogc_2011}\citep{botts_ogc_2008}) 
+\label{table:OGC SWE Funktionalitäten}
+\end{table}
+
+
+Die nachfolgenden Kapitel enthalten weitergehende Beschreibungen der einzelnen Standards und ihrer Einsatzgebiete. 
+
 \subsubsection{SensorML}
 \subsubsection{Metadaten}
-\subsubsection{Sensor Web Enablement}
+
+\subsubsection{Existierende Lösungen}
 \paragraph{52North}
 \paragraph{istSOS}
 
@@ -48,9 +84,9 @@ Weiter verbreitet ist die Verwendung von nicht-autonom agierenden Sensoren. Denn
 \subsubsection{PostGIS}
 \subsubsection{Oracle Spatial}
 \subsection{Webdienste}
-\subsubsection{Web Map Service}
-\subsubsection{Web Feature Service}
-\subsubsection{Web Catalogue Service}
+\subsubsection{OGC Web Map Service}
+\subsubsection{OGC Web Feature Service}
+\subsubsection{OGC Web Catalogue Service}
 
 \section{Analysemethoden}
 \subsection{Methode der finiten Elemente}
