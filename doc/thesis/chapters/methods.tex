@@ -85,6 +85,18 @@ Das \gls{OGC} hat mit der \gls{SWE} Initiative eine Komplettlösung geschaffen, 
 Das Framework $52\,^{\circ}$North stellt eine der umfangreichsten und frei verwendbaren Implementierungen für das \gls{SWE} dar und wird unter Anderem in dem Projekt \gls{GITEWS} (siehe Einleitung) verwendet.
 
 \paragraph{istSOS}
+Um für eine Risiko Management system in der Schweiz die Funktionalitäten der bisherigen \gls{SOS} Implementierungen zu erweitern entwickelte das schweizer Institut \newacronym{IST}{IST}{``Instituto scienze della Terra'' -deutsch: Institut für Geowissenschaften-}\gls{IST} 2010 eine eigene Software mit dem Namen \newacronym{istSOS}{istSOS}{Instituto scienze della Terra Sensor Observation Service}\gls{istSOS}. Die bereits existierenden Implementierungen, wie etwa das oben beschriebene $52\,^{\circ}$North  oder MapServer, erweitert das \gls{istSOS} System unter anderem um eine Unterstützung von unregelmäßigen Zeitreihen und enthält Mechanismen für die Qualitätskontrolle oder Messkorrekturen \citep{cannata_istsos_2013}. 
+
+\gls{IST} entwickelte das System \gls{istSOS} komplett in Phython und vertreibt die Software unter den Lizenzbedingungen der \newacronym{GNU-GPL}{GNU-GPL}{GNU General Public License}. Das System basiert auf einem Apache Webserver \citep{apache_software_fundation_welcome!_2014} und stützt sich auf das räumliche Datenbanksystem PostgreSQL-PostGIS \citep{postgis_project_steering_committee_postgis_2014}. Neben dem \gls{SOS} enthält das \gls{istSOS} System den ``wa-Service'', der eine Reihe von Konfigurations- und Administrationswerkzeuge zur Verfügung stellt. Zusätzlich zu den Serverseitigen Implementierungen wurde auf Client-Seite auch die in JavaScript geschriebene Benutzeroberfläche ``wa-Interface'' geschaffen. Die Software-Architektur des Systems ist verschachtelt aufgebaut. Die Phyton Biliothek ``istsoslib'' stellt den Kern dar und ermöglicht Zugriff auf die Standard \gls{SOS} und auf \gls{istSOS} spezifische Funktionalitäten. Die Bibliothek ``walib'' ermöglicht als Zwischenschicht den Zugriff auf den wa-Service. Weitere Details zu der Software-Architektur finden sich in \citep{cannata_istsos_2013}\citep{cannata_istsos:_2010}.
+
+\begin{figure}[H]
+	\centering
+ 	 \includegraphics[scale=1]{graphics/istSOS_consumer-producer.png} 
+	\caption{Interaktion mit dem istSOS System dargestellt mit einem UML Sequenzdiagramm jeweils für einen Datenkonsumenten und einen Datenproduzenten \citep{cannata_welcome_2014}}
+	 \label{fig:istsos_consumer-producer}
+\end{figure}
+
+Wie bei den meisten \gls{OGC} Services wird auch mit dem \gls{istSOS} über den Austausch von standard Nachrichten über das \gls{HTTP} Protokoll kommuniziert. Die  \ref{fig:istsos_consumer-producer} zeigt sowohl für den Datenkonsumenten als auch für den Datenproduzenten Anfragen an den Service die mindestens in einer \gls{SOS} Implementierung enthalten sein müssen. Die Nachrichten werden beispielsweise mittels ``HTTP POST'' an den Service übermittelt, und dieser sendet die Antwort in Form von \newacronym{XML}{XML}{Extensible Markup Language}\gls{XML}. 
 
 \section{Dateninfrastruktur}
 \subsection{Datentypen und Datenformate}

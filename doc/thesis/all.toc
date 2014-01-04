@@ -39,19 +39,19 @@
 \contentsline {subsubsection}{\numberline {6.3.1.8}Existierende L\IeC {\"o}sungen}{36}{subsubsection.6.3.1.8}
 \contentsline {paragraph}{\numberline {6.3.1.8.1}$52\tmspace +\thinmuskip {.1667em}^{\circ }$North}{36}{paragraph.6.3.1.8.1}
 \contentsline {paragraph}{\numberline {6.3.1.8.2}istSOS}{36}{paragraph.6.3.1.8.2}
-\contentsline {section}{\numberline {6.4}Dateninfrastruktur}{37}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Datentypen und Datenformate}{37}{subsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.1.1}Keyhole Markup Language}{37}{subsubsection.6.4.1.1}
-\contentsline {subsubsection}{\numberline {6.4.1.2}Geographic Markup Language}{37}{subsubsection.6.4.1.2}
-\contentsline {subsection}{\numberline {6.4.2}Geodatenbanken}{37}{subsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.2.1}PostGIS}{37}{subsubsection.6.4.2.1}
-\contentsline {subsubsection}{\numberline {6.4.2.2}Oracle Spatial}{37}{subsubsection.6.4.2.2}
-\contentsline {subsection}{\numberline {6.4.3}Geodateninfrastruktur}{37}{subsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.3.1}Web Map Service}{37}{subsubsection.6.4.3.1}
-\contentsline {subsubsection}{\numberline {6.4.3.2}Web Feature Service}{37}{subsubsection.6.4.3.2}
-\contentsline {subsubsection}{\numberline {6.4.3.3}Web Catalogue Service}{37}{subsubsection.6.4.3.3}
-\contentsline {section}{\numberline {6.5}Analysemethoden}{37}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Methode der finiten Elemente}{37}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Datenkonsistenz}{37}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Mobile Dienste}{37}{section.6.6}
-\contentsline {chapter}{\numberline {7}Softwareentwurf}{39}{chapter.7}
+\contentsline {section}{\numberline {6.4}Dateninfrastruktur}{38}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Datentypen und Datenformate}{38}{subsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.1.1}Keyhole Markup Language}{38}{subsubsection.6.4.1.1}
+\contentsline {subsubsection}{\numberline {6.4.1.2}Geographic Markup Language}{38}{subsubsection.6.4.1.2}
+\contentsline {subsection}{\numberline {6.4.2}Geodatenbanken}{38}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}PostGIS}{38}{subsubsection.6.4.2.1}
+\contentsline {subsubsection}{\numberline {6.4.2.2}Oracle Spatial}{38}{subsubsection.6.4.2.2}
+\contentsline {subsection}{\numberline {6.4.3}Geodateninfrastruktur}{38}{subsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3.1}Web Map Service}{38}{subsubsection.6.4.3.1}
+\contentsline {subsubsection}{\numberline {6.4.3.2}Web Feature Service}{38}{subsubsection.6.4.3.2}
+\contentsline {subsubsection}{\numberline {6.4.3.3}Web Catalogue Service}{38}{subsubsection.6.4.3.3}
+\contentsline {section}{\numberline {6.5}Analysemethoden}{38}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Methode der finiten Elemente}{38}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Datenkonsistenz}{38}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Mobile Dienste}{38}{section.6.6}
+\contentsline {chapter}{\numberline {7}Softwareentwurf}{40}{chapter.7}
