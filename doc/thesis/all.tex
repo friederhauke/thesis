@@ -28,7 +28,7 @@
 
 
 %--- Abreviations ---
-\usepackage[nomain,acronym,xindy,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\usepackage[nomain,acronym,xindy]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
 \makeglossary
 
 %--- Figures, Captions, Labels ---
@@ -113,7 +113,7 @@
 % --- frontmatter: List of Figures (not mandatory) ---
 % ----------------------------------------------------
 \newpage
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \ohead[]{\rightmark}
 \listoffigures
 
@@ -122,7 +122,7 @@
 % --- frontmatter: List of Tables (not mandatory) ---
 % ---------------------------------------------------
 \newpage
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\addcontentsline{toc}{section}{Tabellenverzeichnis}
 \listoftables
 
 
@@ -130,6 +130,7 @@
 % --- frontmatter: Acronyms	---
 % ------------------------------
 \newpage
+\addcontentsline{toc}{section}{Akronyme}
 \printglossary[title=Akronyme]
 
 
@@ -143,7 +144,6 @@
 \setcounter{secnumdepth}{4}
 
 
-\part{Einleitung}
 \input{chapters/introduction}
 \part{Anforderungen}
 \input{chapters/requirements}
