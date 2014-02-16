@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  20 JAN 2014 11:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.29)  8 FEB 2014 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,7 +1173,7 @@ l.11 \begin{itemize}
                      [1
 
 ]
-<graphics/GITEWS_Warning_Centre_01.jpg, id=385, 507.8975pt x 337.26pt>
+<graphics/GITEWS_Warning_Centre_01.jpg, id=377, 507.8975pt x 337.26pt>
 File: graphics/GITEWS_Warning_Centre_01.jpg Graphic file (type jpg)
 
 <use graphics/GITEWS_Warning_Centre_01.jpg>
@@ -1184,7 +1184,7 @@ ne 22.
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[2] <graphics/SOSEWIN_Sensor_Bridge.jpg, id=402, 693.59125pt x 438.63875pt>
+[2] <graphics/SOSEWIN_Sensor_Bridge.jpg, id=394, 693.59125pt x 438.63875pt>
 File: graphics/SOSEWIN_Sensor_Bridge.jpg Graphic file (type jpg)
 
 <use graphics/SOSEWIN_Sensor_Bridge.jpg>
@@ -1222,7 +1222,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[8] <graphics/model_of_issue.jpg, id=451, 647.41875pt x 422.57875pt>
+[8] <graphics/model_of_issue.jpg, id=443, 647.41875pt x 422.57875pt>
 File: graphics/model_of_issue.jpg Graphic file (type jpg)
 
 <use graphics/model_of_issue.jpg>
@@ -1233,7 +1233,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [9 <./graphics/model_of_issue.jpg>]
-<graphics/bpmn_business-processes.jpg, id=456, 2532.46124pt x 594.22pt>
+<graphics/bpmn_business-processes.jpg, id=448, 2532.46124pt x 594.22pt>
 File: graphics/bpmn_business-processes.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_business-processes.jpg>
@@ -1259,7 +1259,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 [12]
 Kapitel 3.
-<graphics/uml_functionalities.jpg, id=472, 668.4975pt x 604.2575pt>
+<graphics/uml_functionalities.jpg, id=464, 668.4975pt x 604.2575pt>
 File: graphics/uml_functionalities.jpg Graphic file (type jpg)
 
 <use graphics/uml_functionalities.jpg>
@@ -1289,7 +1289,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [17]
-<graphics/bpmn_use-cases_management.jpg, id=498, 1877.0125pt x 767.86874pt>
+<graphics/bpmn_use-cases_management.jpg, id=490, 1877.0125pt x 767.86874pt>
 File: graphics/bpmn_use-cases_management.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_management.jpg>
@@ -1301,7 +1301,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [18 <./graphics/bpmn_use-cases_management.jpg>]
-<graphics/bpmn_use-cases_measurement.jpg, id=507, 2123.935pt x 692.5875pt>
+<graphics/bpmn_use-cases_measurement.jpg, id=499, 2123.935pt x 692.5875pt>
 File: graphics/bpmn_use-cases_measurement.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_measurement.jpg>
@@ -1322,7 +1322,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [20 <./graphics/bpmn_use-cases_measurement.jpg>]
-<graphics/bpmn_use-cases_analysis.jpg, id=519, 1596.96625pt x 640.3925pt>
+<graphics/bpmn_use-cases_analysis.jpg, id=511, 1596.96625pt x 640.3925pt>
 File: graphics/bpmn_use-cases_analysis.jpg Graphic file (type jpg)
 
 <use graphics/bpmn_use-cases_analysis.jpg>
@@ -1375,7 +1375,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[28] <graphics/SWE_layer-stack.jpg, id=579, 1020.81375pt x 681.54625pt>
+[28] <graphics/SWE_layer-stack.jpg, id=571, 1020.81375pt x 681.54625pt>
 File: graphics/SWE_layer-stack.jpg Graphic file (type jpg)
 
 <use graphics/SWE_layer-stack.jpg>
@@ -1393,7 +1393,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[31] <graphics/SOA_architektur.jpg, id=641, 443.6575pt x 281.05pt>
+[31] <graphics/SOA_architektur.jpg, id=633, 443.6575pt x 281.05pt>
 File: graphics/SOA_architektur.jpg Graphic file (type jpg)
 
 <use graphics/SOA_architektur.jpg>
@@ -1407,7 +1407,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[33] <graphics/SWE_OM.jpg, id=700, 464.73625pt x 283.0575pt>
+[33] <graphics/SWE_OM.jpg, id=692, 464.73625pt x 283.0575pt>
 File: graphics/SWE_OM.jpg Graphic file (type jpg)
 
 <use graphics/SWE_OM.jpg>
@@ -1422,7 +1422,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [35 <./graphics/SWE_OM.jpg>]
-<graphics/SWE_SOS-OM+SensorML.jpg, id=750, 905.3825pt x 568.1225pt>
+<graphics/SWE_SOS-OM+SensorML.jpg, id=742, 905.3825pt x 568.1225pt>
 File: graphics/SWE_SOS-OM+SensorML.jpg Graphic file (type jpg)
 
 <use graphics/SWE_SOS-OM+SensorML.jpg>
@@ -1438,7 +1438,7 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [37 <./graphics/SWE_SOS-OM+SensorML.jpg>]
-<graphics/istSOS_consumer-producer.png, id=828, 475.9965pt x 190.53pt>
+<graphics/istSOS_consumer-producer.png, id=824, 475.9965pt x 190.53pt>
 File: graphics/istSOS_consumer-producer.png Graphic file (type png)
 
 <use graphics/istSOS_consumer-producer.png>
@@ -1521,13 +1521,13 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 [44
 
 ]
-Underfull \hbox (badness 2846) in paragraph at lines 131--137
+Underfull \hbox (badness 2846) in paragraph at lines 148--154
 []\T1/cmr/m/n/10.95 Gregor En-gels.  Vor-le-sung soft-wa-re-ent-wurf - AG en-ge
 ls, datenbank- und in-for-ma-ti-ons-
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 131--137
+Underfull \hbox (badness 1762) in paragraph at lines 148--154
 \T1/cmr/m/n/10.95 sy-ste-me, 2006.  URL []$\T1/cmtt/m/n/10.95 http : / / www2 .
  cs . uni-[]paderborn . de / cs / ag-[]engels / ag _ dt / Courses /
  []
@@ -1537,27 +1537,21 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 177--187
+Underfull \hbox (badness 10000) in paragraph at lines 194--204
 \T1/cmtt/m/n/10.95 6Uy6MHnGN6UC&oi = fnd&pg = PA75&dq = %22Vernetztes + Wissen 
 : +Daten ,[] +Menschen ,[] +Systeme %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--214
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
 \T1/cmr/m/n/10.95 URL []$\T1/cmtt/m/n/10.95 http : / / books . google . de / bo
 oks ? hl = de&lr = &id = kcDxdD3gTkcC&oi = fnd&pg = PP2&dq = H .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--214
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
 \T1/cmtt/m/n/10.95 +Moellering + and + R . +Hogan ,[] + + 1997 + %22Spatial + D
 atabase + Transfer + Standards + %22&ots =
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 216--219
-[]\T1/cmr/m/n/10.95 Arthur Na and Mark Priest.  Sen-sor ob-ser-va-ti-on ser-vic
-e, 2007.  URL []$\T1/cmtt/m/n/10.95 http : / / portal .
  []
 
 
@@ -1565,31 +1559,49 @@ Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
 [46]
-Underfull \hbox (badness 1137) in paragraph at lines 221--227
+Underfull \hbox (badness 1577) in paragraph at lines 233--236
+[]\T1/cmr/m/n/10.95 Arthur Na and Mark Priest.  Sen-sor ob-ser-va-ti-on ser-vic
+e, 2007.  URL []$\T1/cmtt/m/n/10.95 http : / / portal .
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 239--246
+\T1/cmr/m/n/10.95 2004.  URL []$\T1/cmtt/m/n/10.95 http : / / www . researchgat
+e . net / publication / 226967714 _ Modellierung _ und _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--246
+\T1/cmtt/m/n/10.95 kartographische _ Visualisierung _ von _ Geodaten _ mit _ XM
+L-[]basierten _ Sprachen / file /
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 248--254
 []\T1/cmr/m/n/10.95 Michael Pa-pa-zoglou.  \T1/cmr/m/it/10.95 Web ser-vices: pr
 in-cip-les and tech-no-lo-gy\T1/cmr/m/n/10.95 .  Pear-son Edu-ca-ti-on, 2008.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--227
+Underfull \hbox (badness 10000) in paragraph at lines 248--254
 \T1/cmr/m/n/10.95 URL []$\T1/cmtt/m/n/10.95 http : / / books . google . de / bo
 oks ? hl = de&lr = &id = 0qLX9nl87EwC&oi = fnd&pg = PR19&dq =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--227
+Underfull \hbox (badness 10000) in paragraph at lines 248--254
 \T1/cmtt/m/n/10.95 Papazoglou ,[] +Micheal + (2008 ) . + Web + Services : +Prin
 ciples + and + Technology . +Pearson +
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 229--236
+Underfull \hbox (badness 1960) in paragraph at lines 256--263
 []\T1/cmr/m/n/10.95 Bernd Resch.  Stan-dar-di-sier-te geo-sen-sor-netz-wer-ke f
 ür um-welt-be-ob-ach-tung in na-her echt-
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 229--236
+Underfull \hbox (badness 4144) in paragraph at lines 256--263
 \T1/cmr/m/n/10.95 zeit.  2012.  URL []$\T1/cmtt/m/n/10.95 http : / / www . bern
 dresch . com / download / work / publications / resch _
  []
@@ -1598,7 +1610,26 @@ dresch . com / download / work / publications / resch _
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
 
 
-[47])
+[47]
+Underfull \hbox (badness 4518) in paragraph at lines 321--327
+\T1/cmr/m/n/10.95 in vi-sua-li-za-ti-on.  \T1/cmr/m/it/10.95 Dy-kes/-Ma-cE-ach-
+ren/-Kraak (Hrsg.): Ex-plo-ring Geo-vi-sua-li-za-ti-on. El-se-
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 321--327
+\T1/cmr/m/it/10.95 vier Am-ster-dam\T1/cmr/m/n/10.95 , pa-ge 295^^U312, 2005.  
+URL []$\T1/cmtt/m/n/10.95 http : / / books . google . de / books ? hl = de&lr =
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
+\T1/cmtt/m/n/10.95 &id = gUza-[]nsEwioC&oi = fnd&pg = PA295&dq = Wood + %22Usin
+g + 3D + in + Visualization % 22&ots =
+ []
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
 
 Overfull \vbox (6.78236pt too high) has occurred while \output is active []
@@ -1610,17 +1641,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `all.out' has not changed.
-(rerunfilecheck)             Checksum: B18141AB94FAC346EBFFDCCA89EB8745;2143.
+(rerunfilecheck)             Checksum: B9737496B3854CC3BE147D533666DF74;1928.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 15790 strings out of 494979
- 229335 string characters out of 6179170
- 377669 words of memory out of 5000000
- 18501 multiletter control sequences out of 15000+600000
+ 15860 strings out of 494979
+ 230581 string characters out of 6179170
+ 377885 words of memory out of 5000000
+ 18567 multiletter control sequences out of 15000+600000
  22674 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,11n,96p,1819b,736s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,11n,96p,1819b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
  </tmp/texfonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </tmp/texfonts/pk/ljfou
 r/jknappen/ec/ecti1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm0900.600
 pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </tmp/texfonts/pk/ljfo
@@ -1633,10 +1664,10 @@ four/jknappen/ec/ecbx1095.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm1095.
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on all.pdf (55 pages, 1072443 bytes).
+Output written on all.pdf (55 pages, 1075519 bytes).
 PDF statistics:
- 1571 PDF objects out of 1728 (max. 8388607)
- 961 compressed objects within 10 object streams
- 188 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1592 PDF objects out of 1728 (max. 8388607)
+ 986 compressed objects within 10 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -23,20 +23,18 @@
 \contentsline {subsection}{\numberline {6.1.1}Sensortypen}{28}{subsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.1}manuelle Sensoren}{28}{subsubsection.6.1.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.2}automatische Sensoren}{28}{subsubsection.6.1.1.2}
-\contentsline {subsection}{\numberline {6.1.2}Relevante Eigenschaften}{28}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Entscheidungsunterst\IeC {\"u}tzung}{28}{section.6.2}
+\contentsline {section}{\numberline {6.2}Assistenzkonzept}{28}{section.6.2}
 \contentsline {section}{\numberline {6.3}Sensornetzwerke}{28}{section.6.3}
 \contentsline {section}{\numberline {6.4}Dateninfrastruktur}{31}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}OGC Sensor Web Enablement}{33}{subsection.6.4.1}
 \contentsline {subsubsection}{\numberline {6.4.1.1}Existierende L\IeC {\"o}sungen}{37}{subsubsection.6.4.1.1}
 \contentsline {paragraph}{\numberline {6.4.1.1.1}$52\tmspace +\thinmuskip {.1667em}^{\circ }$North}{37}{paragraph.6.4.1.1.1}
 \contentsline {paragraph}{\numberline {6.4.1.1.2}istSOS}{38}{paragraph.6.4.1.1.2}
-\contentsline {subsection}{\numberline {6.4.2}Datentypen und Datenformate}{40}{subsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.2.1}Keyhole Markup Language}{40}{subsubsection.6.4.2.1}
-\contentsline {subsubsection}{\numberline {6.4.2.2}Geographic Markup Language}{40}{subsubsection.6.4.2.2}
-\contentsline {section}{\numberline {6.5}Analysemethoden}{40}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Methode der finiten Elemente}{40}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Datenkonsistenz}{40}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.4.2}Datentypen und Datenformate}{39}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}Keyhole Markup Language}{39}{subsubsection.6.4.2.1}
+\contentsline {subsubsection}{\numberline {6.4.2.2}Geographic Markup Language}{39}{subsubsection.6.4.2.2}
+\contentsline {subsubsection}{\numberline {6.4.2.3}Industrial Foundation Classes}{39}{subsubsection.6.4.2.3}
+\contentsline {section}{\numberline {6.5}Datenrepr\IeC {\"a}sentation und Visualisierung}{39}{section.6.5}
 \contentsline {section}{\numberline {6.6}Mobile Dienste}{40}{section.6.6}
 \contentsline {chapter}{\numberline {7}Softwareentwurf}{41}{chapter.7}
 \contentsline {part}{III\hspace {1em}Diskussion}{42}{part.3}

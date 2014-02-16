@@ -8,9 +8,9 @@ In der Einleitung wurde bereits beschrieben, wozu dieses System dienen soll, und
 \subsection{Sensortypen}
 \subsubsection{manuelle Sensoren}
 \subsubsection{automatische Sensoren}
-\subsection{Relevante Eigenschaften}
 
-\section{Entscheidungsunterstützung}
+
+\section{Assistenzkonzept}
 
 
 \section{Sensornetzwerke}
@@ -27,7 +27,7 @@ Das Sensor Web kann als Kommunikationsebene zwischen den Sensoren und der die Da
 	 \label{fig:swe_layer-stack}
 \end{figure}
 
-Noch weiter ging Kevin Ashton als er 1999 erstmals den Begriff des Internet der Dinge (englisch: ``Internet of things\") verwendete. In seiner Präsentation 1999 zum Thema \newacronym{RFID}{RFID}{Radio-Frequency Identification} \gls{RFID} bei Procter \& Gamble formulierte er eine These derzufolge in der Zukunft Computer über Sensoren ohne die Mithilfe des Menschen Informationen über die Umwelt sammeln könnten um so den Menschen zu entlasten und ihm mehr Wissen zu verschaffen als er selbst im Stande wäre. Ashton begründete dies mit der Aussage, dass das momentane Internet aus reinen Informationen besteht, Dinge wie Lebensmittel oder Brennstoffe aber wesentlich wichtiger sind, und das Internet somit auch über diese Dinge Bescheid wissen sollte \citep{ashton_that_2009}.
+Noch weiter ging Kevin Ashton als er 1999 erstmals den Begriff des Internet der Dinge (englisch: ``Internet of things'') verwendete. In seiner Präsentation 1999 zum Thema \newacronym{RFID}{RFID}{Radio-Frequency Identification} \gls{RFID} bei Procter \& Gamble formulierte er eine These derzufolge in der Zukunft Computer über Sensoren ohne die Mithilfe des Menschen Informationen über die Umwelt sammeln könnten um so den Menschen zu entlasten und ihm mehr Wissen zu verschaffen als er selbst im Stande wäre. Ashton begründete dies mit der Aussage, dass das momentane Internet aus reinen Informationen besteht, Dinge wie Lebensmittel oder Brennstoffe aber wesentlich wichtiger sind, und das Internet somit auch über diese Dinge Bescheid wissen sollte \citep{ashton_that_2009}.
 
 Das ``Web'' der Dinge wiederum ist nach \citep{broring_new_2011} eine Erweiterung des Internet der Dinge, da es gängige Protokolle für die Kommunikation zwischen realen Objekten verwendet. Funktionalitäten realer Objekte werden mittels \gls{API} über das \newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}\gls{HTTP} im Web verfügbar gemacht \citep{guinard_towards_2009}.
 
@@ -60,7 +60,7 @@ In der Grafik \ref{fig:SOA_architektur} werden die drei Teile in einem Dreieck d
 
 Schon zu den Anfängen des Internets wurden bereits Vorschläge zum Austausch von Räumlichen Daten über standardisierte Schnittstellen diskutiert. \citep{moellering_spatial_1997} beschreibt in seinem Buch verschiedene Standards die meist von öffentlichen Verwaltungen verschiedener Staaten für ihre nationale Daten entwickelt wurden. Eine Kommission der \newacronym{ICA}{ICA}{International Cartographic Association}\gls{ICA} beschäftigte sich bereits ab 1989 mit dem Transfer von Räumlichen Daten, und schuf eine Reihe von Anforderungen an Geodateninfrastrukturen die zum großen Teil bis heute gültig sind. 
 
-Werden räumliche (oder geographische) Daten über das Internet zur Verfügung gestellt, ist das aus Sicht von \citep{aalders_spatial_2001} bereits eine Geodateninfrastruktur. Der Unterschied zu einer standardisierten Geodateninfrastruktur liegt darin, dass diese Daten meist nicht ohne großen Zusatzaufwand in bestehende Systeme eingebunden, und mit den Daten anderer Anbieter verschnitten werden können. Durch das Kombinieren verschiedener räumlicher Datensätze entsteht ein erheblicher Mehrwert, aus diesem Grund entwickelte das \newacronym{OGC}{OGC}{Open Geospatial Consortium}\gls{OGC} verschiedene Standards zur Visualisierung von räumlichen Daten wie zum Beispiel der \newacronym{WMS}{WMS}{Web Map Service}\gls{WMS} und zum Verwalten von räumlichen Daten wie der \newacronym{WCS}{WCS}{Web Catalogue Service}\gls{WCS}. Das \gls{OGC} ist die weltweit größte Organisation die sich um die Standardisierung des Datenverkehres von räumlichen Informationen bemüht. 
+Werden räumliche (oder geographische) Daten über das Internet zur Verfügung gestellt, ist das aus Sicht von \citep{aalders_spatial_2001} bereits eine Geodateninfrastruktur. Der Unterschied zu einer standardisierten Geodateninfrastruktur liegt darin, dass diese Daten meist nicht ohne großen Zusatzaufwand in bestehende Systeme eingebunden, und mit den Daten anderer Anbieter verschnitten werden können. Durch das Kombinieren verschiedener räumlicher Datensätze entsteht ein erheblicher Mehrwert, aus diesem Grund entwickelte das \newacronym{OGC}{OGC}{Open Geospatial Consortium}\gls{OGC} verschiedene Standards zur Visualisierung von räumlichen Daten wie zum Beispiel der \newacronym{WMS}{WMS}{Web Map Service}\gls{WMS} und zum Verwalten von räumlichen Daten wie der \newacronym{WCS}{WCS}{Web Catalogue Service}\gls{WCS}. Das \gls{OGC} ist die weltweit größte Organisation die sich um die Standardisierung des Datenverkehres mit räumlichen Informationen bemüht. 
 
 Die Sensornetzwerk Spezifikationen des \gls{OGC} basieren auf dem gleichen \gls{SOA} Paradigma wie die klassischen oben genannten \gls{SDI} Webdienste. Es existieren Spezifikationen sowohl zu Komponenten die als Registratur dienen, als auch zu Services die Daten anbieten.
 
@@ -110,7 +110,7 @@ Der \newacronym{SOS}{SOS}{Sensor Observations Service}\gls{SOS} steht als Web-Di
 
 Die Abbildung \ref{fig:swe_sos-om+sml} beschreibt den Zusammenhang zwischen dem \gls{SOS} und dem \gls{OM} Schema sowie der \gls{SensorML} Sprache. Antworten des \gls{SOS} werden somit als \gls{OM} oder als \gls{SensorML} kodiert.
 
-Das \gls{OGC} hat mit der \gls{SWE} Initiative eine Komplettlösung geschaffen, die es ermöglicht verschiedenartige Sensoren in eine  \gls{SDI} einzubinden oder vielmehr um das \gls{SDI} um die Möglichkeit zu bereichern auch Sensoren zu integrieren. Damit ist auch eine Visualisierung von Sensordaten eingebettet in andere Webservices wie etwa einem Kartenservice möglich \citep{broring_new_2011}\citep{walkowski_sensor_2008}.
+Das \gls{OGC} hat mit der \gls{SWE} Initiative eine Komplettlösung geschaffen, die es ermöglicht verschiedenartige Sensoren in eine  \gls{SDI} einzubinden oder vielmehr um das \gls{SDI} um die Möglichkeit zu bereichern auch Sensoren auf Dienstebene in eine \gls{SDI} zu integrieren. Damit ist auch eine Visualisierung von Sensordaten eingebettet in andere Webservices wie etwa einem Kartenservice möglich \citep{broring_new_2011}\citep{walkowski_sensor_2008}\citep{dollner_techniken_2007}.
 
 
 \subsubsection{Existierende Lösungen}
@@ -146,15 +146,20 @@ Wie bei den meisten \gls{OGC} Services wird auch mit dem \gls{istSOS} über den 
 \subsubsection{Industrial Foundation Classes}
 
 \section{Datenrepräsentation und Visualisierung}
+Einleitend habe ich beschrieben wie ein Assistenzsystem für den ebenfalls beschriebenen Anwendungsfall auszusehen hat. Ein wesentliches Bindeglied zwischen System und Anwender, zwischen der Theorie der Datenerhebung und der Praxis, der Nutzbarmachung dieser Daten, ist die Visualisierung dieser Daten. Visualisierung dient dazu dem Anwender Kenntnis über Daten zu ermöglichen und ihn einen ``Einsichtsgewinn'' zu verschaffen \citep{dollner_techniken_2007}. Insbesondere die Visualisierung von 3D Daten ermöglicht es eine Fülle von Informationen verständlich aufzubereiten, siehe dazu auch \citep{wood_using_2005}.
+
+\citep{breunig_entwicklung_2003} wies bereits früh auf das Potential von Geographischen Informationen für mobile Assistenz-Dienste hin. Die wesentlichen Teile eines solchen Systems haben sich bis heute kaum verändert, deren heutiger Entwicklungsstand ist jedoch seit dem um einiges weiter fortgeschritten. Breunig beschreibt ebenfalls die Nutzung von standardisierten Schnittstellen, die besonderen Anforderungen der System-Architektur und die Datenvisualisierung als Kernpunkte eines Konzeptes für ein mobiles System.
+
+In dem Kapitel über die Dateninfrastrukturen wurde eine Möglichkeit der Integration verschiedenartiger Daten in einem System beschrieben. Diese beschriebene Möglichkeit, mithilfe der \gls{OGC} Spezifikationen auf Dienstebene verschiedene Daten abzurufen und gemeinsam zu verarbeiten, kann durch die Integration der Daten auf Visualisierungsebene ersetzt werden. Bei dieser Vorgehensweise sind die Leistungsanforderungen an das Klientsystem erheblich niedriger und das Gesamtsystem effizienter als andere Integrationswege. Weitere generelle Informationen zur Visualisierung von Geodaten gibt \citep{dollner_techniken_2007}.
+
+Die Visualisierung von räumlichen Daten im Internet ist nicht trivial da \newacronym{HTML}{HTML}{Hypertext Markup Language}\gls{HTML} grundsätzlich nur für die Visualisierung von Rasterdatensätzen und nicht für Vektordaten geeignet ist. Rasterdatensätze sind Daten die aus einem Raster bestehen, dessen Felder unterschiedlich eingefärbt sind. Bilder werden normalerweise als Rasterdatensätze gespeichert. Informationen die sich auf Punkte, Linien oder Polygonzüge beziehen werden jedoch als Vektordaten gespeichert. Ein Lösungsansatz ist die Verwendung von \gls{GML}, eine Spezifikation der \gls{XML}, als Beschreibungssprache für primitive geometrische Objekten in einer computerlesbaren Form die in Form von \newacronym{SVG}{SVG}{Scalable Vector Graphics}\gls{SVG} Dateien im Internet angezeigt werden können. \citep{brinkhoff_architektur_2001} und \citep{neumann_modellierung_2004} beschreiben detailliert wie solch ein Ansatz umzusetzen wäre.
+
+
 %- Methoden / Tools zum Visualisieren der Daten 
+%  - Web perspective view service ??
+%  - SVG Grafiken
+
 %- Zweck der Visualisierung, welche Information soll der Klient damit erhalten?
-%- 
-
-
-\section{Mobile Dienste}
-In der Einleitung bin ich bereits umfangreich auf die besonderen Charakteristiken von mobilen Diensten eingegangen, insbesondere auf die nicht-funktionellen Eigenschaften. In diesem Kapitel skizziere ich die aktuellen Forschungen in diesem Bereich und gehe detailliert darauf ein welche Rolle sie für diese Arbeit spielen können.
-
-Der bereits zitierte Martin Breunig, siehe \citep{breunig_entwicklung_2003}, wies bereits früh auf das Potential von Geographischen Informationen für mobile Dienste hin. Die wesentlichen Teile eines solchen Systems haben sich bis heute kaum verändert, deren heutiger Entwicklungsstand ist jedoch seit dem um einiges weiter fortgeschritten. Breunig beschreibt ebenfalls die Nutzung von standardisierten Schnittstellen (siehe Kapitel Dateninfrastruktur), die besonderen Anforderungen der System-Architektur sowie die Datenvisualisierung als Kernpunkte eines Konzeptes für ein mobiles System.
 
 
 \chapter{Softwareentwurf}

@@ -20,15 +20,12 @@
 \BOOKMARK [0][-]{chapter.6}{Werkzeuge}{part.2}% 20
 \BOOKMARK [1][-]{section.6.1}{Bauwerks\374berwachung}{chapter.6}% 21
 \BOOKMARK [2][-]{subsection.6.1.1}{Sensortypen}{section.6.1}% 22
-\BOOKMARK [2][-]{subsection.6.1.2}{Relevante Eigenschaften}{section.6.1}% 23
-\BOOKMARK [1][-]{section.6.2}{Entscheidungsunterst\374tzung}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.3}{Sensornetzwerke}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.4}{Dateninfrastruktur}{chapter.6}% 26
-\BOOKMARK [2][-]{subsection.6.4.1}{OGC Sensor Web Enablement}{section.6.4}% 27
-\BOOKMARK [2][-]{subsection.6.4.2}{Datentypen und Datenformate}{section.6.4}% 28
-\BOOKMARK [1][-]{section.6.5}{Analysemethoden}{chapter.6}% 29
-\BOOKMARK [2][-]{subsection.6.5.1}{Methode der finiten Elemente}{section.6.5}% 30
-\BOOKMARK [2][-]{subsection.6.5.2}{Datenkonsistenz}{section.6.5}% 31
-\BOOKMARK [1][-]{section.6.6}{Mobile Dienste}{chapter.6}% 32
-\BOOKMARK [0][-]{chapter.7}{Softwareentwurf}{part.2}% 33
-\BOOKMARK [-1][-]{part.3}{III Diskussion}{}% 34
+\BOOKMARK [1][-]{section.6.2}{Assistenzkonzept}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.3}{Sensornetzwerke}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.4}{Dateninfrastruktur}{chapter.6}% 25
+\BOOKMARK [2][-]{subsection.6.4.1}{OGC Sensor Web Enablement}{section.6.4}% 26
+\BOOKMARK [2][-]{subsection.6.4.2}{Datentypen und Datenformate}{section.6.4}% 27
+\BOOKMARK [1][-]{section.6.5}{Datenrepr\344sentation und Visualisierung}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.6}{Mobile Dienste}{chapter.6}% 29
+\BOOKMARK [0][-]{chapter.7}{Softwareentwurf}{part.2}% 30
+\BOOKMARK [-1][-]{part.3}{III Diskussion}{}% 31
